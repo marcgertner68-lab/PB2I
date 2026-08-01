@@ -164,14 +164,7 @@
   .card-article-img-wrap {
     @apply relative overflow-hidden h-48;
   }
-  .card-article-img-wrap::after {
-    content: '';
-    @apply absolute bottom-0 left-0 right-0 h-1 scale-x-0 transition-transform duration-300 origin-left;
-    background: var(--color-primary);
-  }
-  .card-article:hover .card-article-img-wrap::after {
-    @apply scale-x-100;
-  }
+
   .card-article-img {
     @apply w-full h-full object-cover transition-transform duration-500;
   }

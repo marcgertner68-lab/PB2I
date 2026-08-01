@@ -42,6 +42,7 @@ export function mountComponents(activePage = '') {
 
   // Footer
   const footerEl = document.createElement('div')
+  footerEl.id = 'pb2i-footer-wrapper'
   footerEl.innerHTML = createFooter()
   document.body.appendChild(footerEl)
 
@@ -61,13 +62,21 @@ export function mountComponents(activePage = '') {
 }
 
 /**
- * Re-renders just the navbar after translations have loaded.
+ * Re-renders just the navbar and footer after translations have loaded.
  * Called after initI18n() resolves so labels are in the correct language.
  * @param {string} activePage
  */
 export function refreshNavbar(activePage = '') {
   const wrapper = document.getElementById('pb2i-navbar-wrapper')
+  if (wrapper) {
+    wrapper.innerHTML = createNavbar(activePage)
+    initNavbarInteractions()
+  }
+  refreshFooter()
+}
+
+export function refreshFooter() {
+  const wrapper = document.getElementById('pb2i-footer-wrapper')
   if (!wrapper) return
-  wrapper.innerHTML = createNavbar(activePage)
-  initNavbarInteractions()
+  wrapper.innerHTML = createFooter()
 }
