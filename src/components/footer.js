@@ -28,19 +28,19 @@ export function createFooter() {
   return `
   <footer class="relative mt-24" role="contentinfo">
     <div class="footer-wave">${wave}</div>
-    <div class="bg-primary px-6 md:px-12 lg:px-36 py-8 grid grid-cols-2 lg:flex lg:flex-row gap-8 lg:gap-12 justify-between">
+    <div class="bg-primary px-6 md:px-12 lg:px-36 py-12 flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left gap-10 lg:gap-12 justify-between">
       <!-- Branding -->
-      <div class="flex flex-col gap-4 col-span-2 lg:col-span-1">
-        <img src="${logoUrl}" alt="Logo PB2I" class="h-12 w-auto object-contain self-start" onerror="this.style.display='none'">
-        <p class="font-heading font-extrabold text-white text-sm leading-snug max-w-[200px] lg:max-w-[160px]">
+      <div class="flex flex-col gap-4 items-center lg:items-start">
+        <img src="${logoUrl}" alt="Logo PB2I" class="h-12 w-auto object-contain" onerror="this.style.display='none'">
+        <p class="font-heading font-extrabold text-white text-sm leading-snug max-w-[220px] lg:max-w-[160px]">
           ${t('footer.title')}
         </p>
       </div>
 
       <!-- Liens -->
-      <div class="flex flex-col gap-4 col-span-2 lg:col-span-1">
+      <div class="flex flex-col gap-4 items-center lg:items-start w-full max-w-xs sm:max-w-sm">
         <h3 id="footer-nav-heading" class="font-heading text-sm font-semibold text-white uppercase tracking-wider">${t('footer.navigation')}</h3>
-        <nav aria-labelledby="footer-nav-heading" class="grid grid-cols-2 gap-x-4 gap-y-2">
+        <nav aria-labelledby="footer-nav-heading" class="grid grid-cols-2 gap-x-8 gap-y-2 text-center lg:text-left w-full">
           <div class="flex flex-col gap-2">
             ${renderedLinks}
           </div>
@@ -51,7 +51,7 @@ export function createFooter() {
       </div>
 
       <!-- Mentions légales -->
-      <div class="flex flex-col gap-4 col-span-1">
+      <div class="flex flex-col gap-4 items-center lg:items-start">
         <h3 id="footer-legal-heading" class="font-heading text-sm font-semibold text-white uppercase tracking-wider">${t('footer.legal_heading')}</h3>
         <nav aria-labelledby="footer-legal-heading" class="flex flex-col gap-2">
           <a href="${BASE_URL}mentions-legales.html" class="text-xs text-white/75 hover:text-white transition-colors">${t('footer.legal')}</a>
@@ -60,7 +60,7 @@ export function createFooter() {
       </div>
 
       <!-- Social -->
-      <div class="flex flex-col gap-4 col-span-1">
+      <div class="flex flex-col gap-4 items-center lg:items-start">
         <h3 class="font-heading text-sm font-semibold text-white uppercase tracking-wider">${t('footer.follow')}</h3>
         <div class="flex gap-4">
           <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"

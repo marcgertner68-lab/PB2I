@@ -2,16 +2,24 @@
  * PB2I — Homepage JS
  */
 
-import { mountComponents, initFadeIn, initCarousel, formatArticleDate } from '../components.js'
-import { fetchArticles } from '../utils/api.js'
+import { mountComponents, refreshNavbar, initFadeIn, initCarousel, formatArticleDate } from '../components.js'
+import { fetchArticles, prefetch } from '../utils/api.js'
 import { initI18n, translateDOM } from '../utils/i18n.js'
 
 window.PB2I_PAGE = 'home'
 
-// Mount navbar + footer
-await initI18n()
-  mountComponents('')
+// 1) Mount immediately — page is visible right away (navbar labels in FR)
+mountComponents('')
+
+// 2) Start data fetches in parallel (no await yet)
+prefetch('articles.json')
+const i18nReady = initI18n()
+
+// 3) Once i18n resolves, update navbar labels to the correct language
+i18nReady.then(() => {
+  refreshNavbar('')
   translateDOM()
+})
 
 // ── Carousel ────────────────────────────────────────────────
 initCarousel({
@@ -37,7 +45,8 @@ async function loadNews() {
         class="bg-white border-2 border-[#252525] flex gap-4 items-start overflow-hidden relative w-full min-h-[80px] shrink-0 no-underline hover:scale-[1.01] transition-transform duration-150">
         <img src="${a.thumbnail}" alt="${a.title}"
           class="w-20 sm:w-24 self-stretch object-cover shrink-0"
-          onerror="this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?w=200&q=60'">
+          loading="lazy"
+          onerror="this.onerror=null;this.style.opacity='0'">
         <div class="flex-1 min-w-0 pr-3 py-2 flex flex-col justify-between gap-1">
           <p class="font-heading font-semibold text-sm text-[#252525] leading-snug line-clamp-2">${a.title}</p>
           <p class="text-[11px] text-[#252525]/80 line-clamp-1 leading-normal">${a.excerpt || ''}</p>

@@ -23,7 +23,7 @@ export function createArticleCard(article, index, baseUrl, lang = 'fr') {
     <a href="${baseUrl}article.html?id=${article.id}" class="card-article no-underline h-full" data-fade style="animation-delay:${index * 60}ms">
       <div class="card-article-img-wrap">
         <img src="${article.thumbnail}" alt="" class="card-article-img"
-          onerror="this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=70'">
+          onerror="this.src='/assets/images/placeholder.svg'">
       </div>
       <div class="flex flex-col flex-1 p-5 gap-3">
         <h2 class="text-body font-heading font-bold text-lg leading-snug transition-colors duration-200"

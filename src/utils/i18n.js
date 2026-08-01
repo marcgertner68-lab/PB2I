@@ -1,42 +1,50 @@
+/**
+ * PB2I — i18n utility
+ * Loads UI translations from /data/{lang}/ui.json.
+ * Falls back to key path if a translation is missing.
+ */
 import { getActiveLang } from './lang.js'
-import { fetchJSON } from './api.js';
+import { fetchJSON } from './api.js'
 
-let translations = {};
+let translations = {}
 
 export async function initI18n() {
-  const lang = getActiveLang();
   try {
-    translations = await fetchJSON('ui.json');
+    translations = await fetchJSON('ui.json')
   } catch (err) {
-    console.error('Failed to load translations:', err);
+    console.warn('[i18n] Could not load translations, using key fallback.')
   }
 }
 
 export function t(keyPath) {
-  const keys = keyPath.split('.');
-  let value = translations;
+  const keys = keyPath.split('.')
+  let value = translations
   for (const key of keys) {
     if (value && value[key] !== undefined) {
-      value = value[key];
+      value = value[key]
     } else {
-      return keyPath; // Fallback
+      return keyPath // Fallback to key
     }
   }
-  return value;
+  return typeof value === 'string' ? value : keyPath
 }
 
+/**
+ * Translate all elements that have a [data-i18n] attribute.
+ * Currently disabled — re-enable when static pages have data-i18n attributes.
+ */
 export function translateDOM() {
-  // Désactivé à la demande de l'utilisateur : seule la navbar est traduite pour le moment.
+  // Désactivé à la demande de l'utilisateur : seule la navbar est traduite.
   /*
   document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    const translation = t(key);
+    const key = el.getAttribute('data-i18n')
+    const translation = t(key)
     if (translation !== key) {
-      el.innerHTML = translation;
+      el.innerHTML = translation
     }
-  });
+  })
   */
 }
 
-// Global exposure if needed by inline scripts
-window.i18n = { t, translateDOM };
+// Global exposure for any inline scripts that need it
+window.i18n = { t, translateDOM }

@@ -1,14 +1,15 @@
 /**
  * PB2I — Article detail JS
  */
-import { mountComponents, initFadeIn, createArticleCard, formatArticleDate, initCarousel } from '../components.js'
-import { fetchArticles } from '../utils/api.js'
+import { mountComponents, refreshNavbar, initFadeIn, createArticleCard, formatArticleDate, initCarousel } from '../components.js'
+import { fetchArticles, prefetch } from '../utils/api.js'
 import { initI18n, translateDOM } from '../utils/i18n.js'
 
 window.PB2I_PAGE = 'articles'
-await initI18n()
-  mountComponents('actualites')
-  translateDOM()
+mountComponents('actualites')
+prefetch('articles.json')
+initI18n().then(() => { refreshNavbar('actualites'); translateDOM() })
+
 
 async function loadArticle() {
   const params    = new URLSearchParams(window.location.search)
@@ -44,18 +45,24 @@ async function loadArticle() {
       </h1>
     `
 
-    // Render body
+    // Render body with a elegant, non-invasive layout (floating/sidebar image)
     body.innerHTML = `
-      <!-- Hero image -->
-      <img src="${article.thumbnail}" alt="${article.title}"
-        class="w-full rounded-2xl my-10 shadow-md object-cover max-h-[320px]"
-        onerror="this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80'">
+      <div class="flex flex-col lg:flex-row gap-10 items-start">
+        <!-- Article Text content -->
+        <div class="flex-1">
+          ${article.content.map(p => `<p class="text-muted text-base leading-loose mb-6" >${p}</p>`).join('')}
+        </div>
 
-      <!-- Intro paragraphs -->
-      ${article.content.slice(0, 2).map(p => `<p class="text-muted text-base leading-loose mb-6" >${p}</p>`).join('')}
-
-      <!-- Rest of content -->
-      ${article.content.slice(2).map(p => `<p class="text-muted text-base leading-loose mb-6" >${p}</p>`).join('')}
+        <!-- Sidebar Image container -->
+        <div class="w-full lg:w-80 flex-shrink-0">
+          <figure class="bg-warm-bg p-3 rounded-2xl border shadow-sm" style="border-color:rgba(0,0,0,0.06)">
+            <img src="${article.thumbnail}" alt="${article.title}"
+              class="w-full h-auto rounded-xl object-cover max-h-60"
+              onerror="this.src='/assets/images/placeholder.svg'">
+            <figcaption class="text-center text-xs text-black/50 italic mt-2">${article.title}</figcaption>
+          </figure>
+        </div>
+      </div>
 
       <!-- Author -->
       <div class="border-primary/10 flex items-center gap-3 mt-12 pt-8 border-t" >

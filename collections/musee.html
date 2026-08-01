@@ -16,7 +16,7 @@
 
 
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+      
   <script type="module" src="/src/pages/collections/musee.js"></script>
 </head>
 <body class="bg-white">
@@ -43,33 +43,6 @@
       <!-- Machines injected by JS -->
     </div>
   </section>
-
-  <!-- Machine Modal -->
-  <div id="machine-overlay"
-    class="fixed inset-0 z-[1000] flex p-4 opacity-0 pointer-events-none transition-opacity duration-250"
-    style="background:rgba(0,0,0,0.6);backdrop-filter:blur(4px)">
-
-    <div class="m-auto bg-white rounded-2xl max-w-3xl w-full max-h-[90vh] max-h-[90dvh] overflow-hidden flex flex-col animate-scale-in"
-      style="box-shadow:var(--shadow-modal)">
-
-      <!-- Modal Header -->
-      <div class="bg-primary flex items-center justify-between px-6 py-4" >
-        <h2 id="modal-title" class="font-heading font-bold text-lg text-white">Machine</h2>
-        <button id="modal-close"
-          class="w-8 h-8 rounded-lg flex items-center justify-center text-white hover:bg-white/20 transition-colors text-xl leading-none"
-          aria-label="Fermer">✕</button>
-      </div>
-
-      <!-- Modal Body -->
-      <div class="overflow-y-auto flex-1 p-6">
-        <img id="modal-img" src="" alt=""
-          class="bg-warm-bg w-full max-h-80 object-contain rounded-xl mb-6"
-          >
-        <h3 id="modal-name" class="text-body font-heading font-bold text-xl mb-4" ></h3>
-        <p id="modal-desc" class="text-muted text-sm leading-relaxed" ></p>
-      </div>
-    </div>
-  </div>
 
 </main>
 </body>

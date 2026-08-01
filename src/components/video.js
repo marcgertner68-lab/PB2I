@@ -17,11 +17,31 @@ export function createVideoOverlay() {
   `
 }
 
-export function openVideo(youtubeId) {
+export function openVideo(videoUrlOrId) {
   const overlay = document.getElementById('video-overlay')
   const iframe  = document.getElementById('video-iframe')
   if (!overlay || !iframe) return
-  iframe.src = `https://www.youtube.com/embed/${youtubeId}?autoplay=1`
+
+  let srcUrl = ''
+  if (videoUrlOrId.includes('vimeo.com')) {
+    const match = videoUrlOrId.match(/vimeo\.com\/(\d+)/)
+    const id = match ? match[1] : videoUrlOrId
+    srcUrl = `https://player.vimeo.com/video/${id}?autoplay=1`
+  } else if (videoUrlOrId.includes('youtube.com') || videoUrlOrId.includes('youtu.be')) {
+    let id = videoUrlOrId
+    if (videoUrlOrId.includes('watch?v=')) {
+      id = videoUrlOrId.split('watch?v=')[1].split('&')[0]
+    } else if (videoUrlOrId.includes('youtu.be/')) {
+      id = videoUrlOrId.split('youtu.be/')[1].split('?')[0]
+    } else if (videoUrlOrId.includes('embed/')) {
+      id = videoUrlOrId.split('embed/')[1].split('?')[0]
+    }
+    srcUrl = `https://www.youtube.com/embed/${id}?autoplay=1`
+  } else {
+    srcUrl = `https://www.youtube.com/embed/${videoUrlOrId}?autoplay=1`
+  }
+
+  iframe.src = srcUrl
   overlay.classList.remove('opacity-0', 'pointer-events-none')
   overlay.classList.add('opacity-100', 'pointer-events-auto')
   document.body.style.overflow = 'hidden'

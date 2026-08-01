@@ -15,21 +15,28 @@
 import { createNavbar, initNavbarInteractions } from './navbar.js'
 import { createFooter }                          from './footer.js'
 import { createVideoOverlay, initVideoOverlayClose } from './video.js'
+import { createMachineModal }                    from './machineModal.js'
 
 // Re-exports for pages
-export { openModal, closeModal, closeAllModals } from './modal.js'
+export { openModal, closeModal, closeAllModals, bindMachineModal } from './modal.js'
 export { openVideo }                             from './video.js'
 export { initFadeIn }                            from './animations.js'
 export { createArticleCard, formatArticleDate }  from './articleCard.js'
 export { initCarousel }                          from './carousel.js'
 
 /**
- * Injects navbar, footer and video overlay into the page, then wires up all interactions.
+ * Injects navbar, footer, video overlay and machine details modal into the page,
+ * then wires up all interactions.
+ *
+ * Call this BEFORE awaiting i18n — components render immediately with default labels,
+ * then call refreshNavbar() after initI18n() resolves to update translations.
+ *
  * @param {string} activePage - key matching a navbar link (e.g. 'histoire', 'missions')
  */
 export function mountComponents(activePage = '') {
   // Navbar
   const navbarEl = document.createElement('div')
+  navbarEl.id = 'pb2i-navbar-wrapper'
   navbarEl.innerHTML = createNavbar(activePage)
   document.body.prepend(navbarEl)
 
@@ -43,7 +50,24 @@ export function mountComponents(activePage = '') {
   videoEl.innerHTML = createVideoOverlay()
   document.body.appendChild(videoEl)
 
+  // Machine details overlay
+  const machineOverlayEl = document.createElement('div')
+  machineOverlayEl.innerHTML = createMachineModal()
+  document.body.appendChild(machineOverlayEl)
+
   // Wire interactions
   initNavbarInteractions()
   initVideoOverlayClose()
+}
+
+/**
+ * Re-renders just the navbar after translations have loaded.
+ * Called after initI18n() resolves so labels are in the correct language.
+ * @param {string} activePage
+ */
+export function refreshNavbar(activePage = '') {
+  const wrapper = document.getElementById('pb2i-navbar-wrapper')
+  if (!wrapper) return
+  wrapper.innerHTML = createNavbar(activePage)
+  initNavbarInteractions()
 }

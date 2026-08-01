@@ -19,7 +19,7 @@
 
 
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+      
   <script type="module" src="/src/pages/contact.js"></script>
   <style>
     /* Permet à l'arrière-plan de la section de toucher le footer sans créer de scrollbar */
@@ -46,18 +46,24 @@
       <form id="contact-form" novalidate class="space-y-6" action="mailto:pb2i.belfort@gmail.com" method="post"
         enctype="text/plain">
 
+        <!-- Honeypot anti-spam -->
+        <div class="hidden" aria-hidden="true">
+          <label for="contact-hp">Ne pas remplir ce champ</label>
+          <input type="text" id="contact-hp" name="hp" tabindex="-1" autocomplete="off">
+        </div>
+
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <!-- Email -->
           <div>
             <label class="form-label" for="contact-email">Adresse mail</label>
-            <input type="email" id="contact-email" name="email" required placeholder="votre@email.com"
+            <input type="email" id="contact-email" name="email" required maxlength="100" placeholder="votre@email.com"
               class="form-input">
             <p class="hidden text-xs mt-1 text-red-600" id="email-error">Adresse email invalide.</p>
           </div>
           <!-- Objet -->
           <div>
             <label class="form-label" for="contact-objet">Objet</label>
-            <input type="text" id="contact-objet" name="objet" required placeholder="Sujet de votre message"
+            <input type="text" id="contact-objet" name="objet" required maxlength="150" placeholder="Sujet de votre message"
               class="form-input">
           </div>
         </div>
@@ -65,7 +71,7 @@
         <!-- Message -->
         <div>
           <label class="form-label" for="contact-message">Message</label>
-          <textarea id="contact-message" name="message" rows="6" required placeholder="Écrivez votre message ici…"
+          <textarea id="contact-message" name="message" rows="6" required maxlength="1500" placeholder="Écrivez votre message ici…"
             class="form-input resize-y min-h-36"></textarea>
         </div>
 

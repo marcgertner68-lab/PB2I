@@ -1,10 +1,9 @@
 /**
  * PB2I — Nos missions page JS
  */
-import { mountComponents } from '../components.js'
+import { mountComponents, refreshNavbar } from '../components.js'
 import { initI18n, translateDOM } from '../utils/i18n.js'
 
 window.PB2I_PAGE = 'missions'
-await initI18n()
-  mountComponents('missions')
-  translateDOM()
+mountComponents('missions')
+initI18n().then(() => { refreshNavbar('missions'); translateDOM() })

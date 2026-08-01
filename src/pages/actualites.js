@@ -1,14 +1,15 @@
 /**
  * PB2I — Actualités JS
  */
-import { mountComponents, initFadeIn, createArticleCard } from '../components.js'
-import { fetchArticles } from '../utils/api.js'
+import { mountComponents, refreshNavbar, initFadeIn, createArticleCard } from '../components.js'
+import { fetchArticles, prefetch } from '../utils/api.js'
 import { initI18n, translateDOM } from '../utils/i18n.js'
 
 window.PB2I_PAGE = 'articles'
-await initI18n()
-  mountComponents('actualites')
-  translateDOM()
+
+mountComponents('actualites')
+prefetch('articles.json')
+initI18n().then(() => { refreshNavbar('actualites'); translateDOM() })
 
 async function loadArticles() {
   const grid      = document.getElementById('articles-grid')
@@ -17,7 +18,7 @@ async function loadArticles() {
 
   try {
     const baseUrl = import.meta.env.BASE_URL || '/'
-    const lang = document.documentElement.lang || 'fr' // needed for date formatting
+    const lang = document.documentElement.lang || 'fr'
     const articles = await fetchArticles()
 
     if (!articles.length) {

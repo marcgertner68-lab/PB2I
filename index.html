@@ -15,8 +15,9 @@
   <meta property="og:site_name" content="PB2I" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <meta name="base-url" content="/PB2I/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  
+  
   <script type="module" src="/src/pages/home.js"></script>
 </head>
 <body class="bg-white">
@@ -45,14 +46,14 @@
         <!-- Polaroid Card 1 (Rotated, back) -->
         <div class="absolute z-10 transform rotate-2 translate-x-2 sm:translate-x-4 lg:translate-x-8 -translate-y-2 card-polaroid w-40 sm:w-[210px] lg:w-[260px]">
           <div class="card-polaroid-img-wrap h-20 sm:h-[105px] lg:h-[130px]">
-            <img src="/assets/images/mecanographie.webp" alt="M&#xe9;canographie Bull" class="card-polaroid-img">
+            <img src="/assets/images/mecanographie.webp" alt="M&#xe9;canographie Bull" class="card-polaroid-img" fetchpriority="high">
           </div>
           <p class="card-polaroid-caption" data-i18n="hero.photo_caption_1">Atelier m&#xe9;canographique &#xe0; cartes perfor&#xe9;es</p>
         </div>
         <!-- Polaroid Card 2 (Straight, front) -->
         <div class="absolute z-20 -translate-x-2 sm:-translate-x-6 lg:-translate-x-10 translate-y-3 sm:translate-y-4 card-polaroid w-40 sm:w-[210px] lg:w-[260px]">
           <div class="card-polaroid-img-wrap h-20 sm:h-[105px] lg:h-[130px]">
-            <img src="/assets/images/musee.webp" alt="Exposition permanente" class="card-polaroid-img">
+            <img src="/assets/images/musee.webp" alt="Exposition permanente" class="card-polaroid-img" fetchpriority="high">
           </div>
           <p class="card-polaroid-caption" data-i18n="hero.photo_caption_2">Exposition permanente dans nos locaux</p>
         </div>
@@ -63,11 +64,11 @@
     <!-- ─── Section 2: Partners ─────────────────────────────── -->
     <section id="partners" class="border-primary/10 bg-white px-4 lg:px-36 py-8 border-b" >
       <div class="flex flex-wrap items-center justify-center gap-12 lg:gap-16">
-        <img src="/assets/images/logo-federation-bull.webp" alt="Fédération des équipes Bull" class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
-        <img src="/assets/images/Logo Ville de Belfort.svg" alt="Ville de Belfort" class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
-        <img src="/assets/images/logo-territoire-belfort.webp" alt="Territoire de Belfort — Le Département" class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
-        <img src="/assets/images/logo-credit-mutuel.webp" alt="Crédit Mutuel" class="h-6 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
-        <img src="/assets/images/logo-tandem.webp" alt="Tandem Belfort" class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
+        <img src="/assets/images/logo-federation-bull.webp" alt="Fédération des équipes Bull" class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" loading="lazy">
+        <img src="/assets/images/Logo Ville de Belfort.svg" alt="Ville de Belfort" class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" loading="lazy">
+        <img src="/assets/images/logo-territoire-belfort.webp" alt="Territoire de Belfort — Le Département" class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" loading="lazy">
+        <img src="/assets/images/logo-credit-mutuel.webp" alt="Crédit Mutuel" class="h-6 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" loading="lazy">
+        <img src="/assets/images/logo-tandem.webp" alt="Tandem Belfort" class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" loading="lazy">
       </div>
     </section>
 
@@ -82,7 +83,7 @@
       </div>
       <div class="flex flex-col gap-8 items-center mt-6">
         <div class="w-full max-w-xl rounded-2xl overflow-hidden shadow-md">
-          <img src="/assets/images/history-1.webp" alt="Machines historiques" class="w-full object-cover h-64 lg:h-80" onerror="this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=70'">
+          <img src="/assets/images/history-1.webp" alt="Machines historiques" class="w-full object-cover h-64 lg:h-80" loading="lazy" onerror="this.src='/assets/images/placeholder.svg'">
         </div>
         <a href="notre-histoire.html" class="btn-beige" data-i18n="history.cta">En savoir plus</a>
       </div>

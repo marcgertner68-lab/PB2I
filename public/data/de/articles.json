@@ -7,7 +7,7 @@
       "date": "2024-09-21",
       "author": "PB2I",
       "authorAvatar": "/assets/images/avatar-default.jpg",
-      "thumbnail": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&q=70",
+      "thumbnail": "/assets/images/placeholder.svg",
       "content": [
         "Le 21 Septembre 2024, journée du patrimoine 2024, le Musée Bull et de la Mécanographie ouvre ses portes le samedi 21 Septembre de 14h à 18h et le dimanche 22 Septembre de 10h à 12h et de 14h à 18h, 5 rue Jacqueline Auriol 90000 Belfort."
       ],
@@ -21,7 +21,7 @@
       "date": "2024-05-29",
       "author": "PB2I",
       "authorAvatar": "/assets/images/avatar-default.jpg",
-      "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=70",
+      "thumbnail": "/assets/images/placeholder.svg",
       "content": [
         "Les 29 et 31 Mai 2024, le Musée accueille 75 élèves de l'IUT d'informatique de Belfort.",
         "Ce sont 3 groupes d'élèves ingénieurs qui assisteront à la présentation de la naissance du traitement informatique des données via un atelier de Mécanographie (toujours en fonctionnement aujourd'hui)."
@@ -36,7 +36,7 @@
       "date": "2024-05-24",
       "author": "PB2I",
       "authorAvatar": "/assets/images/avatar-default.jpg",
-      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Punch_card_reader_IBM.jpg/640px-Punch_card_reader_IBM.jpg",
+      "thumbnail": "/assets/images/placeholder.svg",
       "content": [
         "Le 24 mai 2024, le Musée accueille les bénévoles de l'ACS PARIS (Association nationale de retraités Bull)."
       ],
@@ -50,7 +50,7 @@
       "date": "2024-05-04",
       "author": "PB2I",
       "authorAvatar": "/assets/images/avatar-default.jpg",
-      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Belfort%2C_Territoire_de_Belfort%2C_France_-_panoramio_%28102%29.jpg/640px-Belfort%2C_Territoire_de_Belfort%2C_France_-_panoramio_%28102%29.jpg",
+      "thumbnail": "/assets/images/placeholder.svg",
       "content": [
         "Le 04 Mai 2024, un groupe du canton du Jura en Suisse visite le Musée. Les 25 participants apprécient la visite."
       ],
@@ -64,7 +64,7 @@
       "date": "2024-03-13",
       "author": "PB2I",
       "authorAvatar": "/assets/images/avatar-default.jpg",
-      "thumbnail": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=70",
+      "thumbnail": "/assets/images/placeholder.svg",
       "content": [
         "Le 13 Mars 2024 s'est tenue l'Assemblée Générale de l'ACS et de PB2I."
       ],

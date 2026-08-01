@@ -6,10 +6,10 @@
  * Priority:
  *  1. Value stored in localStorage ('pb2i_lang') — set when user explicitly switches
  *  2. Browser/navigator language (navigator.language or navigator.languages)
- *  3. Default: 'fr'
+ *  3. Default: 'en' (English, for any unsupported browser locale)
  *
  * Only the three supported languages are accepted; any other browser language
- * falls back to French.
+ * falls back to English.
  */
 
 const SUPPORTED = ['fr', 'en', 'de']
@@ -18,6 +18,7 @@ const STORAGE_KEY = 'pb2i_lang'
 /**
  * Detect the browser's preferred language from the supported set.
  * Tries navigator.languages first (ordered preference list), then navigator.language.
+ * Falls back to 'en' if no supported language is found.
  */
 function detectBrowserLang() {
   const candidates = [
@@ -30,7 +31,7 @@ function detectBrowserLang() {
     const primary = tag.split('-')[0].toLowerCase()
     if (SUPPORTED.includes(primary)) return primary
   }
-  return 'fr'
+  return 'en' // Default to English for unsupported browser locales
 }
 
 /**
@@ -42,7 +43,7 @@ export function getActiveLang() {
   const stored = localStorage.getItem(STORAGE_KEY)
   if (stored && SUPPORTED.includes(stored)) return stored
 
-  // First visit: detect and persist
+  // First visit: detect browser language and persist the choice
   const detected = detectBrowserLang()
   localStorage.setItem(STORAGE_KEY, detected)
   return detected
