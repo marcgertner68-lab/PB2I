@@ -1,13 +1,12 @@
 /* ── Self-hosted fonts (no external network request, no render-blocking CDN) ── */
-@import '@fontsource/inter/400.css';
-@import '@fontsource/inter/500.css';
-@import '@fontsource/inter/600.css';
-@import '@fontsource/inter/700.css';
-@import '@fontsource/literata/400.css';
-@import '@fontsource/literata/600.css';
-@import '@fontsource/literata/700.css';
-@import '@fontsource/literata/800.css';
-@import '@fontsource/literata/400-italic.css';
+@import '@fontsource/inter/latin-400.css';
+@import '@fontsource/inter/latin-500.css';
+@import '@fontsource/inter/latin-600.css';
+@import '@fontsource/inter/latin-700.css';
+@import '@fontsource/literata/latin-400.css';
+@import '@fontsource/literata/latin-600.css';
+@import '@fontsource/literata/latin-700.css';
+@import '@fontsource/literata/latin-800.css';
 @import "tailwindcss";
 
 /* ============================================================
@@ -93,7 +92,7 @@
   }
 
   .navbar-link {
-    @apply text-sm font-semibold text-white/90 whitespace-nowrap relative transition-all duration-200 hover:text-white;
+    @apply text-sm font-semibold text-white/90 whitespace-nowrap relative transition-colors duration-200 hover:text-white;
     font-family: var(--font-body);
   }
 
@@ -109,8 +108,9 @@
 
   /* --- Buttons --- */
   .btn-primary {
-    @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold text-white transition-all duration-200;
+    @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold text-white;
     background: var(--color-primary);
+    transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
   }
   .btn-primary:hover {
     background: var(--color-primary-dark);
@@ -118,24 +118,14 @@
   }
 
   .btn-outline {
-    @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200 border-2;
+    @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold border-2;
     color: var(--color-primary);
     border-color: var(--color-primary);
+    transition: background-color 0.2s, color 0.2s, transform 0.2s;
   }
   .btn-outline:hover {
     background: var(--color-primary);
     @apply text-white -translate-y-px;
-  }
-
-  .btn-ghost {
-    @apply inline-flex items-center gap-2 text-sm font-semibold transition-all duration-200;
-    color: var(--color-primary);
-  }
-  .btn-ghost:hover {
-    @apply gap-3;
-  }
-  .btn-ghost:hover svg {
-    @apply translate-x-1;
   }
 
   /* --- Page Title --- */
@@ -152,10 +142,11 @@
 
   /* --- Cards: Article --- */
   .card-article {
-    @apply rounded-xl overflow-hidden flex flex-col cursor-pointer transition-all duration-300;
+    @apply rounded-xl overflow-hidden flex flex-col cursor-pointer;
     background: var(--color-secondary);
     color: var(--color-body);
     box-shadow: var(--shadow-card);
+    transition: transform 0.3s, box-shadow 0.3s;
   }
   .card-article:hover {
     @apply -translate-y-1;
@@ -174,8 +165,9 @@
 
   /* --- Cards: Machine --- */
   .card-machine {
-    @apply rounded-xl flex flex-col items-center p-5 gap-3 cursor-pointer transition-all duration-300 border-2 border-transparent text-center;
+    @apply rounded-xl flex flex-col items-center p-5 gap-3 cursor-pointer border-2 border-transparent text-center;
     background: var(--color-secondary);
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
   }
   .card-machine:hover {
     @apply -translate-y-1;
@@ -189,7 +181,8 @@
     aspect-ratio: 16/9;
   }
   .card-video-thumb {
-    @apply w-full h-full object-cover transition-all duration-500;
+    @apply w-full h-full object-cover;
+    transition: transform 0.5s, opacity 0.5s;
   }
   .card-video:hover .card-video-thumb {
     @apply scale-105 opacity-80;
@@ -197,7 +190,8 @@
 
   /* --- Form --- */
   .form-input {
-    @apply w-full px-4 py-3 border-2 rounded-lg text-sm transition-all duration-200 outline-none bg-white;
+    @apply w-full px-4 py-3 border-2 rounded-lg text-sm outline-none bg-white;
+    transition: border-color 0.2s, box-shadow 0.2s;
     border-color: rgba(112, 36, 36, 0.2);
     font-family: var(--font-body);
     color: var(--color-body);
@@ -227,10 +221,11 @@
   }
 
   .btn-beige {
-    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-200 border border-amber-200/20 cursor-pointer;
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg text-sm font-semibold border border-amber-200/20 cursor-pointer;
     background: #fbf1e4;
     color: #252525;
     font-family: var(--font-body);
+    transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
   }
   .btn-beige:hover {
     @apply -translate-y-px shadow-md;
@@ -251,7 +246,8 @@
   }
 
   .card-carousel-item {
-    @apply p-3 rounded shadow flex flex-col gap-2 items-center w-full transition-all duration-300;
+    @apply p-3 rounded shadow flex flex-col gap-2 items-center w-full;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
   }
   .card-carousel-item:hover {
     @apply -translate-y-1 shadow-lg;
@@ -275,15 +271,6 @@
     background-size: cover;
     height: 12px;
     width: 100%;
-  }
-
-  .vertical-divider {
-    background-image: url('/assets/images/vertical-divider.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    width: 12px;
   }
 
   /* --- Keyboard Focus-Visible Rings & Accessibility --- */
@@ -347,11 +334,11 @@
   }
   .underline-anim::after {
     content: '';
-    @apply absolute -bottom-1 left-0 h-0.5 w-0 transition-all duration-300;
+    @apply absolute -bottom-1 left-0 right-0 h-0.5 scale-x-0 transition-transform duration-300 origin-left;
     background: currentColor;
   }
   .underline-anim:hover::after {
-    @apply w-full;
+    @apply scale-x-100;
   }
 
   /* Skeleton loading */

@@ -13,6 +13,7 @@
  */
 
 import { createNavbar, initNavbarInteractions } from './navbar.js'
+import { getActiveLang }                         from '../utils/lang.js'
 import { createFooter }                          from './footer.js'
 import { createVideoOverlay, initVideoOverlayClose } from './video.js'
 import { createMachineModal }                    from './machineModal.js'
@@ -34,6 +35,11 @@ export { initCarousel }                          from './carousel.js'
  * @param {string} activePage - key matching a navbar link (e.g. 'histoire', 'missions')
  */
 export function mountComponents(activePage = '') {
+  // Reflect the active language on <html lang> so date formatting
+  // (Intl.DateTimeFormat reads document.documentElement.lang) and
+  // assistive tech follow the user's language choice.
+  document.documentElement.lang = getActiveLang()
+
   // Navbar
   const navbarEl = document.createElement('div')
   navbarEl.id = 'pb2i-navbar-wrapper'

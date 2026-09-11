@@ -3,12 +3,13 @@
  */
 import { mountComponents, refreshNavbar, initFadeIn, createArticleCard, formatArticleDate, initCarousel } from '../components.js'
 import { fetchArticles, prefetch } from '../utils/api.js'
-import { initI18n, translateDOM } from '../utils/i18n.js'
+import { initI18n, translateDOM, t } from '../utils/i18n.js'
 
 window.PB2I_PAGE = 'articles'
 mountComponents('actualites')
 prefetch('articles.json')
-initI18n().then(() => { refreshNavbar('actualites'); translateDOM() })
+const i18nReady = initI18n()
+i18nReady.then(() => { refreshNavbar('actualites'); translateDOM() })
 
 
 async function loadArticle() {
@@ -20,8 +21,9 @@ async function loadArticle() {
 
   try {
     const baseUrl = import.meta.env.BASE_URL || '/'
+    // Wait for translations too, so the page renders in the right language
+    const [all] = await Promise.all([fetchArticles(), i18nReady])
     const lang = document.documentElement.lang || 'fr'
-    const all = await fetchArticles()
 
     const article = all.find(a => a.id === articleId) || all[0]
     if (!article) throw new Error('Not found')
@@ -32,11 +34,18 @@ async function loadArticle() {
     document.title = `${article.title} — PB2I`
     document.getElementById('article-page-title').textContent = `${article.title} — PB2I`
 
-    // Update og:image dynamically
-    let ogImage = document.querySelector('meta[property="og:image"]')
-    if (ogImage) {
-      ogImage.setAttribute('content', article.thumbnail.startsWith('http') ? article.thumbnail : baseUrl + article.thumbnail.replace(/^\//, ''))
+    // Update social/SEO metas dynamically for the loaded article
+    const setMeta = (selector, content) => {
+      const el = document.querySelector(selector)
+      if (el && content) el.setAttribute(el.tagName === 'LINK' ? 'href' : 'content', content)
     }
+    const pageUrl = new URL(`article.html?id=${encodeURIComponent(article.id)}`, window.location.href).href
+    setMeta('meta[property="og:image"]', article.thumbnail.startsWith('http') ? article.thumbnail : baseUrl + article.thumbnail.replace(/^\//, ''))
+    setMeta('meta[property="og:title"]', `${article.title} — PB2I`)
+    setMeta('meta[property="og:description"]', article.excerpt || '')
+    setMeta('meta[name="description"]', article.excerpt || '')
+    setMeta('meta[property="og:url"]', pageUrl)
+    setMeta('link[rel="canonical"]', pageUrl)
 
     // Render header
     header.innerHTML = `
@@ -56,9 +65,9 @@ async function loadArticle() {
         <!-- Sidebar Image container -->
         <div class="w-full lg:w-80 flex-shrink-0">
           <figure class="bg-warm-bg p-3 rounded-2xl border shadow-sm" style="border-color:rgba(0,0,0,0.06)">
-            <img src="${article.thumbnail}" alt="${article.title}"
+            <img src="${baseUrl}${article.thumbnail.replace(/^\//, '')}" alt="${article.title}"
               class="w-full h-auto rounded-xl object-cover max-h-60"
-              onerror="this.src='/assets/images/placeholder.svg'">
+              onerror="this.src='${baseUrl}assets/images/placeholder.svg'">
             <figcaption class="text-center text-xs text-black/50 italic mt-2">${article.title}</figcaption>
           </figure>
         </div>
@@ -98,7 +107,7 @@ async function loadArticle() {
 
   } catch {
     if (header) header.innerHTML = '<h1 class="text-2xl font-bold text-gray-800">Article non trouvé</h1>'
-    if (body)   body.innerHTML   = '<p class="text-gray-500">Cet article n\'existe pas ou a été supprimé.</p>'
+    if (body)   body.innerHTML   = `<p class="text-gray-500">${t('ui.article_not_found', "Cet article n'existe pas ou a été supprimé.")}</p>`
   }
 }
 

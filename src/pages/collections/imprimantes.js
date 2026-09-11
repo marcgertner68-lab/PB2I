@@ -1,12 +1,11 @@
-import { mountComponents, initFadeIn } from '/src/components.js';
-import { getActiveLang } from '/src/utils/lang.js';
-import { fetchCollection } from '../../utils/api.js';
+import { mountComponents, refreshNavbar, initFadeIn } from '../../components.js';
 import { initI18n, translateDOM } from '../../utils/i18n.js';
 
-window.PB2I_PAGE = 'home';
-await initI18n();
-mountComponents('collections');
-translateDOM();
+window.PB2I_PAGE = 'imprimantes';
+// 1) Render immediately
+mountComponents('imprimantes');
+// 2) i18n in parallel, then refresh labels
+initI18n().then(() => { refreshNavbar('imprimantes'); translateDOM() });
 initFadeIn('[data-fade]');
 
 const chronoData = [

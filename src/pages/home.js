@@ -4,7 +4,7 @@
 
 import { mountComponents, refreshNavbar, initFadeIn, initCarousel, formatArticleDate } from '../components.js'
 import { fetchArticles, prefetch } from '../utils/api.js'
-import { initI18n, translateDOM } from '../utils/i18n.js'
+import { initI18n, translateDOM, t } from '../utils/i18n.js'
 
 window.PB2I_PAGE = 'home'
 
@@ -35,15 +35,16 @@ async function loadNews() {
   if (!newsList) return
 
   try {
-    const lang = document.documentElement.lang || 'fr'
     const baseUrl = import.meta.env.BASE_URL || '/'
-    const all = await fetchArticles()
+    // Wait for translations too, so cards render in the right language
+    const [all] = await Promise.all([fetchArticles(), i18nReady])
+    const lang = document.documentElement.lang || 'fr'
     const articles = all.slice(0, 3)
 
     newsList.innerHTML = articles.map(a => `
       <a href="${baseUrl}article.html?id=${a.id}"
         class="bg-white border-2 border-[#252525] flex gap-4 items-start overflow-hidden relative w-full min-h-[80px] shrink-0 no-underline hover:scale-[1.01] transition-transform duration-150">
-        <img src="${a.thumbnail}" alt="${a.title}"
+        <img src="${baseUrl}${a.thumbnail.replace(/^\//, '')}" alt="${a.title}"
           class="w-20 sm:w-24 self-stretch object-cover shrink-0"
           loading="lazy"
           onerror="this.onerror=null;this.style.opacity='0'">
@@ -56,10 +57,10 @@ async function loadNews() {
     `).join('')
 
     if (!articles.length) {
-      newsList.innerHTML = '<p class="text-sm text-gray-500 py-4">Aucune actualité disponible.</p>'
+      newsList.innerHTML = `<p class="text-sm text-gray-500 py-4">${t('ui.no_news', 'Aucune actualité disponible.')}</p>`
     }
   } catch {
-    newsList.innerHTML = '<p class="text-sm text-gray-400 py-4 italic">Actualités non disponibles.</p>'
+    newsList.innerHTML = `<p class="text-sm text-gray-400 py-4 italic">${t('ui.news_unavailable', 'Actualités non disponibles.')}</p>`
   }
 }
 

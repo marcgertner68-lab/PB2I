@@ -3,13 +3,14 @@
  */
 import { mountComponents, refreshNavbar, initFadeIn, createArticleCard } from '../components.js'
 import { fetchArticles, prefetch } from '../utils/api.js'
-import { initI18n, translateDOM } from '../utils/i18n.js'
+import { initI18n, translateDOM, t } from '../utils/i18n.js'
 
 window.PB2I_PAGE = 'articles'
 
 mountComponents('actualites')
 prefetch('articles.json')
-initI18n().then(() => { refreshNavbar('actualites'); translateDOM() })
+const i18nReady = initI18n()
+i18nReady.then(() => { refreshNavbar('actualites'); translateDOM() })
 
 async function loadArticles() {
   const grid      = document.getElementById('articles-grid')
@@ -18,8 +19,9 @@ async function loadArticles() {
 
   try {
     const baseUrl = import.meta.env.BASE_URL || '/'
+    // Wait for translations too, so cards render in the right language
+    const [articles] = await Promise.all([fetchArticles(), i18nReady])
     const lang = document.documentElement.lang || 'fr'
-    const articles = await fetchArticles()
 
     if (!articles.length) {
       grid.innerHTML = ''
@@ -32,7 +34,7 @@ async function loadArticles() {
     initFadeIn('[data-fade]')
   } catch (err) {
     console.error(err)
-    grid.innerHTML = '<p class="col-span-3 text-center text-sm text-gray-400 py-12 italic">Impossible de charger les articles.</p>'
+    grid.innerHTML = `<p class="col-span-3 text-center text-sm text-gray-400 py-12 italic">${t('ui.articles_error', 'Impossible de charger les articles.')}</p>`
   }
 }
 

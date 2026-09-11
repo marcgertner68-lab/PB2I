@@ -25,3 +25,6 @@ _site
 *.njsproj
 *.sln
 *.sw?
+
+# Lighthouse CI reports
+.lighthouseci

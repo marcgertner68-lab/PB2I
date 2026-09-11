@@ -72,11 +72,15 @@ export function initCarousel({
     if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1)
   })
 
+  let resizeTimer
   window.addEventListener('resize', () => {
-    // Clamp current to new maxIdx after resize
-    current = Math.min(current, maxIdx())
-    buildDots()
-    goTo(current)
+    clearTimeout(resizeTimer)
+    resizeTimer = setTimeout(() => {
+      // Clamp current to new maxIdx after resize
+      current = Math.min(current, maxIdx())
+      buildDots()
+      goTo(current)
+    }, 150)
   })
 
   // Initialize

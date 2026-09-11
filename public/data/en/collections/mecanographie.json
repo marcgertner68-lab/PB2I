@@ -1,20 +1,20 @@
 [
   {
     "id": "carte",
-    "name": "La carte perforée",
+    "name": "The punched card",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Punched_card_abstraction.png/640px-Punched_card_abstraction.png",
-    "description": "La carte perforée est le support de base de l'information mécanographique. Chaque colonne représente un caractère, codé par la présence ou l'absence de trous. À remplir avec des détails."
+    "description": "The punched card is the basic medium of punched-card data processing. Each column represents one character, encoded by the presence or absence of holes. Details to be added."
   },
   {
     "id": "fichier",
-    "name": "Le fichier à cartes perforées",
+    "name": "The punched-card file",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Punch_card_reader_IBM.jpg/640px-Punch_card_reader_IBM.jpg",
-    "description": "L'atelier mécanographique organise d'immenses fichiers composés de milliers de cartes perforées, manipulées et lues par les machines pour effectuer les traitements. À compléter..."
+    "description": "The punched-card room organises huge files made up of thousands of punched cards, handled and read by the machines to carry out the processing. To be completed..."
   },
   {
     "id": "trieuse",
-    "name": "La trieuse de cartes",
+    "name": "The card sorter",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/IBM_card_sorter.jpg/640px-IBM_card_sorter.jpg",
-    "description": "La trieuse permet de reclasser physiquement le paquet de cartes perforées selon les trous d'une colonne donnée, facilitant les traitements par lots. À compléter..."
+    "description": "The sorter physically rearranges a deck of punched cards according to the holes in a given column, making batch processing easier. To be completed..."
   }
 ]

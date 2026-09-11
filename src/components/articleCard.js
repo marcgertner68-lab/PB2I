@@ -2,6 +2,8 @@
  * PB2I — Article Card Component
  */
 
+import { t } from '../utils/i18n.js'
+
 export function formatArticleDate(isoStr, lang = 'fr') {
   try {
     const parts = isoStr.split('-')
@@ -22,15 +24,15 @@ export function createArticleCard(article, index, baseUrl, lang = 'fr') {
   return `
     <a href="${baseUrl}article.html?id=${article.id}" class="card-article no-underline h-full" data-fade style="animation-delay:${index * 60}ms">
       <div class="card-article-img-wrap">
-        <img src="${article.thumbnail}" alt="" class="card-article-img"
-          onerror="this.src='/assets/images/placeholder.svg'">
+        <img src="${baseUrl}${article.thumbnail.replace(/^\//, '')}" alt="" class="card-article-img" loading="lazy"
+          onerror="this.src='${baseUrl}assets/images/placeholder.svg'">
       </div>
       <div class="flex flex-col flex-1 p-5 gap-3">
         <h2 class="text-body font-heading font-bold text-lg leading-snug transition-colors duration-200"
           >
           ${article.title}
         </h2>
-        <p class="text-sm leading-relaxed flex-1" style="color:var(--color-text-muted);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden">
+        <p class="text-sm leading-relaxed flex-1" style="color:var(--color-muted);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden">
           ${article.excerpt}
         </p>
         <div class="border-primary/10 flex items-center justify-between pt-3 border-t" >
@@ -43,7 +45,7 @@ export function createArticleCard(article, index, baseUrl, lang = 'fr') {
             </div>
           </div>
           <span class="bg-primary text-xs font-semibold px-3 py-1.5 rounded-lg text-white" >
-            Lire l'article
+            ${t('ui.read_article', "Lire l'article")}
           </span>
         </div>
       </div>
