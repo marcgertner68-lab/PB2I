@@ -11,7 +11,10 @@
     "magnetographie": "Magnetographie",
     "musee": "Museum",
     "skip_link": "Zum Hauptinhalt springen",
-    "home": "Startseite"
+    "home": "Startseite",
+    "aria_nav": "Hauptnavigation",
+    "aria_menu": "Menü",
+    "logo_alt": "PB2I-Logo — Löwe von Belfort"
   },
   "footer": {
     "title": "Belforter Erbe der Informationsindustrie",
@@ -20,5 +23,308 @@
     "legal": "Impressum",
     "privacy": "Datenschutz",
     "follow": "Folgen Sie uns"
+  },
+  "association": {
+    "title": "Der Verein PB2I",
+    "intro_p1": "Unsere aktive Gruppe besteht aus engagierten Ehrenamtlichen und einigen Unterstützern im Rahmen des Patrimoine Belfortain de l'Industrie Informatique. Der Schwerpunkt unserer Tätigkeit liegt auf der Instandhaltung der restaurierten Maschinen, der Entwicklung von Vorführungen und der Präsentation unseres industriellen Erbes.",
+    "intro_p2": "Wir verfügen über:",
+    "intro_li1": "Eine Lochkartenwerkstatt aus den 1950er Jahren, dauerhaft in unseren Räumen ausgestellt und von mehreren Technikern betreut.",
+    "intro_li2": "Ein umfangreiches Archiv an Unternehmensdokumentation.",
+    "ambitions_title": "Unsere Ziele und Projekte",
+    "ambitions_p1": "Zeugnis ablegen von 30 Jahren Präsenz von BULL in Belfort — vom Leben des Unternehmens, von den Ereignissen, den Frauen und Männern (eine Belegschaft von 1.500 bis 2.500 Personen), den Produkten und Technologien. Unsere Präsenz im lokalen Vereinsleben behaupten, insbesondere gegenüber jenen, die sich für das Kulturerbe im Allgemeinen und das Industrieerbe im Besonderen engagieren — ist unsere Region auf diesem Gebiet doch besonders reich.",
+    "ambitions_p2": "Unsere Projekte:",
+    "ambitions_li1": "Die Wartung alter Lochkartenmaschinen, Drucker und Datenerfassungsgeräte fortführen.",
+    "ambitions_li2": "Unsere Vorführungen des „Atelier Mécanographique 150“ sowie der bei Bull Belfort entwickelten und gefertigten Geräte weiterentwickeln und verfeinern.",
+    "ambitions_li3": "Führungen und Live-Vorführungen an den dauerhaft in unseren Räumen ausgestellten Maschinen organisieren.",
+    "ambitions_li4": "Ein öffentlich zugängliches Schaufenster unserer Industriegeschichte aufbauen.",
+    "ambitions_li5": "Unsere Website lebendig halten.",
+    "structure_title": "Unsere Struktur",
+    "structure_p1": "Der Vorstand von PB2I, Stand 15. März 2025:",
+    "role_president": "Präsident:",
+    "role_vice_president": "Vizepräsident:",
+    "role_tresorier": "Schatzmeister:",
+    "role_tresorier_adjoint": "Stellvertretende Schatzmeisterin:",
+    "role_secretaire": "Schriftführer:",
+    "role_secretaire_adjoint": "Stellvertretender Schriftführer:",
+    "fig_atelier": "Lochkartenwerkstatt",
+    "fig_salle": "Maschinensaal in der Dauerausstellung"
+  },
+  "missions": {
+    "title": "Unsere Aufgaben",
+    "faisons_title": "Was wir tun",
+    "faisons_intro": "Der Verein PB2I, das ist:",
+    "faisons_li1": "Bewahrung und Aufwertung des Informatik-Erbes.",
+    "faisons_li2": "Zusammenarbeit mit soziokulturellen Einrichtungen.",
+    "faisons_li3": "Vielfältige Aktivitäten:",
+    "faisons_li3a": "Eine Reparaturabteilung, zuständig für:",
+    "faisons_li3a1": "Wartung der historischen Geräte.",
+    "faisons_li3a2": "Live-Vorführungen dieser Geräte.",
+    "faisons_li3b": "Ausstellung:",
+    "faisons_li3b1": "Retrospektive Fotos und Dokumente über BULL Belfort.",
+    "faisons_li3b2": "Informationstafeln von allgemeinem Interesse.",
+    "faisons_li3b3": "Vitrinen mit von BULL gefertigten Bauteilen.",
+    "faisons_li3c": "Eine Abteilung „Freizeit“, die Folgendes organisiert:",
+    "faisons_li3c1": "Treffen und mehr …",
+    "faisons_li4": "Koordination zwischen den Mitgliedern des Vereins.",
+    "fig_atelier": "Lochkartenwerkstatt bei einer Vorführung",
+    "fig_expo": "Dauerausstellung in unseren Räumen",
+    "ambitions_title": "Ziele und Projekte",
+    "ambitions_li1": "Auf lokaler Ebene als Ansprechpartner des Vereins wirken.",
+    "ambitions_li2": "Unsere Präsenz im Vereinsleben behaupten.",
+    "ambitions_li3": "Sich für den Erhalt des Industrieerbes einsetzen — ein Gebiet, auf dem unsere Region besonders reich ist.",
+    "ambitions_li4": "Technische und industrielle Partnerschaften aufbauen.",
+    "ambitions_li5": "Konkret bedeutet das:",
+    "ambitions_li5a": "Die Instandhaltung der alten Lochkartenmaschinen fortführen und sie funktionsfähig halten.",
+    "ambitions_li5b": "In der Region an Ausstellungen und Präsentationen teilnehmen, die in unserer Reichweite liegen.",
+    "ambitions_li5c": "Führungen und Live-Vorführungen mit den installierten, betriebsbereiten Maschinen der Lochkartenwerkstatt aus den 1950er Jahren organisieren.",
+    "esprit": "Den TEAMGEIST bewahren, der BULL in Belfort so lange geprägt hat …"
+  },
+  "histoire": {
+    "kicker": "Es war einmal im Osten Frankreichs …",
+    "title": "Die Saga von Bull in Belfort",
+    "mots_title": "Ein paar Worte zur Geschichte",
+    "mots_p1": "Der Ausgangspunkt: Jacques STERN, damals Präsident der BULL-Gruppe, beauftragte eine Gruppe „junger“ Ruheständler damit, sich der Aufwertung des BULL-Erbes anzunehmen. Das war 1985. Diese Initiative führte 1986 zur Gründung des Vereins „Fédération des Équipes Bull“.",
+    "feb_title": "Die Fédération des Équipes Bull<br>in Zahlen",
+    "stat1_label": "Mitglieder in Frankreich",
+    "stat1_sub": "In Paris, Angers und Belfort",
+    "stat2_label": "internationale Vereinigungen",
+    "stat2_sub": "In Deutschland, Belgien und Italien",
+    "feb_p1": "In Belfort wurde eine lokale Sektion gegründet. Schon bald zeigten diese Bemühungen konkrete Ergebnisse:",
+    "feb_li1": "Die Veröffentlichung der retrospektiven Broschüre „La Saga“ über BULL Belfort.",
+    "feb_li2": "Die Restaurierung der ersten historischen Maschinen in Belfort:",
+    "feb_p2": "Diese Maschinen, die den Eintritt von BULL in das Zeitalter der Lochkartentechnik und später der Informatik markierten, wurden ab 1988 der Öffentlichkeit präsentiert. (Erstes Kolloquium zur Geschichte der Informatik in Frankreich, Grenoble, Mai 1988.) In den Jahren 1990&nbsp;–&nbsp;1992 folgten weitere, sehr erfolgreiche Ausstellungen, die den Ruf der F.E.B. begründeten.",
+    "fig_atelier": "Lochkartenwerkstatt",
+    "fig_expo": "Dauerausstellung in unseren Räumen",
+    "verite_title": "1992-1993<br>Die Stunde der Wahrheit für die F.E.B.-Delegation Belfort",
+    "verite_p1": "Nach dem frühen Tod der Pioniere und der Schließung von „BULL Périphériques“ nahm ein erneuertes Team die Herausforderung an. Dieser Neubeginn wurde durch eine große zweiwöchige Ausstellung in einem historischen Gebäude der Stadt Belfort markiert. Die Veranstaltung, die von den Gebietskörperschaften, von BULL und seinen Tochtergesellschaften sowie von unseren Freunden der F.E.B. in Paris unterstützt wurde, fand großen Anklang beim Publikum und insbesondere in der Lehrerschaft: Nahezu 2.000 Schülerinnen und Schüler der Primar- und Sekundarstufe nahmen an eigens für sie organisierten Besuchen teil. (Belfort, März / April 1993)",
+    "verite_p2": "Ein weiterer Meilenstein dieser Zeit: Wir gingen von einer bis dahin statischen zu einer dynamischen Restaurierung über, um die Maschinen im Betrieb vorführen zu können. Neue Ambitionen, neue Herausforderungen … Seitdem hat unser treues, motiviertes, eingeschworenes und kompetentes Team seine Aufgabe beharrlich fortgesetzt und zahlreiche Lochkartenmaschinen aus den 1940er, 1950er und 1960er Jahren restauriert.",
+    "verite_p3": "2012 musste Belfort die FEB verlassen, und unter dem Namen PATRIMOINE BELFORTAIN DE L'INDUSTRIE INFORMATIQUE (PB2I) wurde ein neuer, eigenständiger Verein gegründet.<br>Dies hatte keine Auswirkungen auf die Rolle von PB2I, die mit jener der ehemaligen Delegation FEB-FRANCHE COMTE identisch blieb.",
+    "livre_label": "Buch",
+    "livre_title": "Die Saga von Bull in Belfort",
+    "livre_desc": "Entdecken Sie die ganze Geschichte der Präsenz von Bull in Belfort — der Menschen und Maschinen, die das industrielle Informatik-Erbe unserer Region geprägt haben.",
+    "livre_btn": "PDF-Dokument öffnen",
+    "feb_li2a": "Statistikmaschine von Fredrik Rosing Bull (1923)",
+    "feb_li2b": "Tabelliermaschine T&nbsp;30 (1932)"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "intro": "Bei Fragen zum Verein PB2I oder zum Museum füllen Sie bitte das untenstehende Formular aus.",
+    "label_email": "E-Mail-Adresse",
+    "ph_email": "ihre@email.com",
+    "err_email": "Ungültige E-Mail-Adresse.",
+    "label_objet": "Betreff",
+    "ph_objet": "Betreff Ihrer Nachricht",
+    "label_message": "Nachricht",
+    "ph_message": "Schreiben Sie hier Ihre Nachricht …",
+    "submit": "Nachricht senden",
+    "success": "✓ Nachricht gesendet! Wir melden uns so schnell wie möglich bei Ihnen.",
+    "error": "Es ist ein Fehler aufgetreten. Kontaktieren Sie uns direkt unter <a href=\"mailto:pb2i.belfort@gmail.com\" style=\"color:var(--color-primary)\">pb2i.belfort@gmail.com</a>.",
+    "social": "Oder erreichen Sie uns über die sozialen Netzwerke",
+    "place_title": "Besuchen Sie uns vor Ort",
+    "addr_label": "Adresse:",
+    "hours_label": "Öffnungszeiten:",
+    "hours": "Dienstag- und Donnerstagvormittag von 9 bis 12 Uhr.<br>(Außer Juli / August)",
+    "access_label": "Anfahrt:",
+    "access": "Über die Avenue du Maréchal Juin fahren<br>In den ausgeschilderten Parkplatz einfahren:<br>GENERAL ELECTRIC<br>PARKING DU PERSONNEL"
+  },
+  "legal": {
+    "title": "Impressum",
+    "s1_title": "1. Herausgeber der Website",
+    "s1_p1": "Diese Website wird herausgegeben vom Verein <strong>PB2I (Patrimoine Belfortain de l'Industrie Informatique)</strong>.",
+    "s1_addr": "<strong>Adresse:</strong> Techn'hom 2 – Bâtiment 9, 5 rue Jacqueline AURIOL, 90000 BELFORT",
+    "s1_president": "<strong>Präsident:</strong> Yves MOUGEY",
+    "s1_contact": "<strong>Kontakt:</strong> <a href=\"mailto:pb2i.belfort@gmail.com\" class=\"text-primary hover:underline\">pb2i.belfort@gmail.com</a>",
+    "s2_title": "2. Hosting",
+    "s2_p1": "Die Website wird auf <strong>GitHub Pages</strong> gehostet, einem Dienst der GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA.",
+    "s3_title": "3. Geistiges Eigentum",
+    "s3_p1": "Diese gesamte Website unterliegt der französischen und internationalen Gesetzgebung zum Urheberrecht und zum geistigen Eigentum. Alle Vervielfältigungsrechte sind vorbehalten, einschließlich für herunterladbare Dokumente sowie für ikonografische und fotografische Darstellungen.",
+    "s3_p2": "Die Vervielfältigung dieser Website, ganz oder in Teilen, auf welchem elektronischen oder gedruckten Träger auch immer, ist ohne ausdrückliche Genehmigung des Publikationsverantwortlichen strengstens untersagt.",
+    "s4_title": "4. Datenschutzerklärung (DSGVO)",
+    "s4_p1": "Gemäß der Datenschutz-Grundverordnung (DSGVO) verpflichtet sich der Verein, die Privatsphäre der Nutzer zu respektieren.",
+    "s4_form": "<strong>Kontaktformular:</strong> Die über das Kontaktformular erhobenen Daten (E-Mail-Adresse, Betreff und Nachricht) werden ausschließlich zur Bearbeitung Ihrer Informations- oder Kontaktanfragen verwendet und in keinem Fall an Dritte weitergegeben.",
+    "s4_cookies": "<strong>Cookies:</strong> Diese Website verwendet keine Tracking- oder Werbe-Cookies. Für die Navigation unverzichtbare technische Cookies können gesetzt werden."
+  },
+  "hero": {
+    "title": "Belforter Erbe der IT-Industrie",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "cta_visit": "Das Museum besuchen",
+    "cta_more": "Mehr erfahren",
+    "photo_caption_1": "Lochkarten-Maschinensaal",
+    "photo_caption_2": "Dauerausstellung in unseren Räumen"
+  },
+  "history": {
+    "title": "Unsere Geschichte",
+    "body": "<p>Das industrielle Computer-Erbe Belforts ist untrennbar mit der Präsenz der Compagnie des Machines Bull von 1950 bis heute verbunden. PB2I zeichnet diese Epoche nach, die die technologische und menschliche Entwicklung der Region geprägt hat.</p><p>Mit unseren Sammlungen von Lochkartenmaschinen, Schnelldruckern und Magnetografie-Anlagen laden wir Sie ein, ein einzigartiges Kapitel unseres kollektiven und industriellen Gedächtnisses zu entdecken.</p>",
+    "cta": "Mehr erfahren"
+  },
+  "whoarewe": {
+    "title_section": "Wer sind wir?",
+    "body": "<p>Unsere aktive Gruppe besteht aus engagierten Ehrenamtlichen und einigen Unterstützern im Verein Patrimoine Belfortain de l'Industrie Informatique. Der Schwerpunkt unserer Arbeit liegt darauf, die restaurierten Maschinen betriebsfähig zu halten, Vorführungen zu entwickeln und unser industrielles Erbe zu präsentieren.</p><p>Wir verfügen über einen Lochkarten-Maschinensaal aus den 1950er Jahren, der in unseren Räumen als Dauerausstellung eingerichtet ist und von mehreren Technikern betreut wird, sowie über ein umfangreiches Archiv an Unternehmensdokumentation.</p>",
+    "cta": "Den Verein entdecken"
+  },
+  "news": {
+    "title": "Neueste Nachrichten"
+  },
+  "map": {
+    "title": "So finden Sie uns"
+  },
+  "collections": {
+    "title": "Die Sammlungen des Museums",
+    "musee_caption": "PB2I-Museum"
+  },
+  "actualites": {
+    "title": "Aktuelles",
+    "no_articles": "Derzeit sind keine Artikel verfügbar."
+  },
+  "articlePage": {
+    "related_title": "Weitere Artikel, die Ihnen gefallen könnten …"
+  },
+  "mecano": {
+    "eyebrow": "Unsere Sammlungen",
+    "title": "Lochkartentechnik",
+    "intro": "Willkommen in der Welt der Lochkartentechnik und der Lochkarte als Informationsträger.",
+    "utility_title": "Wozu diente die Lochkartentechnik?",
+    "utility_p1": "In den 1950er Jahren wurde die Lochkartentechnik – also die Verarbeitung von Informationen mit elektromechanischen Maschinen auf Grundlage von Daten, die auf Lochkarten erfasst wurden – vor allem für Statistik, Buchhaltung und Verwaltung eingesetzt. Mit den Lochkartenmaschinen fand die Automatisierung der Büroarbeit eine äußerst effiziente und rentable Lösung. Es handelte sich um eine Reihe von Maschinen, die in einem gemeinsamen Maschinensaal nebeneinander aufgestellt waren und unabhängig voneinander arbeiteten (mit wenigen Ausnahmen verbundener Maschinen, auf die wir noch eingehen).",
+    "utility_p2": "Ihre Besonderheiten waren:",
+    "utility_li1": "Sie nutzten ein einziges Grunddokument: die Lochkarte, die ein für alle Mal erstellt, sorgfältig geprüft und danach beliebig oft wiederverwendet werden konnte. Sie war der dauerhafte, maschinenlesbare Speicher der Daten.",
+    "utility_li2": "Anschließend wurden alle Grundoperationen mit rein automatischen Verfahren aus diesem einen Dokument heraus ausgeführt, womit sich alle typischen Aufgabenstellungen lösen ließen.",
+    "utility_li3a": "Die Organisation der Karteien für die spätere Verarbeitung.",
+    "utility_li3b": "Das Hinzufügen eines Zwischenergebnisses zur Vorbereitung der Endverarbeitung.",
+    "utility_li3c": "Eine endgültige gedruckte Ausgabe (Lohnabrechnungen, Lagerkarten usw.).",
+    "utility_li3d": "Die Erstellung einer Sammelkarte, die einen bestimmten Stand abbildet, um einen neuen Verarbeitungszyklus vorzubereiten (täglich, wöchentlich, monatlich usw.).",
+    "steps_title": "Die Arbeitsschritte und Berufe der Lochkartentechnik",
+    "steps_p1": "Für eine gegebene Anwendung gliederte sich der Ablauf in mehrere aufeinanderfolgende Schritte. Wie bei allen Vorhaben zur Automatisierung von Verwaltungsaufgaben mit informationsverarbeitenden Maschinen führten verschiedene Etappen zur Umsetzung eines Lochkartenverfahrens:",
+    "steps_li1": "Die Voruntersuchung des Problems in Zusammenarbeit mit den Anwendern.",
+    "steps_li2": "Die funktionale Analyse, insbesondere der Informationsflüsse (die betroffenen Verwaltungsabteilungen, der Entwurf der Lochkarten, die Gestaltung der Formulare).",
+    "steps_li3": "Die Detailanalyse mit der Abfolge der anwendungsspezifischen Arbeitsschritte, mit anderen Worten der Verteilung der Verarbeitung auf die verschiedenen Maschinen.",
+    "steps_li4": "Die technische Umsetzung, das heißt die eigentliche Programmierung: Die Funktionen der Maschinen wurden durch externe Verdrahtung auswechselbarer Schalttafeln eingerichtet. Programmiert wurde anhand eines vorgedruckten Dokuments, das die Lage der Kontaktstellen der Maschine exakt abbildete (für jede Maschine eine eigene Tafel, da die Funktionen nicht identisch waren). War das Programm auf dem Papier fertig, nahm der Programmierer die Verdrahtung vor (Zustand der Tafel, gefolgt von der Erprobung an der Maschine mit einem Testkartensatz). Dieser Testsatz wurde vor jeder Verarbeitung vom Bediener systematisch durchlaufen: Die Ergebnisse mussten dem Testsatz exakt entsprechen und bewiesen so, dass die Bauteile der Maschine korrekt arbeiteten – andernfalls rief der Bediener den Kundendienst (SEC, Service Entretien Client).",
+    "steps_p2": "Die zu verarbeitenden Daten erreichten den Erfassungssaal in Form von Belegen, die von den verschiedenen Abteilungen des Unternehmens übermittelt wurden. Die Informationen wurden auf Karten gelocht und von Bedienerinnen (in der Regel weiblichem Personal) geprüft. Die Maschinen für die Erfassung und Prüfung der Daten hießen „Locher“ und „Prüfmaschinen“. Die Prüfung bestand darin zu kontrollieren, dass beide Bedienerinnen dieselbe handschriftliche Information identisch gelesen und erfasst hatten. Die gelochten und geprüften Karten wurden in „Kartenbehältern“ in der Reihenfolge abgelegt, in der sie bearbeitet worden waren.",
+    "steps_p3": "Anschließend gelangten die Karten in den Maschinensaal. Die aus der Locherei kommenden Karten übernahm in kleinen Betrieben direkt ein Operateur, in größeren ein Arbeitsvorbereiter. Der Arbeitsvorbereiter war in der Regel für den reibungslosen Ablauf der Anwendung verantwortlich, bildete die Schnittstelle zwischen dem Maschinensaal und den Abteilungen des Unternehmens und verteilte die Arbeit an die Operateure, die in diesem Fall auf eine bestimmte Maschine spezialisiert waren, ohne dass dies Vielseitigkeit ausschloss. In kleinen Betrieben übernahm der Operateur alle diese Aufgaben. Der Operateur richtete die Maschinen ein: Montage der richtigen Schalttafel, Prüfung der Funktion der Maschine durch Ablauf des Testkartensatzes und Kontrolle der Ergebnisse. Er versorgte die Maschinen mit Karten und mit Papier für den Drucker der Tabelliermaschine. In großen Betrieben unterstand der Erfassungssaal einer Aufsicht, der Verarbeitungssaal einem Saalleiter; das Ganze leitete ein Abteilungsleiter. Die verschiedenen elektromechanischen Maschinen mit ihren Spezialfunktionen werden im Menü „Die Maschinen“ im Einzelnen vorgestellt. Wartungstechniker des Kundendienstes der Compagnie des Machines Bull übernahmen Installation, Reparatur und Wartung der Maschinen des Saals nach geplanten Wartungsintervallen (wöchentlich, monatlich, vierteljährlich, halbjährlich oder jährlich). Mit einer Lehre, der sogenannten „Kontrollschablone“, ließ sich die Zentrierung der Lochungen auf jeder der 80 Spalten der Karte überprüfen.",
+    "operation_title": "So funktioniert die Lochkartentechnik",
+    "card_punched_card": "Die Lochkarte",
+    "card_card_file": "Die Lochkartei",
+    "videos_title": "Videos",
+    "video1_link": "Die Lochkartentechnik aus Sicht des Espace multimédia Gantner",
+    "video2_link": "Die Vorgeschichte der Informatik (Website von Cécile Babiole)",
+    "utility_li3": "Je nach Maschine und auszuführender Arbeit zu erhalten:",
+    "video2_intro": "Siehe auch die Audio-Reportage:"
+  },
+  "imprim": {
+    "eyebrow": "Unsere Sammlungen",
+    "title": "Drucker",
+    "intro": "Diese Maschinen, die seit mehr als 40 Jahren ohne Unterbrechung in Belfort entwickelt und gebaut werden, haben die Grenzen der Druckgeschwindigkeit immer weiter verschoben. Man unterscheidet zwei Arten von Druckern:",
+    "tech_title": "Die beiden wichtigsten Impact-Drucker-Technologien",
+    "tech_intro": "Die ersten Computerdrucker waren sogenannte Impact-Drucker: Ein Hammer schlug das Papier durch ein Farbband gegen ein erhabenes Schriftzeichen – ähnlich wie bei einer Schreibmaschine. Bull entwickelte in Belfort zwei wegweisende Technologien auf diesem Gebiet.",
+    "tab_drum": "Trommeldrucker",
+    "tab_belt": "Banddrucker",
+    "drum_heading": "IN BELFORT BAUTE BULL SCHON AB DEN 1950ER JAHREN TROMMELDRUCKER.",
+    "drum_p1": "Bei diesem Druckertyp sind die Zeichen erhaben auf eine zylindrische Trommel graviert, die sich mit konstanter Geschwindigkeit dreht. Eine Druckzeile umfasst in der Regel 120 oder 132 Positionen; jeder Position steht ein kleiner Hammer gegenüber. Um ein Zeichen an einer bestimmten Position zu drucken, schlägt der zugehörige Hammer genau in dem Moment auf das Papier, in dem das gewünschte Zeichen vor ihm vorbeiläuft. So können in einer einzigen Trommelumdrehung alle Zeichen einer Zeile gedruckt werden.",
+    "drum_p2": "Im Einzelnen arbeitet der Trommeldrucker wie folgt:",
+    "drum_li1": "Die Drucktrommel (1) dreht sich ununterbrochen. Auf ihrem Umfang trägt sie die 64 verschiedenen druckbaren Zeichen, wiederholt über die 120 Spalten, die den 120 Druckpositionen der Zeile entsprechen.",
+    "drum_li2": "Jeder Spalte steht ein Druckhammer (2) gegenüber.",
+    "drum_li3": "Das Endlospapier (3) und das Farbband (4) laufen zwischen der Trommel und der Hammerreihe hindurch.",
+    "drum_li4": "Erscheint ein zu druckendes Zeichen vor dem Hammer der entsprechenden Spalte, wird der Hammer magnetisch ausgelöst.",
+    "drum_li5": "Er schlägt das Papier gegen das Farbband und das erhabene Zeichen auf der Trommel; dabei wird die Farbe übertragen und das Zeichen auf dem Papier geformt.",
+    "drum_li6": "Dieser Vorgang wiederholt sich für jedes Zeichen der Zeile innerhalb einer einzigen Trommelumdrehung.",
+    "drum_li7": "Ist die Zeile gedruckt, rückt das Papier um eine Zeile vor, und der Vorgang beginnt für die nächste Zeile von vorn.",
+    "drum_p3": "Trommeldrucker boten für ihre Zeit sehr hohe Druckgeschwindigkeiten: 150, 300, 600 und schließlich 1200 Zeilen pro Minute beim Spitzenmodell (H1200).",
+    "drum_caption": "Prinzipskizze des Druckwerks",
+    "chrono_title": "Chronologie der magnetografischen Entwicklungen in Belfort",
+    "belt_heading": "DIE ENTWICKLUNG HIN ZU BANDDRUCKERN",
+    "belt_p1": "Um Platz und Kosten zu sparen, wurde die Trommeltechnik in den 1970er Jahren nach und nach durch die Bandtechnik abgelöst.",
+    "belt_p2": "Das Prinzip bleibt ähnlich (Hammeranschlag), doch die Zeichen sind nicht mehr auf eine schwere zylindrische Trommel graviert. Sie sitzen auf einem flexiblen Metallband, das mit hoher Geschwindigkeit horizontal vor der Hammerreihe entlangläuft.",
+    "belt_p3": "Die Vorteile dieser Technik:",
+    "belt_li1": "Weniger mechanische Trägheit und damit schnelleres Anfahren und Anhalten.",
+    "belt_li2": "Einfacher Wechsel des Zeichensatzes (es genügt, das Band auszutauschen).",
+    "belt_li3": "Bessere horizontale Ausrichtung der gedruckten Zeichen.",
+    "belt_li4": "Geringere Fertigungskosten im Vergleich zur aufwendigen Bearbeitung einer Trommel.",
+    "belt_caption": "Druckwerk eines Banddruckers",
+    "nonimpact_title": "Die Entwicklung der Non-Impact-Drucker in Belfort",
+    "nonimpact_p1": "Ende der sechziger Jahre wurde die Hardware immer leistungsfähiger (Rechenleistung, Zugriffszeiten, Speicherkapazität …). Die Impact-Drucker, bei denen ein Hammer das Papier durch ein Farbband schlägt, hatten zwar beachtliche Geschwindigkeiten erreicht (bis zu 1200 Zeilen pro Minute), bildeten aber einen regelrechten Engpass am Ausgang der Computersysteme.",
+    "nonimpact_p2": "Es galt, neue, schnellere und leisere Druckverfahren zu finden: die Geburtsstunde der sogenannten Non-Impact-Technologien. So wagte sich das Bull-Zentrum in Belfort mit Erfolg an die Erforschung und Entwicklung der Magnetografie – einer Technologie, die dem Standort über mehrere Jahrzehnte weltweites Ansehen einbringen sollte.",
+    "book_tag": "Manuskript",
+    "book_title": "Gründungstext",
+    "book_desc": "Diese als Invited Paper auf der Konferenz IEEE Intermag 1980 in Boston vorgestellte Veröffentlichung war die erste offizielle Publikation über die von Bull in Belfort entwickelte Magnetografie-Technologie. Ihr folgten zwischen 1980 und 2000 rund dreißig weitere Beiträge.",
+    "book_cta": "PDF-Dokument öffnen"
+  },
+  "magneto": {
+    "eyebrow": "Unsere Sammlungen",
+    "title": "Magnetografie",
+    "intro": "Die Beiträge in diesem Bereich stellen anhand einfacher Animationen die wichtigsten Technologien vor, die in einem typischen Magnetografie-Druckwerk zum Einsatz kommen.",
+    "operation_title": "So funktioniert die Magnetografie",
+    "operation_intro": "Magnetografie … wie funktioniert das?",
+    "tech_title": "Die Technologien eines typischen Magnetografie-Druckwerks"
+  },
+  "museePage": {
+    "eyebrow": "Unsere Sammlungen",
+    "title": "Museum",
+    "intro": "Statische oder betriebsfähige Präsentation der Maschinen, die der Stolz unseres Museums sind",
+    "machines_title": "Ausgestellte Maschinen"
+  },
+  "ui": {
+    "read_article": "Artikel lesen",
+    "no_news": "Keine Neuigkeiten verfügbar.",
+    "news_unavailable": "Neuigkeiten nicht verfügbar.",
+    "articles_error": "Artikel konnten nicht geladen werden.",
+    "article_not_found": "Dieser Artikel existiert nicht oder wurde entfernt.",
+    "tech_error": "Technologien konnten nicht geladen werden.",
+    "machines_error": "Maschinen konnten nicht geladen werden.",
+    "close": "Schließen",
+    "close_video": "Video schließen",
+    "video_player": "Video-Player",
+    "details": "Details",
+    "learn_more_about": "Mehr erfahren über",
+    "read_more": "Mehr lesen",
+    "panorama_alt": "Panoramaansicht"
+  },
+  "meta": {
+    "index": {
+      "title": "PB2I — Belforter Erbe der IT-Industrie",
+      "description": "Belforter Erbe der IT-Industrie — Ein Verein zur Bewahrung des industriellen Informatikerbes von Belfort."
+    },
+    "histoire": {
+      "title": "Unsere Geschichte — PB2I, Belforter Erbe der IT-Industrie",
+      "description": "Unsere Geschichte — PB2I zeichnet die Bull-Saga in Belfort seit 1985 nach, die Gründung der Fédération des Équipes Bull und die Entstehung von PB2I im Jahr 2012."
+    },
+    "missions": {
+      "title": "Unsere Missionen — PB2I, Belforter Erbe der IT-Industrie",
+      "description": "Unsere Missionen — Der Verein PB2I bewahrt und vermittelt das industrielle Informatikerbe von Belfort durch Vorführungen, Ausstellungen und Bildungsangebote."
+    },
+    "association": {
+      "title": "Der Verein PB2I — Belforter Erbe der IT-Industrie",
+      "description": "Der Verein PB2I — wer wir sind, unsere Ziele, unsere Struktur und unsere Projekte zur Bewahrung des Informatikerbes von Belfort."
+    },
+    "actualites": {
+      "title": "Aktuelles — PB2I",
+      "description": "Neuigkeiten des Vereins PB2I — die neuesten Artikel und Meldungen des Belforter Erbes der IT-Industrie."
+    },
+    "article": {
+      "title": "Artikel — PB2I",
+      "description": "Aktuelles von PB2I — Belforter Erbe der IT-Industrie."
+    },
+    "contact": {
+      "title": "Kontakt — PB2I",
+      "description": "Kontakt zum Verein PB2I — Techn’hom 2, Belfort. Fragen zum Verein oder zu einem Museumsbesuch."
+    },
+    "legal": {
+      "title": "Impressum — PB2I",
+      "description": "Impressum und Datenschutzerklärung des Vereins PB2I — Belforter Erbe der IT-Industrie."
+    },
+    "mecanographie": {
+      "title": "Mechanographie — PB2I-Sammlungen",
+      "description": "Mechanographie — PB2I-Sammlungen. Die Geschichte der Lochkarte und der mechanografischen Maschinen."
+    },
+    "imprimantes": {
+      "title": "Drucker — PB2I-Sammlungen",
+      "description": "Drucker — PB2I-Sammlungen. Die Geschichte der Impact-Drucker (Trommel und Band) und der Non-Impact-Drucker in Belfort."
+    },
+    "magnetographie": {
+      "title": "Magnetographie — PB2I-Sammlungen",
+      "description": "Magnetographie — PB2I-Sammlungen. Magnetografische Druckwerke und Datenerfassungsgeräte."
+    },
+    "musee": {
+      "title": "Museum — PB2I-Sammlungen",
+      "description": "PB2I-Museum — Statische und funktionsfähige Präsentation der mechanografischen Maschinen unserer Sammlung."
+    }
   }
 }

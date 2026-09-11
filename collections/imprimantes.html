@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-page="imprimantes">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,9 +9,11 @@
   <meta property="og:title" content="Imprimantes — Collections PB2I" />
   <meta property="og:description" content="Imprimantes — Collections PB2I. Histoire des imprimantes impact (à tambour et à bande) et non-impact à Belfort." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://pb2i.fr/" />
-  <meta property="og:image" content="https://pb2i.fr/assets/og-image.webp" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:url" content="https://pb2i-belfort.fr/collections/imprimantes.html" />
+  <meta property="og:image" content="https://pb2i-belfort.fr/assets/og-image.webp" />
   <meta property="og:site_name" content="PB2I" />
+  <link rel="canonical" href="https://pb2i-belfort.fr/collections/imprimantes.html" />
 
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <script type="module" src="/src/pages/collections/imprimantes.js"></script>
@@ -21,13 +23,13 @@
 
   <!-- Header -->
   <div class="px-4 lg:px-36 py-12 text-center border-b border-transparent">
-    <p class="text-xs font-semibold uppercase tracking-widest mb-3 text-black">Nos collections</p>
-    <h1 class="page-title text-primary uppercase">Imprimantes</h1>
+    <p class="text-xs font-semibold uppercase tracking-widest mb-3 text-black" data-i18n="imprim.eyebrow">Nos collections</p>
+    <h1 class="page-title text-primary uppercase" data-i18n="imprim.title">Imprimantes</h1>
   </div>
 
   <!-- Main Content -->
   <div class="px-4 lg:px-36 py-8 max-w-[1200px] mx-auto">
-    <p class="text-sm leading-relaxed mb-12 text-gray-500">
+    <p class="text-sm leading-relaxed mb-12 text-gray-500" data-i18n="imprim.intro">
       Ces machines, conçues et fabriquées à Belfort, sans discontinuité depuis plus de 40 ans, n’ont cessé de repousser les limites de la vitesse d’impression.
       On distingue 2 types d’imprimantes :
     </p>
@@ -36,46 +38,46 @@
 
     <!-- SECTION 1 : LES TECHNOLOGIES -->
     <section class="mb-12">
-      <h2 class="section-title mb-6">Les deux principales technologies d'imprimantes impact</h2>
-      <p class="text-sm leading-relaxed text-gray-600 mb-6">
+      <h2 class="section-title mb-6" data-i18n="imprim.tech_title">Les deux principales technologies d'imprimantes impact</h2>
+      <p class="text-sm leading-relaxed text-gray-600 mb-6" data-i18n="imprim.tech_intro">
         Les premières imprimantes d'ordinateurs étaient dites "à impact", c'est-à-dire qu'un marteau venait frapper le papier au travers d'un ruban encreur contre un caractère en relief, un peu comme une machine à écrire. Bull a développé à Belfort deux technologies majeures dans ce domaine.
       </p>
 
       <!-- TABS -->
       <div class="flex border-b border-gray-200 mb-6">
-        <button id="tab-tambours" class="px-6 py-3 font-semibold text-primary border-b-2 border-primary transition-colors hover:bg-gray-50" onclick="switchTab('tambours')">À tambours</button>
-        <button id="tab-bande" class="px-6 py-3 font-semibold text-gray-500 border-b-2 border-transparent transition-colors hover:text-gray-700 hover:bg-gray-50" onclick="switchTab('bande')">À bande</button>
+        <button id="tab-tambours" class="px-6 py-3 font-semibold text-primary border-b-2 border-primary transition-colors hover:bg-gray-50" onclick="switchTab('tambours')" data-i18n="imprim.tab_drum">À tambours</button>
+        <button id="tab-bande" class="px-6 py-3 font-semibold text-gray-500 border-b-2 border-transparent transition-colors hover:text-gray-700 hover:bg-gray-50" onclick="switchTab('bande')" data-i18n="imprim.tab_belt">À bande</button>
       </div>
 
       <!-- TAB CONTENT : À TAMBOURS -->
       <div id="content-tambours" class="text-[13px] leading-relaxed text-gray-600">
-        <h3 class="font-bold text-base mb-4 uppercase text-gray-800">À BELFORT DÈS LES ANNÉES 1950 BULL FABRIQUAIT DES IMPRIMANTES À TAMBOUR.</h3>
+        <h3 class="font-bold text-base mb-4 uppercase text-gray-800" data-i18n="imprim.drum_heading">À BELFORT DÈS LES ANNÉES 1950 BULL FABRIQUAIT DES IMPRIMANTES À TAMBOUR.</h3>
         
         <div class="flex flex-col md:flex-row gap-8 mb-8">
           <div class="flex-1 space-y-4">
-            <p>Dans ce type d'imprimantes, les caractères sont gravés en relief sur un tambour cylindrique qui tourne à vitesse constante. Une ligne d'impression comporte en général 120 ou 132 positions. Face à chaque position se trouve un petit marteau. Pour imprimer un caractère dans une position donnée, le marteau correspondant frappe le papier au moment précis où le caractère voulu se présente devant lui. Ainsi, en un seul tour de tambour, tous les caractères d'une ligne peuvent être imprimés.</p>
-            <p>Le fonctionnement détaillé de l'imprimante à tambour est le suivant :</p>
+            <p data-i18n="imprim.drum_p1">Dans ce type d'imprimantes, les caractères sont gravés en relief sur un tambour cylindrique qui tourne à vitesse constante. Une ligne d'impression comporte en général 120 ou 132 positions. Face à chaque position se trouve un petit marteau. Pour imprimer un caractère dans une position donnée, le marteau correspondant frappe le papier au moment précis où le caractère voulu se présente devant lui. Ainsi, en un seul tour de tambour, tous les caractères d'une ligne peuvent être imprimés.</p>
+            <p data-i18n="imprim.drum_p2">Le fonctionnement détaillé de l'imprimante à tambour est le suivant :</p>
             <ul class="list-disc list-inside space-y-2 ml-2">
-              <li>Le tambour d'impression (1) tourne en permanence. Il porte sur sa circonférence les 64 caractères différents qui peuvent être imprimés. Ces caractères sont répétés sur les 120 colonnes correspondant aux 120 positions d'impression de la ligne.</li>
-              <li>Face à chaque colonne se trouve un marteau de frappe (2).</li>
-              <li>Le papier (3) en continu et le ruban encreur (4) défilent entre le tambour et la rangée de marteaux.</li>
-              <li>Lorsqu'un caractère à imprimer se présente devant le marteau de la colonne correspondante, le marteau est actionné magnétiquement.</li>
-              <li>Il frappe le papier contre le ruban et le caractère en relief sur le tambour, déposant ainsi l'encre et formant le caractère sur le papier.</li>
-              <li>Cette opération se répète pour chaque caractère de la ligne lors d'un seul tour du tambour.</li>
-              <li>Une fois la ligne imprimée, le papier avance d'un interligne et le processus recommence pour la ligne suivante.</li>
+              <li data-i18n="imprim.drum_li1">Le tambour d'impression (1) tourne en permanence. Il porte sur sa circonférence les 64 caractères différents qui peuvent être imprimés. Ces caractères sont répétés sur les 120 colonnes correspondant aux 120 positions d'impression de la ligne.</li>
+              <li data-i18n="imprim.drum_li2">Face à chaque colonne se trouve un marteau de frappe (2).</li>
+              <li data-i18n="imprim.drum_li3">Le papier (3) en continu et le ruban encreur (4) défilent entre le tambour et la rangée de marteaux.</li>
+              <li data-i18n="imprim.drum_li4">Lorsqu'un caractère à imprimer se présente devant le marteau de la colonne correspondante, le marteau est actionné magnétiquement.</li>
+              <li data-i18n="imprim.drum_li5">Il frappe le papier contre le ruban et le caractère en relief sur le tambour, déposant ainsi l'encre et formant le caractère sur le papier.</li>
+              <li data-i18n="imprim.drum_li6">Cette opération se répète pour chaque caractère de la ligne lors d'un seul tour du tambour.</li>
+              <li data-i18n="imprim.drum_li7">Une fois la ligne imprimée, le papier avance d'un interligne et le processus recommence pour la ligne suivante.</li>
             </ul>
-            <p>Les imprimantes à tambour offraient des vitesses d'impression très élevées pour l'époque, atteignant jusqu'à 150, 300, 600 puis 1200 lignes par minute pour le haut de gamme (H1200).</p>
+            <p data-i18n="imprim.drum_p3">Les imprimantes à tambour offraient des vitesses d'impression très élevées pour l'époque, atteignant jusqu'à 150, 300, 600 puis 1200 lignes par minute pour le haut de gamme (H1200).</p>
           </div>
           
           <div class="w-full md:w-1/3 flex-shrink-0">
-            <img src="/assets/collections/imprimantes/schema_tambour.jpg" alt="Schéma de l'imprimante à tambour" class="w-full rounded shadow" onerror="this.onerror=null; this.src='/assets/images/placeholder.svg'">
-            <p class="text-xs text-center mt-2 text-gray-500 italic">Schéma de principe du mécanisme d'impression</p>
+            <img src="/assets/collections/imprimantes/schema_tambour.jpg" alt="Schéma de l'imprimante à tambour" class="w-full rounded shadow" loading="lazy" onerror="this.onerror=null; this.src='../assets/images/placeholder.svg'">
+            <p class="text-xs text-center mt-2 text-gray-500 italic" data-i18n="imprim.drum_caption">Schéma de principe du mécanisme d'impression</p>
           </div>
         </div>
 
         <!-- SECTION CHRONOLOGIE INTERACTIVE -->
         <section class="mb-12 border-t pt-10 border-gray-200">
-          <h2 class="section-title mb-8">Chronologie des développements magnétographiques à Belfort</h2>
+          <h2 class="section-title mb-8" data-i18n="imprim.chrono_title">Chronologie des développements magnétographiques à Belfort</h2>
           
           <div class="flex flex-col lg:flex-row gap-10">
             <!-- Grid on the left -->
@@ -104,22 +106,22 @@
 
       <!-- TAB CONTENT : À BANDE -->
       <div id="content-bande" class="text-[13px] leading-relaxed text-gray-600 hidden">
-        <h3 class="font-bold text-base mb-4 uppercase text-gray-800">L'ÉVOLUTION VERS LES IMPRIMANTES À BANDE</h3>
+        <h3 class="font-bold text-base mb-4 uppercase text-gray-800" data-i18n="imprim.belt_heading">L'ÉVOLUTION VERS LES IMPRIMANTES À BANDE</h3>
         <div class="flex flex-col md:flex-row gap-8">
           <div class="flex-1 space-y-4">
-            <p>Pour gagner en compacité et en coût, la technologie à tambour a été progressivement remplacée par la technologie à bande (ou à courroie) dans les années 1970.</p>
-            <p>Le principe reste similaire (impact d'un marteau), mais les caractères ne sont plus gravés sur un lourd tambour cylindrique. Ils sont portés par une bande métallique souple qui défile horizontalement à grande vitesse devant la rangée de marteaux.</p>
-            <p>Avantages de cette technologie :</p>
+            <p data-i18n="imprim.belt_p1">Pour gagner en compacité et en coût, la technologie à tambour a été progressivement remplacée par la technologie à bande (ou à courroie) dans les années 1970.</p>
+            <p data-i18n="imprim.belt_p2">Le principe reste similaire (impact d'un marteau), mais les caractères ne sont plus gravés sur un lourd tambour cylindrique. Ils sont portés par une bande métallique souple qui défile horizontalement à grande vitesse devant la rangée de marteaux.</p>
+            <p data-i18n="imprim.belt_p3">Avantages de cette technologie :</p>
             <ul class="list-disc list-inside space-y-2 ml-2">
-              <li>Moins d'inertie mécanique, permettant des démarrages/arrêts plus rapides.</li>
-              <li>Changement facile du jeu de caractères (il suffit de remplacer la bande).</li>
-              <li>Meilleur alignement horizontal des caractères imprimés.</li>
-              <li>Coût de fabrication réduit par rapport à l'usinage complexe d'un tambour.</li>
+              <li data-i18n="imprim.belt_li1">Moins d'inertie mécanique, permettant des démarrages/arrêts plus rapides.</li>
+              <li data-i18n="imprim.belt_li2">Changement facile du jeu de caractères (il suffit de remplacer la bande).</li>
+              <li data-i18n="imprim.belt_li3">Meilleur alignement horizontal des caractères imprimés.</li>
+              <li data-i18n="imprim.belt_li4">Coût de fabrication réduit par rapport à l'usinage complexe d'un tambour.</li>
             </ul>
           </div>
           <div class="w-full md:w-1/3 flex-shrink-0">
-            <img src="/assets/collections/imprimantes/schema_bande.jpg" alt="Schéma de l'imprimante à bande" class="w-full rounded shadow" onerror="this.onerror=null; this.src='/assets/images/placeholder.svg'">
-            <p class="text-xs text-center mt-2 text-gray-500 italic">Mécanisme d'une imprimante à bande</p>
+            <img src="/assets/collections/imprimantes/schema_bande.jpg" alt="Schéma de l'imprimante à bande" class="w-full rounded shadow" loading="lazy" onerror="this.onerror=null; this.src='../assets/images/placeholder.svg'">
+            <p class="text-xs text-center mt-2 text-gray-500 italic" data-i18n="imprim.belt_caption">Mécanisme d'une imprimante à bande</p>
           </div>
         </div>
       </div>
@@ -129,11 +131,11 @@
   <!-- SECTION 2 : LE NON IMPACT -->
   <div class="w-full bg-[#702424] text-white py-16 px-4 lg:px-36 mt-16">
     <div class="max-w-[1200px] mx-auto">
-      <h2 class="font-heading font-bold text-2xl md:text-3xl mb-6 uppercase">Le développement des imprimantes à non-impact à Belfort</h2>
+      <h2 class="font-heading font-bold text-2xl md:text-3xl mb-6 uppercase" data-i18n="imprim.nonimpact_title">Le développement des imprimantes à non-impact à Belfort</h2>
       
       <div class="text-[14px] leading-relaxed space-y-4 text-white/90 mb-12">
-        <p>A la fin des années soixante, les matériels deviennent de plus en plus performants (puissance de calcul, temps d'accès aux données, capacités de stockage...). Les imprimantes "à impact" (où un marteau vient frapper le papier au travers d'un ruban encreur), bien qu'ayant atteint des vitesses remarquables (jusqu'à 1200 lignes/minute), constituent un véritable "goulot d'étranglement" en sortie des systèmes informatiques.</p>
-        <p>Il devenait nécessaire de trouver de nouveaux procédés d'impression, plus rapides et plus silencieux : c'est la naissance des technologies dites "non-impact". C'est ainsi que le centre Bull de Belfort s'est lancé avec succès dans la recherche et le développement de la magnétographie, une technologie qui fera la renommée mondiale du site pendant plusieurs décennies.</p>
+        <p data-i18n="imprim.nonimpact_p1">A la fin des années soixante, les matériels deviennent de plus en plus performants (puissance de calcul, temps d'accès aux données, capacités de stockage...). Les imprimantes "à impact" (où un marteau vient frapper le papier au travers d'un ruban encreur), bien qu'ayant atteint des vitesses remarquables (jusqu'à 1200 lignes/minute), constituent un véritable "goulot d'étranglement" en sortie des systèmes informatiques.</p>
+        <p data-i18n="imprim.nonimpact_p2">Il devenait nécessaire de trouver de nouveaux procédés d'impression, plus rapides et plus silencieux : c'est la naissance des technologies dites "non-impact". C'est ainsi que le centre Bull de Belfort s'est lancé avec succès dans la recherche et le développement de la magnétographie, une technologie qui fera la renommée mondiale du site pendant plusieurs décennies.</p>
       </div>
 
     </div>
@@ -145,15 +147,15 @@
 
       <div class="flex flex-col md:flex-row items-start md:items-center gap-8 bg-[#f9f3ea] rounded-xl p-6 md:p-8">
         <div class="w-full md:w-48 flex-shrink-0">
-          <img src="/assets/images/Couverture Texte fondateur.webp" alt="Couverture Texte fondateur" class="w-full rounded shadow-sm border border-gray-300" onerror="this.onerror=null; this.src='/assets/images/placeholder.svg'">
+          <img src="/assets/images/Couverture Texte fondateur.webp" alt="Couverture Texte fondateur" class="w-full rounded shadow-sm border border-gray-300" loading="lazy" onerror="this.onerror=null; this.src='../assets/images/placeholder.svg'">
         </div>
         <div class="flex-1 flex flex-col items-start text-left">
-          <p class="text-[11px] font-bold tracking-widest text-[#702424] mb-2 uppercase">Manuscrit</p>
-          <h3 class="font-heading font-bold text-2xl md:text-3xl text-gray-800 mb-4 uppercase">Texte fondateur</h3>
-          <p class="text-sm text-gray-600 mb-6 leading-relaxed">
+          <p class="text-[11px] font-bold tracking-widest text-[#702424] mb-2 uppercase" data-i18n="imprim.book_tag">Manuscrit</p>
+          <h3 class="font-heading font-bold text-2xl md:text-3xl text-gray-800 mb-4 uppercase" data-i18n="imprim.book_title">Texte fondateur</h3>
+          <p class="text-sm text-gray-600 mb-6 leading-relaxed" data-i18n="imprim.book_desc">
             Papier invité à la conférence IEEE Intermag 1980, à Boston, cette publication constitue la première communication officielle sur la technologie magnétographique développée par Bull à Belfort. Elle fut suivie d'une trentaine d'autres contributions entre 1980 et 2000.
           </p>
-          <a href="/assets/pdf/IEEE80.pdf" target="_blank" class="inline-block bg-[#702424] text-white font-bold text-[13px] px-5 py-2.5 rounded-lg hover:bg-red-800 transition-colors shadow-sm">
+          <a href="/assets/pdf/IEEE80.pdf" target="_blank" class="inline-block bg-[#702424] text-white font-bold text-[13px] px-5 py-2.5 rounded-lg hover:bg-red-800 transition-colors shadow-sm" data-i18n="imprim.book_cta">
             Ouvrir le document PDF
           </a>
         </div>

@@ -11,7 +11,10 @@
     "magnetographie": "Magnétographie",
     "musee": "Musée",
     "skip_link": "Aller au contenu principal",
-    "home": "Accueil"
+    "home": "Accueil",
+    "aria_nav": "Navigation principale",
+    "aria_menu": "Menu",
+    "logo_alt": "Logo PB2I — Lion de Belfort"
   },
   "footer": {
     "title": "Patrimoine Belfortain de l'Industrie Informatique",
@@ -20,5 +23,21 @@
     "legal": "Mentions légales",
     "privacy": "Confidentialité",
     "follow": "Suivez-nous"
+  },
+  "ui": {
+    "read_article": "Lire l'article",
+    "no_news": "Aucune actualité disponible.",
+    "news_unavailable": "Actualités non disponibles.",
+    "articles_error": "Impossible de charger les articles.",
+    "article_not_found": "Cet article n'existe pas ou a été supprimé.",
+    "tech_error": "Impossible de charger les technologies.",
+    "machines_error": "Impossible de charger les machines.",
+    "close": "Fermer",
+    "close_video": "Fermer la vidéo",
+    "video_player": "Lecteur vidéo",
+    "details": "Détails",
+    "learn_more_about": "En savoir plus sur",
+    "read_more": "Lire plus",
+    "panorama_alt": "Vue panoramique"
   }
 }

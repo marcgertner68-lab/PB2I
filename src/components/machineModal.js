@@ -13,10 +13,10 @@ export function createMachineModal() {
 
       <!-- Modal Header -->
       <div class="bg-primary flex items-center justify-between px-6 py-4 flex-shrink-0">
-        <h2 id="modal-title" class="font-heading font-bold text-lg text-white">Détails</h2>
+        <h2 id="modal-title" class="font-heading font-bold text-lg text-white" data-i18n="ui.details">Détails</h2>
         <button id="modal-close"
           class="w-8 h-8 rounded-lg flex items-center justify-center text-white hover:bg-white/20 transition-colors text-xl leading-none"
-          aria-label="Fermer">✕</button>
+          aria-label="Fermer" data-i18n-aria-label="ui.close">✕</button>
       </div>
 
       <!-- Modal Body -->

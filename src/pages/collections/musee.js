@@ -4,13 +4,14 @@
  */
 import { mountComponents, refreshNavbar, initFadeIn, bindMachineModal } from '../../components.js'
 import { fetchCollection, prefetch } from '../../utils/api.js'
-import { initI18n, translateDOM } from '../../utils/i18n.js'
+import { initI18n, translateDOM, t } from '../../utils/i18n.js'
 
 // 1) Render immediately
 mountComponents('musee')
 // 2) Data + i18n in parallel
 prefetch('collections/musee.json')
-initI18n().then(() => { refreshNavbar('musee'); translateDOM() })
+const i18nReady = initI18n()
+i18nReady.then(() => { refreshNavbar('musee'); translateDOM() })
 
 const baseUrl = import.meta.env.BASE_URL || '/'
 
@@ -22,15 +23,18 @@ const { openMachineModal } = bindMachineModal(baseUrl)
 async function loadMachines() {
   if (!grid) return
   try {
-    const data = await fetchCollection('musee') // already cached from prefetch
+    // Data is already cached from the prefetch above; wait for translations too,
+    // so the generated aria-labels are localized.
+    const [data] = await Promise.all([fetchCollection('musee'), i18nReady])
     const machines = data.machines || []
+    const learnMore = t('ui.learn_more_about', 'En savoir plus sur')
 
     grid.innerHTML = machines.map((m, i) => `
       <button
         class="card-machine h-full"
         data-id="${m.id}" data-fade
         style="animation-delay:${i * 40}ms"
-        aria-label="En savoir plus sur ${m.name}">
+        aria-label="${learnMore} ${m.name}">
         <img src="${baseUrl}${m.image.startsWith('/') ? m.image.slice(1) : m.image}" alt="${m.name}"
           class="w-28 h-24 object-contain mx-auto"
           loading="lazy"
@@ -52,7 +56,7 @@ async function loadMachines() {
 
   } catch (err) {
     console.error('Error loading machines:', err)
-    grid.innerHTML = '<p class="col-span-full text-center text-sm text-gray-400 italic py-8">Impossible de charger les machines.</p>'
+    grid.innerHTML = `<p class="col-span-full text-center text-sm text-gray-400 italic py-8">${t('ui.machines_error', 'Impossible de charger les machines.')}</p>`
   }
 }
 

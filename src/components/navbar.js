@@ -47,14 +47,14 @@ export function createNavbar(activePage = '') {
   return `
   <!-- Skip link -->
   <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-0 focus:left-0 focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:z-[9999]">
-    Aller au contenu principal
+    ${t('navbar.skip_link', 'Aller au contenu principal')}
   </a>
 
   <!-- Navbar -->
-  <nav id="navbar" class="navbar" role="navigation" aria-label="Navigation principale">
+  <nav id="navbar" class="navbar" role="navigation" aria-label="${t('navbar.aria_nav', 'Navigation principale')}">
     
     <!-- Mobile Hamburger -->
-    <button id="nav-hamburger" class="lg:hidden absolute left-4 top-1/2 -translate-y-1/2 flex flex-col gap-1.5 cursor-pointer p-2 bg-transparent border-none z-50" aria-label="Menu" aria-expanded="false">
+    <button id="nav-hamburger" class="lg:hidden absolute left-4 top-1/2 -translate-y-1/2 flex flex-col gap-1.5 cursor-pointer p-2 bg-transparent border-none z-50" aria-label="${t('navbar.aria_menu', 'Menu')}" aria-expanded="false">
       <span class="block w-5.5 h-0.5 bg-white rounded transition-all duration-300 origin-center" id="ham-l1"></span>
       <span class="block w-5.5 h-0.5 bg-white rounded transition-all duration-300" id="ham-l2"></span>
       <span class="block w-5.5 h-0.5 bg-white rounded transition-all duration-300 origin-center" id="ham-l3"></span>
@@ -63,7 +63,7 @@ export function createNavbar(activePage = '') {
     <!-- Logo -->
     <div class="flex items-center justify-center lg:justify-start w-full lg:w-auto gap-3 flex-shrink-0">
       <a href="${BASE_URL}index.html" class="flex items-center gap-2 lg:gap-3">
-        <img id="navbar-logo" src="${logoUrl}" alt="Logo PB2I — Lion de Belfort" class="h-8 lg:h-12 w-auto object-contain" onerror="this.style.display='none'">
+        <img id="navbar-logo" src="${logoUrl}" alt="${t('navbar.logo_alt', 'Logo PB2I — Lion de Belfort')}" class="h-8 lg:h-12 w-auto object-contain" onerror="this.style.display='none'">
         <span class="font-heading font-extrabold text-white text-xl lg:text-sm leading-tight">PB2I</span>
       </a>
     </div>
@@ -159,7 +159,15 @@ export function createNavbar(activePage = '') {
 }
 
 // ── Interactions ─────────────────────────────────────────────
+// Les listeners attachés à `document` survivent au remplacement du navbar par
+// refreshNavbar() : on les révoque via un AbortController avant chaque ré-init.
+let navbarDocListeners = null
+
 export function initNavbarInteractions() {
+  navbarDocListeners?.abort()
+  navbarDocListeners = new AbortController()
+  const docSignal = { signal: navbarDocListeners.signal }
+
   const dropdownToggle  = document.getElementById('nav-dropdown-toggle')
   const dropdownMenu    = document.getElementById('nav-dropdown-menu')
   const dropdownChevron = document.getElementById('nav-dropdown-chevron')
@@ -213,7 +221,7 @@ export function initNavbarInteractions() {
     })
   })
 
-  document.addEventListener('click', () => { closeDropdown(); closeLangMenu() })
+  document.addEventListener('click', () => { closeDropdown(); closeLangMenu() }, docSignal)
 
   // Mobile hamburger
   const hamburger  = document.getElementById('nav-hamburger')
@@ -280,7 +288,7 @@ export function initNavbarInteractions() {
 
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') { closeDropdown(); closeLangMenu() }
-  })
+  }, docSignal)
 
   // Init lang (detects browser language on first visit)
   setActiveLang(getActiveLang())

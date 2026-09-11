@@ -11,7 +11,10 @@
     "magnetographie": "Magnetography",
     "musee": "Museum",
     "skip_link": "Skip to main content",
-    "home": "Home"
+    "home": "Home",
+    "aria_nav": "Main navigation",
+    "aria_menu": "Menu",
+    "logo_alt": "PB2I logo — Lion of Belfort"
   },
   "footer": {
     "title": "Belfort Heritage of the IT Industry",
@@ -20,5 +23,308 @@
     "legal": "Legal Notice",
     "privacy": "Privacy Policy",
     "follow": "Follow Us"
+  },
+  "association": {
+    "title": "The PB2I Association",
+    "intro_p1": "Our active group is made up of dedicated volunteers and a number of supporters, within the Patrimoine Belfortain de l'Industrie Informatique. Most of our activity is devoted to keeping the restored machines in working order, developing demonstrations and presenting our industrial heritage.",
+    "intro_p2": "We have:",
+    "intro_li1": "A punched-card workshop from the 1950s, on permanent display in our premises and run by several technicians.",
+    "intro_li2": "An extensive archive of company documentation.",
+    "ambitions_title": "Our ambitions and projects",
+    "ambitions_p1": "To bear witness to 30 years of BULL's presence in Belfort — the life of the company, its events, its women and men (a workforce of 1,500 to 2,500 people), its products and its technologies. To affirm our place in the local community of associations, especially among those committed to heritage in general and industrial heritage in particular, since our region is rich in this field.",
+    "ambitions_p2": "Our current projects:",
+    "ambitions_li1": "Continuing the maintenance of vintage punched-card machines, printers and data-entry equipment.",
+    "ambitions_li2": "Developing and refining our demonstrations of the “Atelier Mécanographique 150” and of the equipment developed and manufactured at Bull Belfort.",
+    "ambitions_li3": "Organising guided tours and live demonstrations of the machines on permanent display in our premises.",
+    "ambitions_li4": "Creating a showcase of our industrial history open to the public.",
+    "ambitions_li5": "Keeping our website alive and up to date.",
+    "structure_title": "Our organisation",
+    "structure_p1": "The PB2I committee as of 15 March 2025:",
+    "role_president": "President:",
+    "role_vice_president": "Vice-President:",
+    "role_tresorier": "Treasurer:",
+    "role_tresorier_adjoint": "Deputy Treasurer:",
+    "role_secretaire": "Secretary:",
+    "role_secretaire_adjoint": "Deputy Secretary:",
+    "fig_atelier": "Punched-card workshop",
+    "fig_salle": "Machine room on permanent display"
+  },
+  "missions": {
+    "title": "Our Missions",
+    "faisons_title": "What we do",
+    "faisons_intro": "The PB2I association means:",
+    "faisons_li1": "Preserving and promoting our computing heritage.",
+    "faisons_li2": "Cooperating with social and cultural organisations.",
+    "faisons_li3": "A range of activities:",
+    "faisons_li3a": "A repair section in charge of:",
+    "faisons_li3a1": "Maintaining the vintage machines.",
+    "faisons_li3a2": "Live demonstrations of these machines.",
+    "faisons_li3b": "An exhibition:",
+    "faisons_li3b1": "Retrospective photos and documents on BULL Belfort.",
+    "faisons_li3b2": "Information panels of general interest.",
+    "faisons_li3b3": "Display cases featuring components made by BULL.",
+    "faisons_li3c": "A “Leisure” section organising:",
+    "faisons_li3c1": "Get-togethers and more…",
+    "faisons_li4": "Coordination between the association's members.",
+    "fig_atelier": "Punched-card workshop during a demonstration",
+    "fig_expo": "Permanent exhibition in our premises",
+    "ambitions_title": "Ambitions and projects",
+    "ambitions_li1": "Acting as the association's local representative.",
+    "ambitions_li2": "Affirming our place in the community of local associations.",
+    "ambitions_li3": "Working to preserve industrial heritage, a field in which our region is particularly rich.",
+    "ambitions_li4": "Building technical and industrial partnerships.",
+    "ambitions_li5": "More concretely:",
+    "ambitions_li5a": "Continuing to service the vintage punched-card machines and keep them in working order.",
+    "ambitions_li5b": "Taking part in exhibitions and presentations within our reach across the region.",
+    "ambitions_li5c": "Organising guided tours and live demonstrations with the installed, fully operational machines of the 1950s punched-card workshop.",
+    "esprit": "Keeping alive the TEAM SPIRIT that long defined BULL in Belfort…"
+  },
+  "histoire": {
+    "kicker": "Once upon a time in eastern France…",
+    "title": "The saga of Bull in Belfort",
+    "mots_title": "A few words of history",
+    "mots_p1": "It all began when Jacques STERN, then chairman of the BULL group, asked a group of “young” retirees to take charge of promoting BULL's heritage. That was in 1985. This initiative led, in 1986, to the creation of the association “Fédération des Équipes Bull”.",
+    "feb_title": "The Fédération des Équipes Bull<br>in figures",
+    "stat1_label": "members in France",
+    "stat1_sub": "Across Paris, Angers and Belfort",
+    "stat2_label": "international associations",
+    "stat2_sub": "In Germany, Belgium and Italy",
+    "feb_p1": "A local branch was created in Belfort. These efforts soon bore fruit with:",
+    "feb_li1": "The publication of “La Saga”, a retrospective brochure on BULL Belfort.",
+    "feb_li2": "The restoration in Belfort of the first historic machines:",
+    "feb_p2": "These machines, which marked BULL's entry into the era of punched-card data processing and, later, of computing, were presented to the public from 1988 onwards. (First symposium on the History of Computing in France, Grenoble, May 1988.) In the years 1990&nbsp;–&nbsp;1992, further exhibitions followed, whose success built the reputation of the F.E.B.",
+    "fig_atelier": "Punched-card workshop",
+    "fig_expo": "Permanent exhibition in our premises",
+    "verite_title": "1992-1993<br>The moment of truth for the F.E.B. delegation in Belfort",
+    "verite_p1": "After the untimely passing of the pioneers, followed by the closure of “BULL Périphériques”, a renewed team took up the challenge. This new start was marked by a major two-week exhibition in a historic building in the city of Belfort. The event, which received the support of the local authorities, of BULL and its subsidiaries, and of our friends from the F.E.B. in Paris, was warmly received by the public and by the teaching community in particular, as nearly 2,000 primary and secondary school pupils took part in visits organised for them. (Belfort, March / April 1993)",
+    "verite_p2": "Another milestone of that period: we moved from what had been a static form of restoration to a dynamic one, so as to be able to present the machines in working order. New ambitions, new challenges… Since then, our loyal, motivated, close-knit and skilled team has persevered in its mission, restoring many punched-card machines from the 1940s, 1950s and 1960s.",
+    "verite_p3": "In 2012, Belfort was compelled to leave the FEB and a new independent association was created under the name PATRIMOINE BELFORTAIN DE L'INDUSTRIE INFORMATIQUE (PB2I).<br>This had no bearing on PB2I's role, which remained identical to that of the former FEB-FRANCHE COMTE delegation.",
+    "livre_label": "Book",
+    "livre_title": "The saga of Bull in Belfort",
+    "livre_desc": "Discover the full story of Bull's presence in Belfort — the people and the machines that shaped the industrial computing heritage of our region.",
+    "livre_btn": "Open the PDF document",
+    "feb_li2a": "Fredrik Rosing Bull's statistical machine (1923)",
+    "feb_li2b": "T&nbsp;30 tabulator (1932)"
+  },
+  "contact": {
+    "title": "Contact us",
+    "intro": "For any questions about the PB2I association or the museum, please fill in the form below.",
+    "label_email": "Email address",
+    "ph_email": "your@email.com",
+    "err_email": "Invalid email address.",
+    "label_objet": "Subject",
+    "ph_objet": "Subject of your message",
+    "label_message": "Message",
+    "ph_message": "Write your message here…",
+    "submit": "Send message",
+    "success": "✓ Message sent! We will get back to you as soon as possible.",
+    "error": "An error occurred. Please contact us directly at <a href=\"mailto:pb2i.belfort@gmail.com\" style=\"color:var(--color-primary)\">pb2i.belfort@gmail.com</a>.",
+    "social": "Or get in touch on social media",
+    "place_title": "Let's talk in person",
+    "addr_label": "Address:",
+    "hours_label": "Opening times:",
+    "hours": "Tuesday and Thursday mornings, 9 am to 12 noon.<br>(Except July / August)",
+    "access_label": "How to find us:",
+    "access": "Take the avenue du Maréchal Juin<br>Enter the car park signposted:<br>GENERAL ELECTRIC<br>PARKING DU PERSONNEL"
+  },
+  "legal": {
+    "title": "Legal Notice",
+    "s1_title": "1. Website publisher",
+    "s1_p1": "This website is published by the association <strong>PB2I (Patrimoine Belfortain de l'Industrie Informatique)</strong>.",
+    "s1_addr": "<strong>Address:</strong> Techn'hom 2 – Bâtiment 9, 5 rue Jacqueline AURIOL, 90000 BELFORT",
+    "s1_president": "<strong>President:</strong> Yves MOUGEY",
+    "s1_contact": "<strong>Contact:</strong> <a href=\"mailto:pb2i.belfort@gmail.com\" class=\"text-primary hover:underline\">pb2i.belfort@gmail.com</a>",
+    "s2_title": "2. Hosting provider",
+    "s2_p1": "The site is hosted on <strong>GitHub Pages</strong>, a service of GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, United States.",
+    "s3_title": "3. Intellectual property",
+    "s3_p1": "This entire website is governed by French and international legislation on copyright and intellectual property. All reproduction rights are reserved, including for downloadable documents and for iconographic and photographic representations.",
+    "s3_p2": "The reproduction of all or part of this site on any electronic or paper medium whatsoever is strictly prohibited without the express permission of the publication director.",
+    "s4_title": "4. Privacy policy (GDPR)",
+    "s4_p1": "In accordance with the General Data Protection Regulation (GDPR), the association is committed to respecting users' privacy.",
+    "s4_form": "<strong>Contact form:</strong> The data collected via the contact form (email address, subject and message) is used solely to process your requests for information or contact and is never passed on to third parties.",
+    "s4_cookies": "<strong>Cookies:</strong> This site does not use tracking or advertising cookies. Technical cookies essential to navigation may be placed."
+  },
+  "hero": {
+    "title": "Belfort Heritage of the IT Industry",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "cta_visit": "Visit the museum",
+    "cta_more": "Learn more",
+    "photo_caption_1": "Punched-card data processing workshop",
+    "photo_caption_2": "Permanent exhibition on our premises"
+  },
+  "history": {
+    "title": "Our History",
+    "body": "<p>Belfort's computer-industry heritage is inseparable from the presence of the Compagnie des Machines Bull, from 1950 to the present day. PB2I retraces this remarkable story, which shaped the technological and human development of the region.</p><p>Through our collections of punched-card machines, high-speed printers and magnetography equipment, we invite you to discover a unique chapter of our collective and industrial memory.</p>",
+    "cta": "Learn more"
+  },
+  "whoarewe": {
+    "title_section": "Who are we?",
+    "body": "<p>Our active group is made up of dedicated volunteers and a few supporters, within the Belfort Heritage of the IT Industry association. Most of our work involves keeping the restored machines in working order, developing demonstrations and presenting our industrial heritage.</p><p>We have a 1950s punched-card data processing workshop, installed on our premises as a permanent exhibition and run by several technicians, as well as an extensive archive of company documentation.</p>",
+    "cta": "Discover the association"
+  },
+  "news": {
+    "title": "Latest news"
+  },
+  "map": {
+    "title": "How to find us"
+  },
+  "collections": {
+    "title": "The museum's collections",
+    "musee_caption": "PB2I Museum"
+  },
+  "actualites": {
+    "title": "News",
+    "no_articles": "No articles available at the moment."
+  },
+  "articlePage": {
+    "related_title": "Other articles you may enjoy…"
+  },
+  "mecano": {
+    "eyebrow": "Our collections",
+    "title": "Punched-card data processing",
+    "intro": "Welcome to the world of punched-card data processing, where the punched card served as the medium for information.",
+    "utility_title": "What punched-card data processing was used for",
+    "utility_p1": "In the 1950s, punched-card data processing — that is, processing information with electromechanical machines from data recorded on punched cards — was used mainly for statistics, accounting and business management. Punched-card equipment provided a highly efficient and cost-effective answer to the automation of office work. It consisted of a range of machines set up side by side in a single workshop, each operating independently (apart from a few exceptions of connected machines, which we will come back to).",
+    "utility_p2": "Their distinctive features were:",
+    "utility_li1": "They used a single source document, the punched card, created once and for all and carefully verified, then reusable as many times as needed. It was the permanent, machine-readable memory of the data.",
+    "utility_li2": "They then relied on purely automatic processes to carry out all the basic operations from that single document, and thus solve every standard problem.",
+    "utility_li3a": "Organising card files for later processing.",
+    "utility_li3b": "Adding an intermediate calculation result in preparation for the final processing.",
+    "utility_li3c": "Producing a final printed output (payslips, stock records, etc.).",
+    "utility_li3d": "Creating a summary card reflecting a given situation, in order to prepare a new processing cycle (daily, weekly, monthly, etc.).",
+    "steps_title": "The stages and trades of punched-card data processing",
+    "steps_p1": "For a given application, the process broke down into several successive stages. As with any project to automate administrative tasks with information-processing machines, a series of steps led to the design of a punched-card procedure:",
+    "steps_li1": "A preliminary study of the problem, carried out with the users.",
+    "steps_li2": "The functional analysis, covering in particular the flow of information (the administrative departments involved, the layout of the punched cards, the design of the printed forms).",
+    "steps_li3": "The detailed analysis, defining the sequence of tasks specific to the application — in other words, how the processing was distributed across the various machines.",
+    "steps_li4": "The technical implementation, that is, the programming itself: the machines' functions were set up by externally wiring removable plugboards. Programming was done on a pre-printed document that exactly mirrored the layout of the machine's contact hubs (a different chart for each machine, since their functions were not identical). Once the program had been worked out on paper, the programmer carried out the wiring (the state of the board, followed by debugging on the machine using a test deck). This test deck was run systematically by the operator before every job: the results had to match the test deck exactly, proving that the machine's components were responding correctly — otherwise the operator called in the SEC (the customer maintenance service).",
+    "steps_p2": "The data to be processed reached the data-entry room in the form of slips sent in by the company's various departments. The information was punched onto cards and verified by operators (usually female staff). The machines used for entering and checking the data were known as \"key punches\" and \"verifiers\". Verification consisted of checking that the two operators had read and keyed the same handwritten information in exactly the same way. The punched and verified cards were stored in card trays, in the order in which they had been processed.",
+    "steps_p3": "The cards were then taken to the punched-card room. Cards coming from the punching room were handled either directly by an operator, in small organisations, or by a job preparer in larger ones. The preparer was generally responsible for the smooth running of the application, acted as the interface between the punched-card room and the company's departments, and handed work out to the operators — who in that case specialised in a given machine, though versatility was not ruled out. In small organisations, the operator took on all of these tasks. The operator set up the machines: mounting the right plugboard and checking that the machine worked properly by running the test deck and verifying the results. He fed the machines with cards, and with paper for the tabulator's printer. In large organisations, the data-entry room was overseen by a supervisor, while the processing (or operations) room was overseen by a shop foreman, the whole being headed by a department manager. The various electromechanical machines performing the specialised functions are described in detail under the \"Machines\" menu. Maintenance technicians from the customer service department of the Compagnie des Machines Bull handled the installation, repair and servicing of the machines in the workshop, following schedules of planned operations (weekly, monthly, quarterly, half-yearly or yearly). A gauge known as the \"control grid\" was used to check that the punches were correctly centred on each of the card's 80 columns.",
+    "operation_title": "How punched-card data processing works",
+    "card_punched_card": "The punched card",
+    "card_card_file": "The punched-card file",
+    "videos_title": "Videos",
+    "video1_link": "Punched-card data processing as seen by the Espace multimédia Gantner",
+    "video2_link": "The prehistory of computing (Cécile Babiole's website)",
+    "utility_li3": "To obtain, depending on the machine and the work to be done:",
+    "video2_intro": "See also the audio report:"
+  },
+  "imprim": {
+    "eyebrow": "Our collections",
+    "title": "Printers",
+    "intro": "Designed and built in Belfort without interruption for more than 40 years, these machines kept pushing back the limits of printing speed. Two types of printers can be distinguished:",
+    "tech_title": "The two main impact-printer technologies",
+    "tech_intro": "The earliest computer printers were known as \"impact\" printers: a hammer struck the paper through an inked ribbon against a raised character, much like a typewriter. In Belfort, Bull developed two major technologies in this field.",
+    "tab_drum": "Drum printers",
+    "tab_belt": "Belt printers",
+    "drum_heading": "IN BELFORT, FROM THE 1950s ONWARDS, BULL BUILT DRUM PRINTERS.",
+    "drum_p1": "In this type of printer, the characters are engraved in relief on a cylindrical drum rotating at constant speed. A print line generally has 120 or 132 positions, with a small hammer facing each position. To print a character in a given position, the corresponding hammer strikes the paper at the precise moment the desired character passes in front of it. In a single revolution of the drum, every character of a line can thus be printed.",
+    "drum_p2": "In detail, the drum printer works as follows:",
+    "drum_li1": "The print drum (1) rotates continuously. Its circumference carries the 64 different characters that can be printed, repeated across the 120 columns corresponding to the line's 120 print positions.",
+    "drum_li2": "Facing each column is a print hammer (2).",
+    "drum_li3": "The continuous paper (3) and the inked ribbon (4) run between the drum and the row of hammers.",
+    "drum_li4": "When a character to be printed comes in front of the hammer of the corresponding column, the hammer is triggered magnetically.",
+    "drum_li5": "It strikes the paper against the ribbon and the raised character on the drum, depositing the ink and forming the character on the paper.",
+    "drum_li6": "This operation is repeated for every character of the line within a single revolution of the drum.",
+    "drum_li7": "Once the line has been printed, the paper advances one line and the process starts again for the next line.",
+    "drum_p3": "Drum printers offered very high printing speeds for their time, reaching 150, 300, 600 and finally 1200 lines per minute at the top of the range (H1200).",
+    "drum_caption": "Schematic diagram of the printing mechanism",
+    "chrono_title": "Timeline of magnetographic developments in Belfort",
+    "belt_heading": "THE MOVE TO BELT PRINTERS",
+    "belt_p1": "To reduce size and cost, drum technology was gradually replaced by belt technology in the 1970s.",
+    "belt_p2": "The principle remains similar (a hammer strike), but the characters are no longer engraved on a heavy cylindrical drum. They are carried on a flexible metal belt that travels horizontally at high speed in front of the row of hammers.",
+    "belt_p3": "The advantages of this technology:",
+    "belt_li1": "Less mechanical inertia, allowing faster starts and stops.",
+    "belt_li2": "Easy character-set changes (simply replace the belt).",
+    "belt_li3": "Better horizontal alignment of the printed characters.",
+    "belt_li4": "Lower manufacturing cost compared with the complex machining of a drum.",
+    "belt_caption": "Mechanism of a belt printer",
+    "nonimpact_title": "The development of non-impact printers in Belfort",
+    "nonimpact_p1": "By the late 1960s, hardware was becoming ever more powerful (computing power, data access times, storage capacity, and so on). Impact printers — in which a hammer strikes the paper through an inked ribbon — had reached remarkable speeds (up to 1200 lines per minute), yet they had become a genuine bottleneck at the output of computer systems.",
+    "nonimpact_p2": "New printing processes had to be found, faster and quieter: this was the birth of the so-called \"non-impact\" technologies. It was in this context that Bull's Belfort centre successfully embarked on the research and development of magnetography, a technology that would earn the site worldwide renown for several decades.",
+    "book_tag": "Manuscript",
+    "book_title": "Founding paper",
+    "book_desc": "An invited paper at the IEEE Intermag 1980 conference in Boston, this publication was the first official communication on the magnetographic technology developed by Bull in Belfort. It was followed by some thirty further contributions between 1980 and 2000.",
+    "book_cta": "Open the PDF document"
+  },
+  "magneto": {
+    "eyebrow": "Our collections",
+    "title": "Magnetography",
+    "intro": "Using simple animations, the articles in this section present the main technologies at work in a typical magnetographic print engine.",
+    "operation_title": "How magnetography works",
+    "operation_intro": "Magnetography... how does it work?",
+    "tech_title": "The technologies of a typical magnetographic print engine"
+  },
+  "museePage": {
+    "eyebrow": "Our collections",
+    "title": "Museum",
+    "intro": "A static or working presentation of the machines that are the pride of our museum",
+    "machines_title": "Machines on display"
+  },
+  "ui": {
+    "read_article": "Read the article",
+    "no_news": "No news available.",
+    "news_unavailable": "News unavailable.",
+    "articles_error": "Unable to load articles.",
+    "article_not_found": "This article does not exist or has been removed.",
+    "tech_error": "Unable to load technologies.",
+    "machines_error": "Unable to load machines.",
+    "close": "Close",
+    "close_video": "Close video",
+    "video_player": "Video player",
+    "details": "Details",
+    "learn_more_about": "Learn more about",
+    "read_more": "Read more",
+    "panorama_alt": "Panoramic view"
+  },
+  "meta": {
+    "index": {
+      "title": "PB2I — Belfort Heritage of the IT Industry",
+      "description": "Belfort Heritage of the IT Industry — An association dedicated to preserving Belfort's industrial computing heritage."
+    },
+    "histoire": {
+      "title": "Our History — PB2I, Belfort Heritage of the IT Industry",
+      "description": "Our History — PB2I retraces the Bull saga in Belfort since 1985, the founding of the Fédération des Équipes Bull and the birth of PB2I in 2012."
+    },
+    "missions": {
+      "title": "Our Missions — PB2I, Belfort Heritage of the IT Industry",
+      "description": "Our Missions — The PB2I association preserves and promotes Belfort's industrial computing heritage through demonstrations, exhibitions and educational activities."
+    },
+    "association": {
+      "title": "The PB2I Association — Belfort Heritage of the IT Industry",
+      "description": "The PB2I association — who we are, our ambitions, our structure and our projects to preserve Belfort's computing heritage."
+    },
+    "actualites": {
+      "title": "News — PB2I",
+      "description": "News from the PB2I association — the latest articles and updates from the Belfort Heritage of the IT Industry."
+    },
+    "article": {
+      "title": "Article — PB2I",
+      "description": "News from PB2I — Belfort Heritage of the IT Industry."
+    },
+    "contact": {
+      "title": "Contact — PB2I",
+      "description": "Contact the PB2I association — Techn’hom 2, Belfort. Any question about the association or about visiting the museum."
+    },
+    "legal": {
+      "title": "Legal Notice — PB2I",
+      "description": "Legal notice and privacy policy of the PB2I association — Belfort Heritage of the IT Industry."
+    },
+    "mecanographie": {
+      "title": "Mechanical DP — PB2I Collections",
+      "description": "Mechanical data processing — PB2I Collections. The history of the punched card and of mechanical data-processing machines."
+    },
+    "imprimantes": {
+      "title": "Printers — PB2I Collections",
+      "description": "Printers — PB2I Collections. The history of impact printers (drum and band) and of non-impact printers in Belfort."
+    },
+    "magnetographie": {
+      "title": "Magnetography — PB2I Collections",
+      "description": "Magnetography — PB2I Collections. Magnetographic print engines and data-entry equipment."
+    },
+    "musee": {
+      "title": "Museum — PB2I Collections",
+      "description": "PB2I Museum — A static and working presentation of the mechanical data-processing machines in our collection."
+    }
   }
 }

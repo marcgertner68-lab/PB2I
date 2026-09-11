@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-page="missions">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,13 +10,15 @@
   <meta property="og:title" content="Nos missions — PB2I, Patrimoine Belfortain de l'Industrie Informatique" />
   <meta property="og:description" content="Nos missions — L'association PB2I préserve et valorise le patrimoine informatique industriel de Belfort à travers des démonstrations, expositions et activités éducatives." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://pb2i.fr/" />
-  <meta property="og:image" content="https://pb2i.fr/assets/og-image.webp" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:url" content="https://pb2i-belfort.fr/nos-missions.html" />
+  <meta property="og:image" content="https://pb2i-belfort.fr/assets/og-image.webp" />
   <meta property="og:site_name" content="PB2I" />
+  <link rel="canonical" href="https://pb2i-belfort.fr/nos-missions.html" />
 
 
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-      
+
   <script type="module" src="/src/pages/nos-missions.js"></script>
 </head>
 <body class="bg-white">
@@ -24,43 +26,43 @@
 
   <!-- Header -->
   <div class="border-primary/10 px-4 lg:px-36 py-12 text-center border-b" >
-    <h1 class="page-title">Nos missions</h1>
+    <h1 class="page-title" data-i18n="missions.title">Nos missions</h1>
   </div>
 
   <!-- ─── Section : Que faisons-nous — ──────────────────────── -->
   <div class="px-4 lg:px-36 py-12 flex flex-col gap-16">
 
     <div class="flex flex-col gap-8">
-      <h2 class="font-heading font-bold text-2xl text-gray-900 uppercase">Que faisons-nous</h2>
+      <h2 class="font-heading font-bold text-2xl text-gray-900 uppercase" data-i18n="missions.faisons_title">Que faisons-nous</h2>
 
       <div class="text-muted text-sm leading-relaxed flex flex-col gap-3" >
-        <p>L'association PB2I, c'est&nbsp;:</p>
+        <p data-i18n="missions.faisons_intro">L'association PB2I, c'est&nbsp;:</p>
         <ul class="list-disc list-inside space-y-1.5 pl-2">
-          <li>Préservation et mise en valeur du patrimoine informatique.</li>
-          <li>Coopération avec les milieux socio-culturels.</li>
-          <li>Des activités diverses&nbsp;:
+          <li data-i18n="missions.faisons_li1">Préservation et mise en valeur du patrimoine informatique.</li>
+          <li data-i18n="missions.faisons_li2">Coopération avec les milieux socio-culturels.</li>
+          <li><span data-i18n="missions.faisons_li3">Des activités diverses&nbsp;:</span>
             <ul class="list-disc list-inside pl-6 mt-1 space-y-1">
-              <li>Une section réparation s'occupant de&nbsp;:
+              <li><span data-i18n="missions.faisons_li3a">Une section réparation s'occupant de&nbsp;:</span>
                 <ul class="list-disc list-inside pl-6 mt-1 space-y-1">
-                  <li>Maintenance des matériels anciens.</li>
-                  <li>Présentations dynamiques de ces matériels.</li>
+                  <li data-i18n="missions.faisons_li3a1">Maintenance des matériels anciens.</li>
+                  <li data-i18n="missions.faisons_li3a2">Présentations dynamiques de ces matériels.</li>
                 </ul>
               </li>
-              <li>Exposition&nbsp;:
+              <li><span data-i18n="missions.faisons_li3b">Exposition&nbsp;:</span>
                 <ul class="list-disc list-inside pl-6 mt-1 space-y-1">
-                  <li>Photos et documents rétrospectifs sur BULL Belfort.</li>
-                  <li>Panneaux informatifs d'intérêt général.</li>
-                  <li>Vitrines, avec des composants fabriqués par BULL.</li>
+                  <li data-i18n="missions.faisons_li3b1">Photos et documents rétrospectifs sur BULL Belfort.</li>
+                  <li data-i18n="missions.faisons_li3b2">Panneaux informatifs d'intérêt général.</li>
+                  <li data-i18n="missions.faisons_li3b3">Vitrines, avec des composants fabriqués par BULL.</li>
                 </ul>
               </li>
-              <li>Une section «&nbsp;Loisirs&nbsp;» organisant&nbsp;:
+              <li><span data-i18n="missions.faisons_li3c">Une section «&nbsp;Loisirs&nbsp;» organisant&nbsp;:</span>
                 <ul class="list-disc list-inside pl-6 mt-1 space-y-1">
-                  <li>Des rencontres et …</li>
+                  <li data-i18n="missions.faisons_li3c1">Des rencontres et …</li>
                 </ul>
               </li>
             </ul>
           </li>
-          <li>Coordination entre les différents adhérents de l'association.</li>
+          <li data-i18n="missions.faisons_li4">Coordination entre les différents adhérents de l'association.</li>
         </ul>
       </div>
     </div>
@@ -72,16 +74,16 @@
           src="/assets/images/mecanographie.webp"
           alt="Atelier mécanographique PB2I en fonctionnement"
           class="w-full rounded-xl aspect-video object-cover shadow-md transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
-          onerror="this.onerror=null;this.style.display='none'">
-        <figcaption class="text-black/50 text-xs mt-2 italic text-center" >Atelier mécanographique à cartes perforées en démonstration</figcaption>
+          loading="lazy" onerror="this.onerror=null;this.style.display='none'">
+        <figcaption class="text-black/50 text-xs mt-2 italic text-center" data-i18n="missions.fig_atelier" >Atelier mécanographique à cartes perforées en démonstration</figcaption>
       </figure>
       <figure>
         <img
           src="/assets/images/musee.webp"
           alt="Exposition permanente des machines informatiques PB2I"
           class="w-full rounded-xl aspect-video object-cover shadow-md transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
-          onerror="this.onerror=null;this.style.display='none'">
-        <figcaption class="text-black/50 text-xs mt-2 italic text-center" >Exposition permanente dans nos locaux</figcaption>
+          loading="lazy" onerror="this.onerror=null;this.style.display='none'">
+        <figcaption class="text-black/50 text-xs mt-2 italic text-center" data-i18n="missions.fig_expo" >Exposition permanente dans nos locaux</figcaption>
       </figure>
     </div>
 
@@ -90,23 +92,23 @@
 
     <!-- Section : Ambitions et projets -->
     <div class="flex flex-col gap-8">
-      <h2 class="font-heading font-bold text-2xl text-gray-900 uppercase">Ambitions et projets</h2>
+      <h2 class="font-heading font-bold text-2xl text-gray-900 uppercase" data-i18n="missions.ambitions_title">Ambitions et projets</h2>
 
       <div class="text-muted text-sm leading-relaxed flex flex-col gap-3" >
         <ul class="list-disc list-inside space-y-1.5 pl-2">
-          <li>Être le relais de l'association au niveau local.</li>
-          <li>Affirmer notre existence dans le tissu associatif.</li>
-          <li>Agir pour la préservation du patrimoine industriel, ce domaine est particulièrement riche dans notre région.</li>
-          <li>Développer des relations de partenariat technique et industriel.</li>
-          <li>Plus concrètement&nbsp;:
+          <li data-i18n="missions.ambitions_li1">Être le relais de l'association au niveau local.</li>
+          <li data-i18n="missions.ambitions_li2">Affirmer notre existence dans le tissu associatif.</li>
+          <li data-i18n="missions.ambitions_li3">Agir pour la préservation du patrimoine industriel, ce domaine est particulièrement riche dans notre région.</li>
+          <li data-i18n="missions.ambitions_li4">Développer des relations de partenariat technique et industriel.</li>
+          <li><span data-i18n="missions.ambitions_li5">Plus concrètement&nbsp;:</span>
             <ul class="list-disc list-inside pl-6 mt-1 space-y-1">
-              <li>Continuer l'activité d'entretien des anciennes machines à cartes, les maintenir en état de fonctionnement.</li>
-              <li>Dans la région, participer aux expositions et présentations à notre portée.</li>
-              <li>Organiser des visites et démonstrations dynamiques avec les matériels installés et opérationnels de l'atelier mécanographique des années 1950.</li>
+              <li data-i18n="missions.ambitions_li5a">Continuer l'activité d'entretien des anciennes machines à cartes, les maintenir en état de fonctionnement.</li>
+              <li data-i18n="missions.ambitions_li5b">Dans la région, participer aux expositions et présentations à notre portée.</li>
+              <li data-i18n="missions.ambitions_li5c">Organiser des visites et démonstrations dynamiques avec les matériels installés et opérationnels de l'atelier mécanographique des années 1950.</li>
             </ul>
           </li>
         </ul>
-        <p class="italic mt-4">Maintenir l'ambiance ESPRIT D'ÉQUIPE qui fut longtemps celle de BULL à Belfort…</p>
+        <p class="italic mt-4" data-i18n="missions.esprit">Maintenir l'ambiance ESPRIT D'ÉQUIPE qui fut longtemps celle de BULL à Belfort…</p>
       </div>
     </div>
 
