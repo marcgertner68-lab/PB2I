@@ -1,7 +1,7 @@
 /**
  * PB2I — Actualités JS
  */
-import { mountComponents, refreshNavbar, initFadeIn, createArticleCard } from '../components.js'
+import { mountComponents, refreshNavbar, initFadeIn, createArticleCard, renderLoadError } from '../components.js'
 import { fetchArticles, prefetch } from '../utils/api.js'
 import { initI18n, translateDOM, t } from '../utils/i18n.js'
 
@@ -34,7 +34,10 @@ async function loadArticles() {
     initFadeIn('[data-fade]')
   } catch (err) {
     console.error(err)
-    grid.innerHTML = `<p class="col-span-3 text-center text-sm text-gray-400 py-12 italic">${t('ui.articles_error', 'Impossible de charger les articles.')}</p>`
+    renderLoadError(grid, {
+      message: t('ui.articles_error', 'Impossible de charger les articles.'),
+      onRetry: loadArticles,
+    })
   }
 }
 

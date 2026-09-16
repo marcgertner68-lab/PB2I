@@ -22,6 +22,7 @@ import { createMachineModal }                    from './machineModal.js'
 export { openModal, closeModal, closeAllModals, bindMachineModal } from './modal.js'
 export { openVideo }                             from './video.js'
 export { initFadeIn }                            from './animations.js'
+export { renderLoadError }                       from './loadError.js'
 export { createArticleCard, formatArticleDate }  from './articleCard.js'
 export { initCarousel }                          from './carousel.js'
 
@@ -65,6 +66,14 @@ export function mountComponents(activePage = '') {
   // Wire interactions
   initNavbarInteractions()
   initVideoOverlayClose()
+
+  // If translations arrive after the page gave up waiting for them,
+  // re-render the chrome in the right language.
+  document.addEventListener('pb2i:i18n-late', () => {
+    refreshNavbar(activePage)
+  }, { once: true })
+
+  registerServiceWorker()
 }
 
 /**
@@ -85,4 +94,19 @@ export function refreshFooter() {
   const wrapper = document.getElementById('pb2i-footer-wrapper')
   if (!wrapper) return
   wrapper.innerHTML = createFooter()
+}
+
+
+/**
+ * Caches the site for repeat visits and poor connections.
+ * Pages and JSON stay network-first, so content can't go stale.
+ */
+function registerServiceWorker() {
+  if (!import.meta.env.PROD || !('serviceWorker' in navigator)) return
+  const base = import.meta.env.BASE_URL || '/'
+  window.addEventListener('load', () => {
+    navigator.serviceWorker
+      .register(`${base}sw.js`)
+      .catch(err => console.warn('[sw] registration failed:', err))
+  }, { once: true })
 }

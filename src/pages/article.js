@@ -1,7 +1,7 @@
 /**
  * PB2I — Article detail JS
  */
-import { mountComponents, refreshNavbar, initFadeIn, createArticleCard, formatArticleDate, initCarousel } from '../components.js'
+import { mountComponents, refreshNavbar, initFadeIn, createArticleCard, formatArticleDate, initCarousel, renderLoadError } from '../components.js'
 import { fetchArticles, prefetch } from '../utils/api.js'
 import { initI18n, translateDOM, t } from '../utils/i18n.js'
 
@@ -26,7 +26,11 @@ async function loadArticle() {
     const lang = document.documentElement.lang || 'fr'
 
     const article = all.find(a => a.id === articleId) || all[0]
-    if (!article) throw new Error('Not found')
+    if (!article) {
+      const missing = new Error('Article not found')
+      missing.notFound = true
+      throw missing
+    }
 
     // formatArticleDate is now imported from components.js
 
@@ -105,9 +109,18 @@ async function loadArticle() {
       })
     }
 
-  } catch {
-    if (header) header.innerHTML = '<h1 class="text-2xl font-bold text-gray-800">Article non trouvé</h1>'
-    if (body)   body.innerHTML   = `<p class="text-gray-500">${t('ui.article_not_found', "Cet article n'existe pas ou a été supprimé.")}</p>`
+  } catch (err) {
+    if (err?.notFound) {
+      if (header) header.innerHTML = `<h1 class="page-title text-primary">${t('ui.article_not_found_title', 'Article introuvable')}</h1>`
+      if (body)   body.innerHTML   = `<p class="text-muted">${t('ui.article_not_found', "Cet article n'existe pas ou a été supprimé.")}</p>`
+      return
+    }
+    // Network failure: keep the page retryable instead of claiming the article is gone.
+    if (header) header.innerHTML = ''
+    renderLoadError(body, {
+      message: t('ui.articles_error', 'Impossible de charger les articles.'),
+      onRetry: loadArticle,
+    })
   }
 }
 

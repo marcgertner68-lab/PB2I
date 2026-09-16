@@ -1,12 +1,8 @@
+/* Polices variables : un fichier par famille couvre toutes les graisses,
+   soit 98 Ko au lieu de 179 Ko pour les huit fichiers statiques. */
+@import '@fontsource-variable/inter/wght.css';
+@import '@fontsource-variable/literata/wght.css';
 /* ── Self-hosted fonts (no external network request, no render-blocking CDN) ── */
-@import '@fontsource/inter/latin-400.css';
-@import '@fontsource/inter/latin-500.css';
-@import '@fontsource/inter/latin-600.css';
-@import '@fontsource/inter/latin-700.css';
-@import '@fontsource/literata/latin-400.css';
-@import '@fontsource/literata/latin-600.css';
-@import '@fontsource/literata/latin-700.css';
-@import '@fontsource/literata/latin-800.css';
 @import "tailwindcss";
 
 /* ============================================================
@@ -27,8 +23,8 @@
   --color-muted:         rgba(37, 37, 37, 0.7);
 
   /* --- Fonts --- */
-  --font-heading: 'Literata', Georgia, serif;
-  --font-body:    'Inter', system-ui, sans-serif;
+  --font-heading: 'Literata Variable', Literata, Georgia, serif;
+  --font-body:    'Inter Variable', Inter, system-ui, sans-serif;
 
   /* --- Custom Spacing --- */
   --spacing-18: 4.5rem;
@@ -342,6 +338,23 @@
   }
 
   /* Skeleton loading */
+  /* Network failure notice — inherits colour so it works on any background */
+  .load-error {
+    @apply flex flex-col items-center gap-3 py-8 text-center text-sm;
+  }
+  .load-error p {
+    @apply max-w-md opacity-80;
+  }
+  .load-error-retry {
+    @apply inline-flex items-center px-4 py-2 rounded-lg text-sm font-semibold cursor-pointer transition-opacity;
+    background: transparent;
+    color: inherit;
+    border: 1px solid currentColor;
+  }
+  .load-error-retry:hover { opacity: 0.75; }
+  .load-error-retry:disabled { opacity: 0.6; cursor: progress; }
+  .load-error-retry:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+
   .skeleton {
     background: linear-gradient(90deg, var(--color-warm-bg) 25%, var(--color-warm-200) 50%, var(--color-warm-bg) 75%);
     background-size: 200% 100%;

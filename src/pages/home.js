@@ -2,7 +2,7 @@
  * PB2I — Homepage JS
  */
 
-import { mountComponents, refreshNavbar, initFadeIn, initCarousel, formatArticleDate } from '../components.js'
+import { mountComponents, refreshNavbar, initFadeIn, initCarousel, formatArticleDate, renderLoadError } from '../components.js'
 import { fetchArticles, prefetch } from '../utils/api.js'
 import { initI18n, translateDOM, t } from '../utils/i18n.js'
 
@@ -60,7 +60,10 @@ async function loadNews() {
       newsList.innerHTML = `<p class="text-sm text-gray-500 py-4">${t('ui.no_news', 'Aucune actualité disponible.')}</p>`
     }
   } catch {
-    newsList.innerHTML = `<p class="text-sm text-gray-400 py-4 italic">${t('ui.news_unavailable', 'Actualités non disponibles.')}</p>`
+    renderLoadError(newsList, {
+      message: t('ui.news_unavailable', 'Actualités non disponibles.'),
+      onRetry: loadNews,
+    })
   }
 }
 

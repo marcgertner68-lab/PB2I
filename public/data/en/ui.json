@@ -275,7 +275,11 @@
     "details": "Details",
     "learn_more_about": "Learn more about",
     "read_more": "Read more",
-    "panorama_alt": "Panoramic view"
+    "panorama_alt": "Panoramic view",
+    "retry": "Try again",
+    "loading": "Loading…",
+    "offline": "You appear to be offline. The content will load once you are back.",
+    "article_not_found_title": "Article not found"
   },
   "meta": {
     "index": {

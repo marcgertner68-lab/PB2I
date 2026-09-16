@@ -38,6 +38,10 @@
     "details": "Détails",
     "learn_more_about": "En savoir plus sur",
     "read_more": "Lire plus",
-    "panorama_alt": "Vue panoramique"
+    "panorama_alt": "Vue panoramique",
+    "retry": "Réessayer",
+    "loading": "Chargement…",
+    "offline": "Vous êtes hors ligne. Le contenu se chargera au retour de la connexion.",
+    "article_not_found_title": "Article introuvable"
   }
 }

@@ -1,7 +1,7 @@
 /**
  * PB2I — Magnétographie page JS
  */
-import { mountComponents, refreshNavbar, initFadeIn, bindMachineModal } from '../../components.js'
+import { mountComponents, refreshNavbar, initFadeIn, bindMachineModal, renderLoadError } from '../../components.js'
 import { fetchCollection, prefetch } from '../../utils/api.js'
 import { initI18n, translateDOM, t } from '../../utils/i18n.js'
 
@@ -51,7 +51,10 @@ async function loadTechnologies() {
 
   } catch (err) {
     console.error('Error loading technologies:', err)
-    grid.innerHTML = `<p class="col-span-full text-center text-sm text-gray-400 italic py-8">${t('ui.tech_error', 'Impossible de charger les technologies.')}</p>`
+    renderLoadError(grid, {
+      message: t('ui.tech_error', 'Impossible de charger les technologies.'),
+      onRetry: loadTechnologies,
+    })
   }
 }
 

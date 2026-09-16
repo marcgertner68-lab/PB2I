@@ -1,32 +1,52 @@
 /**
  * PB2I — i18n utility
  * Loads UI translations from /data/{lang}/ui.json.
- * Falls back to key path if a translation is missing.
+ * Missing keys fall back to the bundled French strings, then to the key path.
  */
 import { getActiveLang } from './lang.js'
 import { fetchJSON } from './api.js'
+// Bundled so the UI never shows raw keys ("navbar.histoire") while ui.json is
+// still on its way — or if it never arrives on a poor connection.
+import frDefaults from '../../public/data/fr/ui.json'
 
 let translations = {}
 
-export async function initI18n() {
-  try {
-    translations = await fetchJSON('ui.json')
-  } catch (err) {
-    console.warn('[i18n] Could not load translations, using key fallback.')
+// Pages wait for translations before rendering generated content. On a slow
+// connection that wait is capped: content shows in French, and the interface
+// is re-translated if the file lands later.
+const I18N_WAIT_MS = 3000
+
+export function initI18n() {
+  const load = fetchJSON('ui.json', { timeout: 6000 })
+    .then(data => { translations = data; return true })
+    .catch(() => {
+      console.warn('[i18n] Could not load translations, using French defaults.')
+      return false
+    })
+  const cap = new Promise(resolve => setTimeout(() => resolve('late'), I18N_WAIT_MS))
+
+  return Promise.race([load, cap]).then(result => {
+    if (result !== 'late') return
+    load.then(ok => {
+      if (!ok) return
+      translateDOM()
+      document.dispatchEvent(new CustomEvent('pb2i:i18n-late'))
+    })
+  })
+}
+
+function lookup(dict, keys) {
+  let value = dict
+  for (const key of keys) {
+    if (value && value[key] !== undefined) value = value[key]
+    else return undefined
   }
+  return typeof value === 'string' ? value : undefined
 }
 
 export function t(keyPath, fallback) {
   const keys = keyPath.split('.')
-  let value = translations
-  for (const key of keys) {
-    if (value && value[key] !== undefined) {
-      value = value[key]
-    } else {
-      return fallback ?? keyPath // Fallback to provided default, else key
-    }
-  }
-  return typeof value === 'string' ? value : (fallback ?? keyPath)
+  return lookup(translations, keys) ?? lookup(frDefaults, keys) ?? fallback ?? keyPath
 }
 
 /**
