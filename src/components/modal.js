@@ -21,7 +21,7 @@ export function closeModal(overlayEl) {
 }
 
 export function closeAllModals() {
-  _openModals.forEach(m => closeModal(m));
+  [..._openModals].forEach(m => closeModal(m));
 }
 
 /**
@@ -68,7 +68,8 @@ export function bindMachineModal(baseUrl = '/') {
         }
         const alt = imgMatch[1];
         const src = imgMatch[2].startsWith('/') ? baseUrl + imgMatch[2].slice(1) : imgMatch[2];
-        acc.html += `<img src="${src}" alt="${alt}" class="w-auto max-w-full mx-auto rounded-xl my-5 shadow-sm object-contain max-h-72 bg-white p-2 border" style="border-color:rgba(0,0,0,0.08)">`;
+        // Une illustration absente ne doit pas laisser d'icône cassée dans la modale.
+        acc.html += `<img src="${src}" alt="${alt}" loading="lazy" onerror="this.onerror=null;this.remove()" class="w-auto max-w-full mx-auto rounded-xl my-5 shadow-sm object-contain max-h-72 bg-white p-2 border" style="border-color:rgba(0,0,0,0.08)">`;
         return acc;
       }
 

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-page="actualites">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,9 +10,11 @@
   <meta property="og:title" content="Actualités - PB2I" />
   <meta property="og:description" content="Actualités de l'association PB2I — Derniers articles et nouvelles du Patrimoine Belfortain de l'Industrie Informatique." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://pb2i.fr/" />
-  <meta property="og:image" content="https://pb2i.fr/assets/og-image.webp" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:url" content="https://pb2i-belfort.fr/actualites.html" />
+  <meta property="og:image" content="https://pb2i-belfort.fr/assets/og-image.webp" />
   <meta property="og:site_name" content="PB2I" />
+  <link rel="canonical" href="https://pb2i-belfort.fr/actualites.html" />
 
 
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -24,7 +26,7 @@
 
   <!-- Header -->
   <div class="border-primary/10 px-4 lg:px-36 py-12 text-center border-b" >
-    <h1 class="page-title">Actualités</h1>
+    <h1 class="page-title" data-i18n="actualites.title">Actualités</h1>
   </div>
 
   <!-- Articles grid -->
@@ -38,7 +40,7 @@
       <div class="skeleton rounded-xl h-80"></div>
       <div class="skeleton rounded-xl h-80"></div>
     </div>
-    <p id="no-articles" class="hidden text-center text-sm text-gray-500 py-16">Aucun article disponible pour le moment.</p>
+    <p id="no-articles" class="hidden text-center text-sm text-gray-500 py-16" data-i18n="actualites.no_articles">Aucun article disponible pour le moment.</p>
   </section>
 
 </main>

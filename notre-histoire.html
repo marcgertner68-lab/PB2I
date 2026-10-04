@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-page="histoire">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,14 +10,15 @@
   <meta property="og:title" content="Notre histoire — PB2I, Patrimoine Belfortain de l'Industrie Informatique" />
   <meta property="og:description" content="Notre histoire — PB2I retrace l'épopée de Bull à Belfort depuis 1985, la création de la Fédération des Équipes Bull et la naissance de PB2I en 2012." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://pb2i.fr/" />
-  <meta property="og:image" content="https://pb2i.fr/assets/og-image.webp" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:url" content="https://pb2i-belfort.fr/notre-histoire.html" />
+  <meta property="og:image" content="https://pb2i-belfort.fr/assets/og-image.webp" />
   <meta property="og:site_name" content="PB2I" />
+  <link rel="canonical" href="https://pb2i-belfort.fr/notre-histoire.html" />
 
 
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  <meta name="base-url" content="/PB2I/">
-      
+
   <script type="module" src="/src/pages/notre-histoire.js"></script>
 </head>
 <body class="bg-white">
@@ -25,8 +26,8 @@
 
   <!-- Header -->
   <div class="px-4 lg:px-36 py-12 text-center border-b border-transparent">
-    <p class="text-xs font-semibold uppercase tracking-widest mb-3 text-black">Il était une fois dans l'Est…</p>
-    <h1 class="page-title text-primary uppercase">La saga de Bull à Belfort</h1>
+    <p class="text-xs font-semibold uppercase tracking-widest mb-3 text-black" data-i18n="histoire.kicker">Il était une fois dans l'Est…</p>
+    <h1 class="page-title text-primary uppercase" data-i18n="histoire.title">La saga de Bull à Belfort</h1>
   </div>
 
   <!-- ─── Section principale ─────────────────────────────────── -->
@@ -34,47 +35,47 @@
 
     <!-- Paragraphe 1 : Quelques mots d'histoire -->
     <div class="flex flex-col gap-6">
-      <h2 class="font-heading font-bold text-2xl text-gray-900 uppercase">Quelques mots d'histoire</h2>
-      <p class="text-muted text-sm leading-relaxed" >
+      <h2 class="font-heading font-bold text-2xl text-gray-900 uppercase" data-i18n="histoire.mots_title">Quelques mots d'histoire</h2>
+      <p class="text-muted text-sm leading-relaxed" data-i18n="histoire.mots_p1" >
         Le point de départ&nbsp;: Jacques STERN, alors président du groupe BULL, demande à un groupe de «&nbsp;jeunes&nbsp;» retraités de prendre en charge la valorisation du patrimoine BULL. C'était en 1985. Cette démarche conduit à la création en 1986 de l'association&nbsp;: «&nbsp;Fédération des Équipes Bull&nbsp;».
       </p>
     </div>
 
     <!-- Paragraphe 2 : La FEB en chiffres -->
     <div class="flex flex-col gap-10">
-      <h2 class="font-heading font-bold text-2xl text-gray-900 uppercase">La Fédération des Équipes Bull<br>en chiffres</h2>
+      <h2 class="font-heading font-bold text-2xl text-gray-900 uppercase" data-i18n="histoire.feb_title">La Fédération des Équipes Bull<br>en chiffres</h2>
 
       <!-- Stats -->
       <div class="border-primary/10 flex flex-wrap gap-12 lg:gap-24 justify-center py-8 border-y" >
         <div class="flex items-end gap-5">
           <span class="text-primary font-heading font-bold text-6xl lg:text-7xl" >400</span>
           <div class="flex flex-col gap-1 pb-1">
-            <span class="text-primary font-heading font-bold text-lg uppercase" >adhérents en France</span>
-            <span class="text-sm text-gray-600">Entre Paris, Angers, Belfort</span>
+            <span class="text-primary font-heading font-bold text-lg uppercase" data-i18n="histoire.stat1_label" >adhérents en France</span>
+            <span class="text-sm text-gray-600" data-i18n="histoire.stat1_sub">Entre Paris, Angers, Belfort</span>
           </div>
         </div>
         <div class="flex items-end gap-5">
           <span class="text-primary font-heading font-bold text-6xl lg:text-7xl" >3</span>
           <div class="flex flex-col gap-1 pb-1">
-            <span class="text-primary font-heading font-bold text-lg uppercase" >associations internationales</span>
-            <span class="text-sm text-gray-600">En Allemagne, Belgique, Italie</span>
+            <span class="text-primary font-heading font-bold text-lg uppercase" data-i18n="histoire.stat2_label" >associations internationales</span>
+            <span class="text-sm text-gray-600" data-i18n="histoire.stat2_sub">En Allemagne, Belgique, Italie</span>
           </div>
         </div>
       </div>
 
       <!-- Texte suite -->
       <div class="text-muted text-sm leading-relaxed flex flex-col gap-4" >
-        <p>À Belfort, une section locale est créée. Rapidement ces actions se concrétisent par&nbsp;:</p>
+        <p data-i18n="histoire.feb_p1">À Belfort, une section locale est créée. Rapidement ces actions se concrétisent par&nbsp;:</p>
         <ul class="list-disc list-inside space-y-1.5 pl-2">
-          <li>La publication d'une brochure rétrospective sur BULL Belfort «&nbsp;La Saga&nbsp;».</li>
-          <li>Restauration à Belfort des premières machines historiques&nbsp;:
+          <li data-i18n="histoire.feb_li1">La publication d'une brochure rétrospective sur BULL Belfort «&nbsp;La Saga&nbsp;».</li>
+          <li><span data-i18n="histoire.feb_li2">Restauration à Belfort des premières machines historiques&nbsp;:</span>
             <ul class="list-disc list-inside pl-6 mt-1 space-y-1">
-              <li>Machine à statistiques de Fredrik Rosing BULL (1923)</li>
-              <li>Tabulatrice T&nbsp;30 (1932)</li>
+              <li data-i18n="histoire.feb_li2a">Machine à statistiques de Fredrik Rosing BULL (1923)</li>
+              <li data-i18n="histoire.feb_li2b">Tabulatrice T&nbsp;30 (1932)</li>
             </ul>
           </li>
         </ul>
-        <p>
+        <p data-i18n="histoire.feb_p2">
           Ces matériels, qui ont marqué l'entrée de BULL dans l'ère de la mécanographie et, par la suite, de l'informatique, seront présentés au public dès 1988. (Premier colloque sur l'Histoire de l'Informatique en France. Grenoble mai 1988) Dans les années 1990&nbsp;–&nbsp;1992, d'autres expositions suivront, couvertes de succès qui feront la réputation de la F.E.B.
         </p>
       </div>
@@ -87,16 +88,16 @@
           src="/assets/images/history-1.webp"
           alt="Atelier mécanographique Bull Belfort — machines à cartes perforées"
           class="w-full rounded-xl aspect-video object-cover shadow-md transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
-          onerror="this.onerror=null;this.style.display='none'">
-        <figcaption class="text-black/50 text-xs mt-2 italic text-center" >Atelier mécanographique à cartes perforées</figcaption>
+          loading="lazy" onerror="this.onerror=null;this.style.display='none'">
+        <figcaption class="text-black/50 text-xs mt-2 italic text-center" data-i18n="histoire.fig_atelier" >Atelier mécanographique à cartes perforées</figcaption>
       </figure>
       <figure>
         <img
           src="/assets/images/musee.webp"
           alt="Exposition permanente des machines informatiques"
           class="w-full rounded-xl aspect-video object-cover shadow-md transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
-          onerror="this.onerror=null;this.style.display='none'">
-        <figcaption class="text-black/50 text-xs mt-2 italic text-center" >Exposition permanente dans nos locaux</figcaption>
+          loading="lazy" onerror="this.onerror=null;this.style.display='none'">
+        <figcaption class="text-black/50 text-xs mt-2 italic text-center" data-i18n="histoire.fig_expo" >Exposition permanente dans nos locaux</figcaption>
       </figure>
     </div>
 
@@ -105,18 +106,18 @@
 
     <!-- Paragraphe 3 : 1992-1993 -->
     <div class="flex flex-col gap-6">
-      <h2 class="font-heading font-bold text-2xl text-gray-900 uppercase leading-snug">
+      <h2 class="font-heading font-bold text-2xl text-gray-900 uppercase leading-snug" data-i18n="histoire.verite_title">
         1992-1993<br>
         L'heure de la vérité pour la délégation F.E.B. de Belfort
       </h2>
       <div class="text-muted text-sm leading-relaxed flex flex-col gap-4" >
-        <p>
+        <p data-i18n="histoire.verite_p1">
           Après la disparition prématurée des pionniers, puis la fermeture de «&nbsp;BULL Périphériques&nbsp;», une équipe renouvelée, relève le défi. Ce nouveau départ est marqué par une importante exposition de deux semaines, dans un local historique de la ville de Belfort. Cette manifestation, qui a reçu le soutien des collectivités locales, de BULL et de ses filiales, de nos amis de la F.E.B. de Paris, a pu être appréciée par le public et le milieu enseignant en particulier, puisque près de 2000 élèves du primaire et secondaire ont participé à des visites organisées pour eux. (Belfort mars / avril 1993)
         </p>
-        <p>
+        <p data-i18n="histoire.verite_p2">
           Autre fait marquant de cette époque, nous sommes passés d'une restauration, jusqu'alors statique, à une restauration dynamique, pour être en mesure de faire des présentations des machines en fonctionnement. Autres ambitions, autres problèmes… Depuis, notre équipe de fidèles, motivée, soudée, compétente a poursuivi avec persévérance sa mission en restaurant de nombreuses machines à cartes perforées des années 1940&nbsp;/&nbsp;1950&nbsp;/&nbsp;1960.
         </p>
-        <p>
+        <p data-i18n="histoire.verite_p3">
           En 2012, Belfort fut contraint de quitter FEB et une nouvelle association autonome fut créée sous le nom de PATRIMOINE BELFORTAIN DE L'INDUSTRIE INFORMATIQUE (PB2I).<br>
           Ceci fut sans conséquences quant au rôle de PB2I, celui-ci restant identique à ce qu'était celui de la Délégation de FEB-FRANCHE COMTE.
         </p>
@@ -130,17 +131,17 @@
           src="/assets/images/Couverture La Sage de Bull Belfort.webp"
           alt="Couverture du livre La Saga de Bull à Belfort"
           class="w-full h-auto sm:h-full object-contain"
-          onerror="this.onerror=null;this.style.display='none'">
+          loading="lazy" onerror="this.onerror=null;this.style.display='none'">
       </div>
       <div class="flex flex-col gap-4 py-2">
         <div>
-          <p class="text-primary text-xs font-semibold uppercase tracking-widest mb-1" >Livre</p>
-          <h3 class="font-heading font-bold text-xl text-gray-900 uppercase">La saga de Bull à Belfort</h3>
-          <p class="text-muted text-sm mt-2 leading-relaxed" >
+          <p class="text-primary text-xs font-semibold uppercase tracking-widest mb-1" data-i18n="histoire.livre_label" >Livre</p>
+          <h3 class="font-heading font-bold text-xl text-gray-900 uppercase" data-i18n="histoire.livre_title">La saga de Bull à Belfort</h3>
+          <p class="text-muted text-sm mt-2 leading-relaxed" data-i18n="histoire.livre_desc" >
             Découvrez l'histoire complète de la présence de Bull à Belfort, des hommes et des machines qui ont façonné le patrimoine industriel informatique de notre région.
           </p>
         </div>
-        <a href="/assets/pdf/La%20saga%20de%20Bull%20%C3%A0%20Belfort.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary self-start mt-auto" id="btn-download-saga">
+        <a href="/assets/pdf/La%20saga%20de%20Bull%20%C3%A0%20Belfort.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary self-start mt-auto" id="btn-download-saga" data-i18n="histoire.livre_btn">
           Ouvrir le document PDF
         </a>
       </div>

@@ -2,74 +2,84 @@
   "articles": [
     {
       "id": "journee-patrimoine-2024",
-      "title": "Journées du patrimoine 2024",
-      "excerpt": "Le Musée Bull et de la Mécanographie ouvre ses portes pour les journées du patrimoine 2024.",
+      "title": "2024 European Heritage Days",
+      "excerpt": "The Bull and Punched-Card Data Processing Museum opens its doors for the 2024 European Heritage Days.",
       "date": "2024-09-21",
       "author": "PB2I",
-      "authorAvatar": "/assets/images/avatar-default.jpg",
       "thumbnail": "/assets/images/placeholder.svg",
       "content": [
-        "Le 21 Septembre 2024, journée du patrimoine 2024, le Musée Bull et de la Mécanographie ouvre ses portes le samedi 21 Septembre de 14h à 18h et le dimanche 22 Septembre de 10h à 12h et de 14h à 18h, 5 rue Jacqueline Auriol 90000 Belfort."
+        "For the 2024 European Heritage Days, the Bull and Punched-Card Data Processing Museum opens its doors on Saturday 21 September from 2 pm to 6 pm and on Sunday 22 September from 10 am to 12 noon and from 2 pm to 6 pm, at 5 rue Jacqueline Auriol, 90000 Belfort."
       ],
       "images": [],
-      "tags": ["Patrimoine", "Visite"]
+      "tags": [
+        "Heritage",
+        "Visit"
+      ]
     },
     {
       "id": "visite-iut-informatique-2024",
-      "title": "Visite des étudiants de l'IUT d'informatique",
-      "excerpt": "Le Musée accueille 75 élèves de l'IUT d'informatique de Belfort.",
+      "title": "Visit by students from the IUT computer science department",
+      "excerpt": "The Museum welcomes 75 students from the Belfort IUT computer science department.",
       "date": "2024-05-29",
       "author": "PB2I",
-      "authorAvatar": "/assets/images/avatar-default.jpg",
       "thumbnail": "/assets/images/placeholder.svg",
       "content": [
-        "Les 29 et 31 Mai 2024, le Musée accueille 75 élèves de l'IUT d'informatique de Belfort.",
-        "Ce sont 3 groupes d'élèves ingénieurs qui assisteront à la présentation de la naissance du traitement informatique des données via un atelier de Mécanographie (toujours en fonctionnement aujourd'hui)."
+        "On 29 and 31 May 2024, the Museum welcomes 75 students from the Belfort IUT computer science department.",
+        "Three groups of engineering students will attend a presentation on the birth of computerised data processing through a punched-card data processing workshop (still in working order today)."
       ],
       "images": [],
-      "tags": ["Étudiants", "Visite"]
+      "tags": [
+        "Students",
+        "Visit"
+      ]
     },
     {
       "id": "visite-benevoles-acs-2024",
-      "title": "Visite des bénévoles de l'ACS Paris",
-      "excerpt": "Le Musée accueille les bénévoles de l'ACS PARIS (Association nationale de retraités Bull).",
+      "title": "Visit by the ACS Paris volunteers",
+      "excerpt": "The Museum welcomes the volunteers of ACS PARIS (the national association of Bull retirees).",
       "date": "2024-05-24",
       "author": "PB2I",
-      "authorAvatar": "/assets/images/avatar-default.jpg",
       "thumbnail": "/assets/images/placeholder.svg",
       "content": [
-        "Le 24 mai 2024, le Musée accueille les bénévoles de l'ACS PARIS (Association nationale de retraités Bull)."
+        "On 24 May 2024, the Museum welcomes the volunteers of ACS PARIS (the national association of Bull retirees)."
       ],
       "images": [],
-      "tags": ["ACS", "Visite"]
+      "tags": [
+        "ACS",
+        "Visit"
+      ]
     },
     {
       "id": "visite-jura-suisse-2024",
-      "title": "Visite d'un groupe du canton du Jura",
-      "excerpt": "Un groupe du canton du Jura en Suisse visite le Musée.",
+      "title": "Visit by a group from the canton of Jura",
+      "excerpt": "A group from the canton of Jura in Switzerland visits the Museum.",
       "date": "2024-05-04",
       "author": "PB2I",
-      "authorAvatar": "/assets/images/avatar-default.jpg",
       "thumbnail": "/assets/images/placeholder.svg",
       "content": [
-        "Le 04 Mai 2024, un groupe du canton du Jura en Suisse visite le Musée. Les 25 participants apprécient la visite."
+        "On 4 May 2024, a group from the canton of Jura in Switzerland visits the Museum. The 25 participants enjoy their visit."
       ],
       "images": [],
-      "tags": ["Visite", "Jura"]
+      "tags": [
+        "Visit",
+        "Jura"
+      ]
     },
     {
       "id": "ag-acs-pb2i-2024",
-      "title": "AG de ACS et PB2I",
-      "excerpt": "Assemblée Générale de ACS et PB2I le 13 mars 2024.",
+      "title": "ACS and PB2I Annual General Meeting",
+      "excerpt": "Annual General Meeting of ACS and PB2I on 13 March 2024.",
       "date": "2024-03-13",
       "author": "PB2I",
-      "authorAvatar": "/assets/images/avatar-default.jpg",
       "thumbnail": "/assets/images/placeholder.svg",
       "content": [
-        "Le 13 Mars 2024 s'est tenue l'Assemblée Générale de l'ACS et de PB2I."
+        "The Annual General Meeting of ACS and PB2I was held on 13 March 2024."
       ],
       "images": [],
-      "tags": ["AG", "Association"]
+      "tags": [
+        "AGM",
+        "Association"
+      ]
     }
   ]
 }

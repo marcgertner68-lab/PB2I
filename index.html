@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-page="index">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,12 +10,12 @@
   <meta property="og:title" content="PB2I - Patrimoine Belfortain de l'Industrie Informatique" />
   <meta property="og:description" content="Patrimoine Belfortain de l'Industrie Informatique — Association dédiée à la préservation du patrimoine industriel informatique de Belfort." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://pb2i.fr/" />
-  <meta property="og:image" content="https://pb2i.fr/assets/og-image.webp" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:url" content="https://pb2i-belfort.fr/" />
+  <meta property="og:image" content="https://pb2i-belfort.fr/assets/og-image.webp" />
   <meta property="og:site_name" content="PB2I" />
+  <link rel="canonical" href="https://pb2i-belfort.fr/" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  <meta name="base-url" content="/PB2I/">
-  
   
   
   <script type="module" src="/src/pages/home.js"></script>
@@ -83,7 +83,7 @@
       </div>
       <div class="flex flex-col gap-8 items-center mt-6">
         <div class="w-full max-w-xl rounded-2xl overflow-hidden shadow-md">
-          <img src="/assets/images/history-1.webp" alt="Machines historiques" class="w-full object-cover h-64 lg:h-80" loading="lazy" onerror="this.src='/assets/images/placeholder.svg'">
+          <img src="/assets/images/history-1.webp" alt="Machines historiques" class="w-full object-cover h-64 lg:h-80" loading="lazy" onerror="this.src='assets/images/placeholder.svg'">
         </div>
         <a href="notre-histoire.html" class="btn-beige" data-i18n="history.cta">En savoir plus</a>
       </div>
@@ -115,7 +115,7 @@
         </div>
         <div class="flex justify-end">
           <a href="actualites.html" class="flex items-center gap-2 text-white font-semibold text-sm hover:opacity-85 transition-opacity">
-            <span>Lire plus</span>
+            <span data-i18n="ui.read_more">Lire plus</span>
             <svg class="w-5 h-5 fill-white" viewBox="0 0 20 20" aria-hidden="true">
               <path d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"/>
             </svg>
@@ -127,8 +127,7 @@
     <!-- ─── Section 5: Panorama Band ────────────────────────── -->
     <section id="panorama" class="px-0 py-8 bg-white">
       <div class="relative overflow-hidden w-full h-[320px] lg:h-[500px]" style="-webkit-mask-image: url('./assets/images/spacing-mask.svg'); -webkit-mask-size: 100% 100%; mask-image: url('./assets/images/spacing-mask.svg'); mask-size: 100% 100%;">
-        <img src="/assets/images/imprimantes.webp" alt="Vue panoramique" class="absolute inset-0 w-full h-full object-cover">
-        <img src="/assets/images/magnetographie.webp" alt="Vue panoramique overlay" class="absolute inset-0 w-full h-full object-cover mix-blend-normal">
+        <img src="/assets/images/magnetographie.webp" alt="Vue panoramique" data-i18n-alt="ui.panorama_alt" class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="900" height="664">
       </div>
     </section>
 
@@ -146,9 +145,9 @@
           <div class="flex-[0_0_85%] sm:flex-[0_0_calc(45%-12px)] lg:flex-[0_0_calc(28%-16px)] min-w-0 card-image-wrap">
             <a href="collections/mecanographie.html" class="card-carousel-item bg-beige block">
               <div class="card-polaroid-img-wrap">
-                <img src="/assets/images/mecanographie.webp" alt="" class="card-polaroid-img" onerror="this.onerror=null;this.src=(document.querySelector('meta[name=base-url]').content||'/')+'assets/images/musee.webp'">
+                <img src="/assets/images/mecanographie.webp" alt="" class="card-polaroid-img" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/musee.webp'">
               </div>
-              <p class="card-polaroid-caption font-semibold mt-2 text-center">Mécanographie</p>
+              <p class="card-polaroid-caption font-semibold mt-2 text-center" data-i18n="navbar.mecanographie">Mécanographie</p>
             </a>
           </div>
           
@@ -156,9 +155,9 @@
           <div class="flex-[0_0_85%] sm:flex-[0_0_calc(45%-12px)] lg:flex-[0_0_calc(28%-16px)] min-w-0 card-image-wrap">
             <a href="collections/imprimantes.html" class="card-carousel-item bg-beige block">
               <div class="card-polaroid-img-wrap">
-                <img src="/assets/images/imprimantes.webp" alt="" class="card-polaroid-img" onerror="this.onerror=null;this.src=(document.querySelector('meta[name=base-url]').content||'/')+'assets/images/musee.webp'">
+                <img src="/assets/images/imprimantes.webp" alt="" class="card-polaroid-img" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/musee.webp'">
               </div>
-              <p class="card-polaroid-caption font-semibold mt-2 text-center">Imprimantes</p>
+              <p class="card-polaroid-caption font-semibold mt-2 text-center" data-i18n="navbar.imprimantes">Imprimantes</p>
             </a>
           </div>
 
@@ -166,9 +165,9 @@
           <div class="flex-[0_0_85%] sm:flex-[0_0_calc(45%-12px)] lg:flex-[0_0_calc(28%-16px)] min-w-0 card-image-wrap">
             <a href="collections/magnetographie.html" class="card-carousel-item bg-beige block">
               <div class="card-polaroid-img-wrap">
-                <img src="/assets/images/magnetographie.webp" alt="" class="card-polaroid-img" onerror="this.onerror=null;this.src=(document.querySelector('meta[name=base-url]').content||'/')+'assets/images/musee.webp'">
+                <img src="/assets/images/magnetographie.webp" alt="" class="card-polaroid-img" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/musee.webp'">
               </div>
-              <p class="card-polaroid-caption font-semibold mt-2 text-center">Magnétographie</p>
+              <p class="card-polaroid-caption font-semibold mt-2 text-center" data-i18n="navbar.magnetographie">Magnétographie</p>
             </a>
           </div>
 
@@ -176,9 +175,9 @@
           <div class="flex-[0_0_85%] sm:flex-[0_0_calc(45%-12px)] lg:flex-[0_0_calc(28%-16px)] min-w-0 card-image-wrap">
             <a href="collections/musee.html" class="card-carousel-item bg-beige block">
               <div class="card-polaroid-img-wrap">
-                <img src="/assets/images/musee.webp" alt="" class="card-polaroid-img" onerror="this.onerror=null;this.src=(document.querySelector('meta[name=base-url]').content||'/')+'assets/images/musee.webp'">
+                <img src="/assets/images/musee.webp" alt="" class="card-polaroid-img" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/musee.webp'">
               </div>
-              <p class="card-polaroid-caption font-semibold mt-2 text-center">Musée PB2I</p>
+              <p class="card-polaroid-caption font-semibold mt-2 text-center" data-i18n="collections.musee_caption">Musée PB2I</p>
             </a>
           </div>
           
@@ -203,7 +202,7 @@
         </h2>
         <div class="text-muted text-sm leading-loose flex flex-col gap-6" >
           <div>
-            <p class="font-bold text-gray-900 mb-2">Adresse :</p>
+            <p class="font-bold text-gray-900 mb-2" data-i18n="contact.addr_label">Adresse :</p>
             <p>
               ASSOCIATION PB2I<br>
               <strong>Techn’hom 2 – Bâtiment 9</strong><br>
@@ -211,12 +210,12 @@
             </p>
           </div>
           <div>
-            <p class="font-bold text-gray-900 mb-2">Permanences :</p>
-            <p>Mardi et jeudi matin de 9 h à 12 h. (Hors juillet / août)</p>
+            <p class="font-bold text-gray-900 mb-2" data-i18n="contact.hours_label">Permanences :</p>
+            <p data-i18n="contact.hours">Mardi et jeudi matin de 9 h à 12 h. (Hors juillet / août)</p>
           </div>
           <div>
-            <p class="font-bold text-gray-900 mb-2">Pour s’y rendre :</p>
-            <p>Passer par l’avenue du Maréchal Juin<br>
+            <p class="font-bold text-gray-900 mb-2" data-i18n="contact.access_label">Pour s’y rendre :</p>
+            <p data-i18n="contact.access">Passer par l’avenue du Maréchal Juin<br>
             Entrer dans le parking indiqué :<br>
             GENERAL ELECTRIC – PARKING DU PERSONNEL</p>
           </div>

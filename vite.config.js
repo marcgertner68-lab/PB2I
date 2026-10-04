@@ -2,8 +2,9 @@ import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 import { resolve } from 'path'
 
-export default defineConfig(({ command }) => ({
-  base: command === 'build' ? '/PB2I/' : '/',
+export default defineConfig(() => ({
+  // Domaine dédié pb2i-belfort.fr : le site est servi à la racine.
+  base: '/',
   plugins: [
     tailwindcss(),
   ],

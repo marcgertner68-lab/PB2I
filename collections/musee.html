@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-page="musee">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,9 +10,11 @@
   <meta property="og:title" content="Musée — Collections PB2I" />
   <meta property="og:description" content="Musée PB2I — Présentation statique et dynamique des machines mécanographiques de notre collection." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://pb2i.fr/" />
-  <meta property="og:image" content="https://pb2i.fr/assets/og-image.webp" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:url" content="https://pb2i-belfort.fr/collections/musee.html" />
+  <meta property="og:image" content="https://pb2i-belfort.fr/assets/og-image.webp" />
   <meta property="og:site_name" content="PB2I" />
+  <link rel="canonical" href="https://pb2i-belfort.fr/collections/musee.html" />
 
 
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -24,20 +26,20 @@
 
   <!-- Header -->
   <div class="border-primary/10 px-4 lg:px-36 py-12 text-center border-b" >
-    <p class="text-xs font-semibold uppercase tracking-widest mb-3 text-black">Nos collections</p>
-    <h1 class="page-title">Musée</h1>
+    <p class="text-xs font-semibold uppercase tracking-widest mb-3 text-black" data-i18n="museePage.eyebrow">Nos collections</p>
+    <h1 class="page-title" data-i18n="museePage.title">Musée</h1>
   </div>
 
   <!-- Intro -->
   <div class="px-4 lg:px-36 pt-10 pb-6">
-    <p class="text-muted text-sm leading-relaxed" >
+    <p class="text-muted text-sm leading-relaxed" data-i18n="museePage.intro">
       Présentation statique ou dynamique des machines qui font la fierté de notre musée
     </p>
   </div>
 
   <!-- Machines grid -->
   <section class="px-4 lg:px-36 pb-12">
-    <h2 class="section-title mb-8">Machines présentées</h2>
+    <h2 class="section-title mb-8" data-i18n="museePage.machines_title">Machines présentées</h2>
 
     <div id="machines-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
       <!-- Machines injected by JS -->
