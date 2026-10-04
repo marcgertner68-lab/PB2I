@@ -7,7 +7,7 @@ import { getActiveLang } from './lang.js'
 import { fetchJSON } from './api.js'
 // Bundled so the UI never shows raw keys ("navbar.histoire") while ui.json is
 // still on its way — or if it never arrives on a poor connection.
-import frDefaults from '../../public/data/fr/ui.json'
+import frDefaults from 'virtual:pb2i-fr-ui-defaults'
 
 let translations = {}
 

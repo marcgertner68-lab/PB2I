@@ -11,10 +11,15 @@
       "content": [
         "Les Journées du Patrimoine  ont encore cette année remporté un franc succès. Environ 140 personnes reçues en 2 jours ! Le Partenariat avec ‘Fil en Fibre’ a permis aussi aux jeunes visiteurs d’apprendre qu’un téléphone avait pendant longtemps un fil et un cadran …",
         "Les échanges avec les visiteurs ont complété l’agenda des visites programmées en Octobre qui est déjà bien chargé avec des visites régulières de groupes en provenance de l’UTBM, ce qui nous rend optimiste pour atteindre voir dépasser le record de fréquentation sur l’année 2026.",
-        "Quelques photos de cet évènement:"
+        "Quelques photos de cet évènement:",
+        {
+          "type": "image",
+          "src": "/assets/images/2026/10/IMG-20260919-WA0014.webp",
+          "caption": "La salle des fibrés, mise en place avec l’association Fil en Fibre.",
+          "size": "wide"
+        }
       ],
       "images": [
-        "/assets/images/2026/10/IMG-20260919-WA0014.webp",
         "/assets/images/2026/10/IMG-20260919-WA0033.webp",
         "/assets/images/2026/10/IMG-20260919-WA0030.webp",
         "/assets/images/2026/10/IMG-20260919-WA0043.webp",

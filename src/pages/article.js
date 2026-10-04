@@ -2,6 +2,7 @@
  * PB2I — Article detail JS
  */
 import { mountComponents, refreshNavbar, initFadeIn, createArticleCard, formatArticleDate, initCarousel, renderLoadError } from '../components.js'
+import { renderArticleContent, renderArticleGallery } from '../components/articleBody.js'
 import { fetchArticles, prefetch } from '../utils/api.js'
 import { initI18n, translateDOM, t } from '../utils/i18n.js'
 
@@ -58,22 +59,17 @@ async function loadArticle() {
       </h1>
     `
 
-    // Render body with a elegant, non-invasive layout (floating/sidebar image)
+    // Render body: `content` holds ordered blocks (paragraphs and inline images),
+    // then the gallery catches the images that were not placed in the text.
+    const { html: contentHtml, usedImages } = renderArticleContent(article.content, { baseUrl, title: article.title })
+
     body.innerHTML = `
       <div class="flex flex-col lg:flex-row gap-10 items-start">
         <!-- Article Text content -->
         <div class="flex-1">
-          ${article.content.map(p => `<p class="text-muted text-base leading-loose mb-6" >${p}</p>`).join('')}
-          
-          ${article.images && article.images.length > 0 ? `
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
-              ${article.images.map(img => `
-                <figure class="rounded-xl overflow-hidden shadow-sm border border-black/5 hover:shadow-md transition-shadow">
-                  <img src="${img}" alt="${article.title}" class="w-full h-40 object-cover cursor-pointer" onerror="this.style.display='none'" onclick="window.open(this.src, '_blank')">
-                </figure>
-              `).join('')}
-            </div>
-          ` : ''}
+          ${contentHtml}
+
+          ${renderArticleGallery(article.images, usedImages)}
 
           ${article.attachments && article.attachments.length > 0 ? `
             <div class="mt-8 pt-6 border-t border-black/5">

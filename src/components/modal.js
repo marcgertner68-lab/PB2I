@@ -2,6 +2,8 @@
  * PB2I — Modal helpers (shared across pages)
  */
 
+import { parseInlineMarkdown } from '../utils/markdown.js'
+
 let _openModals = [];
 
 export function openModal(overlayEl) {
@@ -38,20 +40,6 @@ export function bindMachineModal(baseUrl = '/') {
   const closeBtn   = document.getElementById('modal-close');
 
   if (!overlay) return { openMachineModal: () => {} };
-
-  function parseInlineMarkdown(text) {
-    if (!text) return '';
-    return text
-      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-      .replace(/__(.*?)__/g, '<strong>$1</strong>')
-      .replace(/\*(.*?)\*/g, '<em>$1</em>')
-      .replace(/_(.*?)_/g, '<em>$1</em>')
-      .replace(/\[(.*?)\]\((.*?)\)/g, (match, linkText, url) => {
-        const isExternal = url.startsWith('http') || url.startsWith('//');
-        const target = isExternal ? ' target="_blank" rel="noopener noreferrer"' : '';
-        return `<a href="${url}"${target} class="text-primary underline font-bold hover:text-primary-light transition-colors">${linkText}</a>`;
-      });
-  }
 
   // Format description text supporting list items and inline images
   function formatDescription(rawDesc) {
