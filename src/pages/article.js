@@ -51,6 +51,16 @@ async function loadArticle() {
         <!-- Article Text content -->
         <div class="flex-1">
           ${article.content.map(p => `<p class="text-muted text-base leading-loose mb-6" >${p}</p>`).join('')}
+          
+          ${article.images && article.images.length > 0 ? `
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+              ${article.images.map(img => `
+                <figure class="rounded-xl overflow-hidden shadow-sm border border-black/5 hover:shadow-md transition-shadow">
+                  <img src="${img}" alt="${article.title}" class="w-full h-40 object-cover cursor-pointer" onerror="this.style.display='none'" onclick="window.open(this.src, '_blank')">
+                </figure>
+              `).join('')}
+            </div>
+          ` : ''}
         </div>
 
         <!-- Sidebar Image container -->

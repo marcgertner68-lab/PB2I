@@ -1,6 +1,39 @@
 {
   "articles": [
     {
+      "id": "journes-patrimoine-2026",
+      "title": "Journées du Patrimoine 2026",
+      "excerpt": "Environ 140 visiteurs reçus pour cette nouvelle édition",
+      "date": "2026-09-20",
+      "author": "PB2I",
+      "authorAvatar": "/assets/og-image.webp",
+      "thumbnail": "/assets/og-image.webp",
+      "content": [
+        "Les Journées du Patrimoine  ont encore cette année remporté un franc succès. Environ 140 personnes reçues en 2 jours ! Le Partenariat avec ‘Fil en Fibre’ a permis aussi aux jeunes visiteurs d’apprendre qu’un téléphone avait pendant longtemps un fil et un cadran …",
+        "Les échanges avec les visiteurs ont complété l’agenda des visites programmées en Octobre qui est déjà bien chargé avec des visites régulières de groupes en provenance de l’UTBM, ce qui nous rend optimiste pour atteindre voir dépasser le record de fréquentation sur l’année 2026.",
+        "Quelques photos de cet évènement:"
+      ],
+      "images": [
+        "/assets/images/2026/10/IMG-20260919-WA0014.webp",
+        "/assets/images/2026/10/IMG-20260919-WA0033.webp",
+        "/assets/images/2026/10/IMG-20260919-WA0030.webp",
+        "/assets/images/2026/10/IMG-20260919-WA0043.webp",
+        "/assets/images/2026/10/IMG-20260919-WA0038.webp",
+        "/assets/images/2026/10/IMG-20260919-WA0024.webp",
+        "/assets/images/2026/10/IMG-20260919-WA0026.webp",
+        "/assets/images/2026/10/IMG-20260919-WA0021.webp",
+        "/assets/images/2026/10/IMG-20260919-WA0032.webp"
+      ],
+      "tags": [
+        "Nouveau",
+        "Exposition",
+        "Visite",
+        "Patrimoine",
+        "2026",
+        "Fil en Fibre"
+      ]
+    },
+    {
       "id": "journee-patrimoine-2024",
       "title": "Journées du patrimoine 2024",
       "excerpt": "Le Musée Bull et de la Mécanographie ouvre ses portes pour les journées du patrimoine 2024.",
@@ -12,7 +45,10 @@
         "Le 21 Septembre 2024, journée du patrimoine 2024, le Musée Bull et de la Mécanographie ouvre ses portes le samedi 21 Septembre de 14h à 18h et le dimanche 22 Septembre de 10h à 12h et de 14h à 18h, 5 rue Jacqueline Auriol 90000 Belfort."
       ],
       "images": [],
-      "tags": ["Patrimoine", "Visite"]
+      "tags": [
+        "Patrimoine",
+        "Visite"
+      ]
     },
     {
       "id": "visite-iut-informatique-2024",
@@ -27,7 +63,10 @@
         "Ce sont 3 groupes d'élèves ingénieurs qui assisteront à la présentation de la naissance du traitement informatique des données via un atelier de Mécanographie (toujours en fonctionnement aujourd'hui)."
       ],
       "images": [],
-      "tags": ["Étudiants", "Visite"]
+      "tags": [
+        "Étudiants",
+        "Visite"
+      ]
     },
     {
       "id": "visite-benevoles-acs-2024",
@@ -41,7 +80,10 @@
         "Le 24 mai 2024, le Musée accueille les bénévoles de l'ACS PARIS (Association nationale de retraités Bull)."
       ],
       "images": [],
-      "tags": ["ACS", "Visite"]
+      "tags": [
+        "ACS",
+        "Visite"
+      ]
     },
     {
       "id": "visite-jura-suisse-2024",
@@ -55,7 +97,10 @@
         "Le 04 Mai 2024, un groupe du canton du Jura en Suisse visite le Musée. Les 25 participants apprécient la visite."
       ],
       "images": [],
-      "tags": ["Visite", "Jura"]
+      "tags": [
+        "Visite",
+        "Jura"
+      ]
     },
     {
       "id": "ag-acs-pb2i-2024",
@@ -69,7 +114,10 @@
         "Le 13 Mars 2024 s'est tenue l'Assemblée Générale de l'ACS et de PB2I."
       ],
       "images": [],
-      "tags": ["AG", "Association"]
+      "tags": [
+        "AG",
+        "Association"
+      ]
     }
   ]
 }
