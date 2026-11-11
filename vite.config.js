@@ -47,7 +47,7 @@ export default defineConfig(() => ({
         contact:       resolve(import.meta.dirname, 'contact.html'),
         mentionsLegales:resolve(import.meta.dirname, 'mentions-legales.html'),
         mecanographie: resolve(import.meta.dirname, 'collections/mecanographie.html'),
-        imprimantes:   resolve(import.meta.dirname, 'collections/imprimantes.html'),
+        impressions:   resolve(import.meta.dirname, 'collections/impressions.html'),
         magnetographie:resolve(import.meta.dirname, 'collections/magnetographie.html'),
         musee:         resolve(import.meta.dirname, 'collections/musee.html'),
       }

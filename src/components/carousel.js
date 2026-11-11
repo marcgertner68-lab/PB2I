@@ -32,7 +32,7 @@ export function initCarousel({
     }
     dotsContainer.innerHTML = Array.from({ length: count }, (_, i) =>
       `<button class="carousel-dot w-2 h-2 rounded-full transition-all duration-200 cursor-pointer"
-        style="background:${i === current ? 'var(--color-primary)' : 'rgba(112,36,36,0.25)'};transform:${i === current ? 'scale(1.3)' : 'scale(1)'}"
+        style="background:${i === current ? 'var(--color-primary)' : 'var(--color-primary-muted)'};transform:${i === current ? 'scale(1.3)' : 'scale(1)'}"
         aria-label="Slide ${i + 1}"></button>`
     ).join('')
     dotsContainer.querySelectorAll('.carousel-dot').forEach((d, i) =>
@@ -43,7 +43,7 @@ export function initCarousel({
   function updateDots() {
     const allDots = dotsContainer?.querySelectorAll('.carousel-dot')
     allDots?.forEach((d, i) => {
-      d.style.background = i === current ? 'var(--color-primary)' : 'rgba(112,36,36,0.25)'
+      d.style.background = i === current ? 'var(--color-primary)' : 'var(--color-primary-muted)'
       d.style.transform  = i === current ? 'scale(1.3)' : 'scale(1)'
     })
   }

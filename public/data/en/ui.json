@@ -1,15 +1,16 @@
 {
   "navbar": {
     "histoire": "Our History",
-    "missions": "Our Missions",
     "association": "The Association",
+    "missions": "Our Missions",
     "actualites": "News",
-    "contact": "Contact",
-    "collections": "Our Collections",
+    "technologies": "Technologies",
     "mecanographie": "Mechanical DP",
-    "imprimantes": "Printers",
+    "imprimantes": "Printing",
     "magnetographie": "Magnetography",
-    "musee": "Museum",
+    "collections": "Our Collections",
+    "musee": "Our Collections",
+    "contact": "Contact",
     "skip_link": "Skip to main content",
     "home": "Home",
     "aria_nav": "Main navigation",
@@ -22,7 +23,18 @@
     "legal_heading": "Legal Notice",
     "legal": "Legal Notice",
     "privacy": "Privacy Policy",
+    "contact_heading": "Contact",
     "follow": "Follow Us"
+  },
+  "stats": {
+    "stat1_num": "+500",
+    "stat1_label": "Annual visitors",
+    "stat2_num": "70+",
+    "stat2_label": "Years of history",
+    "stat3_num": "30+",
+    "stat3_label": "Unique machines",
+    "stat4_num": "100%",
+    "stat4_label": "Volunteers"
   },
   "association": {
     "title": "The PB2I Association",
@@ -256,8 +268,8 @@
     "tech_title": "The technologies of a typical magnetographic print engine"
   },
   "museePage": {
-    "eyebrow": "Our collections",
-    "title": "Museum",
+    "eyebrow": "PB2I",
+    "title": "Our Collections",
     "intro": "A static or working presentation of the machines that are the pride of our museum",
     "machines_title": "Machines on display"
   },

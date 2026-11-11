@@ -64,25 +64,25 @@ async function loadArticle() {
     const { html: contentHtml, usedImages } = renderArticleContent(article.content, { baseUrl, title: article.title })
 
     body.innerHTML = `
-      <div class="flex flex-col lg:flex-row gap-10 items-start">
+      <div class="max-w-3xl mx-auto">
         <!-- Article Text content -->
-        <div class="flex-1">
+        <div>
           ${contentHtml}
 
           ${renderArticleGallery(article.images, usedImages)}
 
           ${article.attachments && article.attachments.length > 0 ? `
             <div class="mt-8 pt-6 border-t border-black/5">
-              <h3 class="text-lg font-bold font-heading text-primary mb-4">Liens & Documents utiles</h3>
+              <h3 class="text-lg font-bold font-heading text-[var(--color-primary-text)] mb-4">Liens & Documents utiles</h3>
               <div class="flex flex-col gap-3">
                 ${article.attachments.map(att => `
                   <a href="${att.url}" target="_blank" class="flex items-center gap-3 p-4 rounded-xl border border-black/5 bg-warm-bg hover:bg-white hover:shadow-md transition-all group">
-                    <div class="bg-primary/10 text-primary w-10 h-10 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
+                    <div class="bg-primary/10 text-[var(--color-primary-text)] w-10 h-10 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>
                       </svg>
                     </div>
-                    <span class="text-sm font-semibold text-body group-hover:text-primary transition-colors">${att.label}</span>
+                    <span class="text-sm font-semibold text-body group-hover:text-[var(--color-primary-text)] transition-colors">${att.label}</span>
                   </a>
                 `).join('')}
               </div>
@@ -90,15 +90,6 @@ async function loadArticle() {
           ` : ''}
         </div>
 
-        <!-- Sidebar Image container -->
-        <div class="w-full lg:w-80 flex-shrink-0">
-          <figure class="bg-warm-bg p-3 rounded-2xl border shadow-sm" style="border-color:rgba(0,0,0,0.06)">
-            <img src="${baseUrl}${article.thumbnail.replace(/^\//, '')}" alt="${article.title}"
-              class="w-full h-auto rounded-xl object-cover max-h-60"
-              onerror="this.src='${baseUrl}assets/images/placeholder.svg'">
-            <figcaption class="text-center text-xs text-black/50 italic mt-2">${article.title}</figcaption>
-          </figure>
-        </div>
       </div>
 
       <!-- Author -->
@@ -106,7 +97,7 @@ async function loadArticle() {
         <div class="bg-primary w-12 h-12 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0"
           >${article.author.split(' ').map(n=>n[0]).join('').slice(0,2)}</div>
         <div>
-          <p class="text-primary text-sm font-semibold" >${article.author}</p>
+          <p class="text-[var(--color-primary-text)] text-sm font-semibold" >${article.author}</p>
           <p class="text-black/50 text-xs" >${formatArticleDate(article.date, lang)}</p>
         </div>
       </div>
@@ -135,7 +126,7 @@ async function loadArticle() {
 
   } catch (err) {
     if (err?.notFound) {
-      if (header) header.innerHTML = `<h1 class="page-title text-primary">${t('ui.article_not_found_title', 'Article introuvable')}</h1>`
+      if (header) header.innerHTML = `<h1 class="page-title text-[var(--color-primary-text)]">${t('ui.article_not_found_title', 'Article introuvable')}</h1>`
       if (body)   body.innerHTML   = `<p class="text-muted">${t('ui.article_not_found', "Cet article n'existe pas ou a été supprimé.")}</p>`
       return
     }

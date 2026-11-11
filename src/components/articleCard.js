@@ -35,16 +35,15 @@ export function createArticleCard(article, index, baseUrl, lang = 'fr') {
         <p class="text-sm leading-relaxed flex-1" style="color:var(--color-muted);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden">
           ${article.excerpt}
         </p>
-        <div class="border-primary/10 flex items-center justify-between pt-3 border-t" >
+        <div class="border-primary/10 flex items-center justify-between pt-3 border-t">
           <div class="flex items-center gap-2">
-            <div class="bg-primary w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold"
-              >${authorInitials}</div>
+            <div class="bg-primary w-8 h-8 rounded-full flex items-center justify-center text-body text-xs font-bold">${authorInitials}</div>
             <div>
-              <p class="text-primary text-xs font-semibold" >${article.author}</p>
-              <p class="text-black/50 text-xs" >${formatArticleDate(article.date, lang)}</p>
+              <p class="text-[var(--color-primary-text)] text-xs font-bold">${article.author}</p>
+              <p class="text-black/50 text-xs">${formatArticleDate(article.date, lang)}</p>
             </div>
           </div>
-          <span class="bg-primary text-xs font-semibold px-3 py-1.5 rounded-lg text-white" >
+          <span class="bg-primary text-xs font-semibold px-3 py-1.5 rounded-lg text-body">
             ${t('ui.read_article', "Lire l'article")}
           </span>
         </div>

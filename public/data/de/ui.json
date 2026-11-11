@@ -1,15 +1,16 @@
 {
   "navbar": {
     "histoire": "Unsere Geschichte",
-    "missions": "Unsere Missionen",
     "association": "Der Verein",
+    "missions": "Unsere Missionen",
     "actualites": "Aktuelles",
-    "contact": "Kontakt",
-    "collections": "Unsere Sammlungen",
+    "technologies": "Technologien",
     "mecanographie": "Mechanographie",
-    "imprimantes": "Drucker",
+    "imprimantes": "Druck",
     "magnetographie": "Magnetographie",
-    "musee": "Museum",
+    "collections": "Unsere Sammlungen",
+    "musee": "Unsere Sammlungen",
+    "contact": "Kontakt",
     "skip_link": "Zum Hauptinhalt springen",
     "home": "Startseite",
     "aria_nav": "Hauptnavigation",
@@ -22,7 +23,18 @@
     "legal_heading": "Rechtliches",
     "legal": "Impressum",
     "privacy": "Datenschutz",
+    "contact_heading": "Kontakt",
     "follow": "Folgen Sie uns"
+  },
+  "stats": {
+    "stat1_num": "+500",
+    "stat1_label": "Besucher pro Jahr",
+    "stat2_num": "70+",
+    "stat2_label": "Jahre Geschichte",
+    "stat3_num": "30+",
+    "stat3_label": "Einzigartige Maschinen",
+    "stat4_num": "100%",
+    "stat4_label": "Ehrenamtliche"
   },
   "association": {
     "title": "Der Verein PB2I",
@@ -256,8 +268,8 @@
     "tech_title": "Die Technologien eines typischen Magnetografie-Druckwerks"
   },
   "museePage": {
-    "eyebrow": "Unsere Sammlungen",
-    "title": "Museum",
+    "eyebrow": "PB2I",
+    "title": "Unsere Sammlungen",
     "intro": "Statische oder betriebsfähige Präsentation der Maschinen, die der Stolz unseres Museums sind",
     "machines_title": "Ausgestellte Maschinen"
   },

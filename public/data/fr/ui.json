@@ -1,20 +1,27 @@
 {
   "navbar": {
     "histoire": "Notre histoire",
-    "missions": "Nos missions",
     "association": "L'association",
+    "missions": "Nos missions",
     "actualites": "Actualités",
-    "contact": "Contact",
-    "collections": "Nos collections",
+    "technologies": "Technologies",
     "mecanographie": "Mécanographie",
-    "imprimantes": "Imprimantes",
+    "imprimantes": "Impressions",
     "magnetographie": "Magnétographie",
-    "musee": "Musée",
+    "collections": "Nos collections",
+    "musee": "Nos collections",
+    "contact": "Contact",
     "skip_link": "Aller au contenu principal",
     "home": "Accueil",
     "aria_nav": "Navigation principale",
     "aria_menu": "Menu",
     "logo_alt": "Logo PB2I — Lion de Belfort"
+  },
+  "museePage": {
+    "eyebrow": "PB2I",
+    "title": "Nos collections",
+    "intro": "Présentation statique ou dynamique des machines qui font la fierté de notre musée",
+    "machines_title": "Machines présentées"
   },
   "footer": {
     "title": "Patrimoine Belfortain de l'Industrie Informatique",
@@ -22,6 +29,7 @@
     "legal_heading": "Mentions légales",
     "legal": "Mentions légales",
     "privacy": "Confidentialité",
+    "contact_heading": "Contact",
     "follow": "Suivez-nous"
   },
   "ui": {
@@ -43,5 +51,15 @@
     "loading": "Chargement…",
     "offline": "Vous êtes hors ligne. Le contenu se chargera au retour de la connexion.",
     "article_not_found_title": "Article introuvable"
+  },
+  "stats": {
+    "stat1_num": "+500",
+    "stat1_label": "Visiteurs par an",
+    "stat2_num": "70+",
+    "stat2_label": "Ans d'histoire",
+    "stat3_num": "30+",
+    "stat3_label": "Machines uniques",
+    "stat4_num": "100%",
+    "stat4_label": "Bénévoles"
   }
 }

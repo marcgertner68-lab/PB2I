@@ -19,6 +19,6 @@ export function parseInlineMarkdown(text) {
     .replace(/(^|[^!])\[(.*?)\]\((.*?)\)/g, (match, lead, linkText, url) => {
       const isExternal = url.startsWith('http') || url.startsWith('//');
       const target = isExternal ? ' target="_blank" rel="noopener noreferrer"' : '';
-      return `${lead}<a href="${url}"${target} class="text-primary underline font-bold hover:text-primary-light transition-colors">${linkText}</a>`;
+      return `${lead}<a href="${url}"${target} class="text-[var(--color-primary-text)] underline font-bold hover:opacity-80 transition-colors">${linkText}</a>`;
     });
 }

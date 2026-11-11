@@ -1,0 +1,29 @@
+# PB2I — Patrimoine Belfortain de l'Industrie Informatique
+
+> Association et musée dédiés à la préservation, à la restauration dynamique et à la transmission du patrimoine industriel informatique et mécanographique de Bull à Belfort.
+
+## Informations pratiques & Localisation
+- **Nom** : PB2I (Patrimoine Belfortain de l'Industrie Informatique)
+- **Adresse** : Techn'hom 2 – Bâtiment 9, 5 rue Jacqueline Auriol, 90000 Belfort, France
+- **Coordonnées GPS** : 47.6327, 6.8517
+- **Téléphone** : +33 3 84 21 26 98
+- **Email** : pb2i.belfort@gmail.com
+- **Site web** : https://pb2i-belfort.fr/
+
+## Pages principales
+- **Accueil** : https://pb2i-belfort.fr/
+- **Notre histoire (La saga de Bull à Belfort)** : https://pb2i-belfort.fr/notre-histoire.html
+- **L'association** : https://pb2i-belfort.fr/association.html
+- **Nos missions** : https://pb2i-belfort.fr/nos-missions.html
+- **Actualités** : https://pb2i-belfort.fr/actualites.html
+- **Nos collections (Musée)** : https://pb2i-belfort.fr/collections/musee.html
+- **Contact & Visites** : https://pb2i-belfort.fr/contact.html
+
+## Technologies & Savoir-faire historiques présentés
+- **Mécanographie à cartes perforées** (https://pb2i-belfort.fr/collections/mecanographie.html) : Atelier des années 1950 restauré en fonctionnement (code Bull AN7 sur 80 colonnes, perforatrices, vérificatrices, trieuses, interclasseuses, tabulatrices).
+- **Impressions — Impact & Sans-Impact** (https://pb2i-belfort.fr/collections/impressions.html) : Imprimantes à impact sur tambour rotatif (Série 300TI, Gamma 60, I51, H1200) et à bande métallique souple à doigts flexibles (PR71 à 1600 lpm, PR46, PR54), jusqu'à l'épopée des imprimantes sans impact (NIP) et presses industrielles VaryPress / Nipson.
+- **Magnétographie** (https://pb2i-belfort.fr/collections/magnetographie.html) : Technologie développée par Bull Périphériques à Belfort dès les années 1970 (image latente magnétique sur tambour, cycle en 6 étapes : écriture, encrage au toner magnétique, transfert, nettoyage, effacement, fixation).
+
+## Langues disponibles
+- Français (`/index.html`), Anglais (`?lang=en`), Allemand (`?lang=de`)
+- Réalisation web : Florian Gertner Kilian (https://wizyx.me)

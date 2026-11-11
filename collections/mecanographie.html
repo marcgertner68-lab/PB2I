@@ -17,6 +17,12 @@
   <meta property="og:image" content="https://pb2i-belfort.fr/assets/og-image.webp" />
   <meta property="og:site_name" content="PB2I" />
   <link rel="canonical" href="https://pb2i-belfort.fr/collections/mecanographie.html" />
+    <meta name="robots" content="index, follow" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="author" content="Florian Gertner Kilian — https://wizyx.me" />
+  <meta name="creator" content="Florian Gertner Kilian (Wizyx)" />
+  <link rel="author" href="https://wizyx.me" />
+  <link rel="me" href="https://linkedin.com/in/flogk/" />
 
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <script type="module" src="/src/pages/collections/mecanographie.js"></script>
@@ -28,7 +34,7 @@
     <!-- Header -->
     <div class="px-4 lg:px-36 py-12 text-center border-b border-transparent">
       <p class="text-xs font-semibold uppercase tracking-widest mb-3 text-black" data-i18n="mecano.eyebrow">Nos collections</p>
-      <h1 class="page-title text-primary uppercase" data-i18n="mecano.title">Mécanographie</h1>
+      <h1 class="page-title" data-i18n="mecano.title">Mécanographie</h1>
     </div>
 
     <!-- Main Content -->
@@ -100,7 +106,7 @@
 
           <div class="my-8">
             <img src="/assets/images/mecanographie.webp" alt="Atelier mécanographique"
-              class="w-full h-auto object-cover grayscale" loading="lazy"
+              class="w-full h-auto object-cover grayscale" loading="lazy" decoding="async"
               onerror="this.onerror=null; this.src='../assets/images/musee.webp'">
           </div>
 
@@ -125,23 +131,74 @@
         </div>
       </div>
 
-      <!-- FONCTIONNEMENT DE LA MÉCANOGRAPHIE -->
+      <!-- FONCTIONNEMENT DE LA MÉCANOGRAPHIE (TABS) -->
       <div class="flex flex-col gap-8">
         <h2 class="font-heading font-bold text-2xl text-gray-900 uppercase" data-i18n="mecano.operation_title">Fonctionnement de la mécanographie</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
-          <button class="card-machine h-full">
-            <img src="/assets/collections/mecanographie/carte_perforee.webp" alt="La carte perforée"
-              class="w-full h-24 object-contain mx-auto mb-4" loading="lazy"
-              onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Punched_card_abstraction.png/640px-Punched_card_abstraction.png'">
-            <p class="font-heading font-bold text-sm" data-i18n="mecano.card_punched_card">La carte perforée</p>
-          </button>
-          <button class="card-machine h-full">
-            <img src="/assets/collections/mecanographie/fichier_cartes.webp" alt="Le fichier à cartes perforées"
-              class="w-full h-24 object-contain mx-auto mb-4" loading="lazy"
-              onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Punch_card_reader_IBM.jpg/640px-Punch_card_reader_IBM.jpg'">
-            <p class="font-heading font-bold text-sm" data-i18n="mecano.card_card_file">Le fichier à cartes perforées</p>
-          </button>
+
+        <!-- TABS -->
+        <div class="flex border-b border-gray-200 mb-2" role="tablist" aria-label="Fonctionnement de la mécanographie">
+          <button id="tab-carte" role="tab" aria-selected="true" aria-controls="content-carte" class="px-6 py-3 font-bold text-[#205c56] border-b-2 border-[#79C0B8] transition-colors bg-white cursor-pointer" onclick="switchTab('carte')">La carte perforée</button>
+          <button id="tab-fichier" role="tab" aria-selected="false" aria-controls="content-fichier" class="px-6 py-3 font-semibold text-gray-600 border-b-2 border-transparent transition-colors hover:text-gray-800 hover:bg-gray-50 cursor-pointer" onclick="switchTab('fichier')">Le fichier à cartes</button>
         </div>
+
+        <!-- TAB CONTENT : LA CARTE PERFORÉE -->
+        <div id="content-carte" role="tabpanel" aria-labelledby="tab-carte" class="text-[13px] leading-relaxed text-gray-600 flex flex-col gap-6">
+          <h3 class="font-bold text-base uppercase text-gray-800">Les cartes perforées ou cartes mécanographiques</h3>
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <div class="lg:col-span-8 flex flex-col gap-4">
+              <p>La carte perforée est principalement utilisée de 1890 à 1935 pour les travaux statistiques, puis à partir de 1935 pour tous les travaux administratifs et de gestion. Elle comporte 12 lignes de 80 colonnes. Elle sera largement utilisée par les machines électromécaniques et même les ordinateurs jusqu’à la fin des années 1970. Elle sera définitivement détrônée par le mode de travail dit « transactionnel » qui à partir d’un terminal, permit une interaction directe entre l’ordinateur et l’utilisateur.</p>
+              <p>Les cartes mécanographiques, fabriquées en papier carton de bonne qualité, mesurent 187,32 mm de longueur, 82,55 mm de largeur et 0,17 mm d'épaisseur. Celles-ci comportent un coin coupé à l’angle supérieur gauche pour repérer le sens de passage dans la machine. Les cartes existent en plusieurs couleurs et il existe plusieurs dizaines de modèles pré-imprimés différents (cartes simples sans cases de saisie, ou avec cases de saisie manuelle).</p>
+              <p>C’est la mémoire de stockage des données. Les caractères sont codés par des trous rectangulaires dans les 80 colonnes de la carte. Pour mémoriser les données, Bull utilisait le <strong>code AN7</strong> :</p>
+              <ul class="list-disc list-inside space-y-1.5 ml-2">
+                <li><strong>Caractères numériques</strong> (0 à 9 et le point « . ») : codés sur une colonne par une seule perforation à l'emplacement correspondant à sa valeur (0 à 9 et 11 pour le point).</li>
+                <li><strong>Caractères alphabétiques</strong> (A à Z) : codés sur une colonne par deux perforations combinées. <em>(À noter : le « O » et le « I » ne figurent pas isolément mais sont identiques aux caractères 0 et 1).</em></li>
+              </ul>
+            </div>
+            <div class="lg:col-span-4 flex flex-col gap-3">
+              <div class="rounded-xl overflow-hidden shadow-sm bg-white border border-gray-100 p-2 text-center">
+                <img src="/assets/collections/mecanographie/lot_carte1.webp" alt="Échantillons de cartes perforées" class="max-h-32 w-auto max-w-full object-contain mx-auto rounded" loading="lazy" decoding="async">
+                <p class="text-[11px] text-muted mt-1 font-medium">Échantillons de cartes mécanographiques</p>
+              </div>
+              <div class="rounded-xl overflow-hidden shadow-sm bg-white border border-gray-100 p-2 text-center">
+                <img src="/assets/collections/mecanographie/Code.webp" alt="Tableau de codification AN7" class="max-h-36 w-auto max-w-full object-contain mx-auto rounded" loading="lazy" decoding="async">
+                <p class="text-[11px] text-muted mt-1 font-medium">Tableau de codification Bull AN7</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB CONTENT : LE FICHIER À CARTES -->
+        <div id="content-fichier" role="tabpanel" aria-labelledby="tab-fichier" class="hidden text-[13px] leading-relaxed text-gray-600 flex flex-col gap-6">
+          <h3 class="font-bold text-base uppercase text-gray-800">Le fichier à cartes perforées</h3>
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <div class="lg:col-span-8 flex flex-col gap-4">
+              <p>Un fichier est composé de plusieurs cartes perforées, permettant de mémoriser des informations relatives à un domaine (stock, comptabilité, paie…), et devant être traitées par différentes machines dans l’atelier mécanographique.</p>
+              <p>Une carte comporte 80 colonnes de 12 lignes, ce qui représente 80 caractères alphanumériques (une perforation par colonne pour un chiffre, deux perforations pour une lettre). Il est nécessaire de répartir les données sur plusieurs cartes si l’ensemble des données concernant un domaine comporte plus de 80 caractères.</p>
+              <p>Le <strong>code carte (C/C)</strong>, en général perforé sur les premières colonnes de la carte, sert à différencier les cartes d’un même référent. Suivant les données qu’elles comportent, on distingue trois grands types de cartes :</p>
+              <div class="flex flex-col gap-3 ml-2">
+                <div class="border-l-2 border-primary pl-3 py-1">
+                  <p class="font-semibold text-gray-800">1. Carte maîtresse :</p>
+                  <p class="text-xs text-muted mt-0.5">Identifie un référent et comporte généralement les données constantes et variables qui lui sont propres (n° de produit, désignation, quantité en stock, etc.).</p>
+                </div>
+                <div class="border-l-2 border-primary pl-3 py-1">
+                  <p class="font-semibold text-gray-800">2. Carte détail :</p>
+                  <p class="text-xs text-muted mt-0.5">Contient les informations permettant d’éditer des documents reflétant une nouvelle situation d’un référent et de produire éventuellement une carte récapitulative pour les travaux cycliques (bulletins de salaires, fiches de stocks, factures, commandes, etc.).</p>
+                </div>
+                <div class="border-l-2 border-primary pl-3 py-1">
+                  <p class="font-semibold text-gray-800">3. Carte récapitulative :</p>
+                  <p class="text-xs text-muted mt-0.5">Créée suite à un traitement spécifique (ex. : mise à jour des stocks en magasin), elle reprend les données constantes de la carte maîtresse et les données modifiées issues du traitement. Cette carte devient alors la nouvelle carte maîtresse lors du prochain cycle.</p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:col-span-4 flex flex-col gap-3">
+              <div class="rounded-xl overflow-hidden shadow-sm bg-white border border-gray-100 p-2 text-center">
+                <img src="/assets/collections/mecanographie/Diagramme_fic.webp" alt="Schéma de traitement de fichier à cartes" class="max-h-64 w-auto max-w-full object-contain mx-auto rounded" loading="lazy" decoding="async">
+                <p class="text-[11px] text-muted mt-1 font-medium">Exemple : Traitement mécanographique de mise à jour du stock</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <!-- VIDÉOS -->
@@ -149,10 +206,10 @@
         <h2 class="font-heading font-bold text-2xl text-gray-900 uppercase" data-i18n="mecano.videos_title">Vidéos</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <div class="card-video relative w-full aspect-video bg-gray-200 cursor-pointer overflow-hidden group mb-3"
-              data-video="https://vimeo.com/267605994">
-              <img src="/assets/images/placeholder.svg" alt="Video cover"
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale">
+            <div class="card-video relative w-full aspect-video bg-gray-200 cursor-pointer overflow-hidden group mb-3 rounded-xl shadow-md"
+              data-video="https://vimeo.com/80070927">
+              <img src="/assets/images/video-thumb-vimeo.webp" alt="Mécanographie vue par l'espace multimédia gantner"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async">
               <div
                 class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/30 transition-colors">
                 <div
@@ -164,16 +221,16 @@
               </div>
             </div>
             <p class="text-xs font-medium text-gray-500">
-              <a href="https://vimeo.com/267605994" class="underline hover:text-primary transition-colors"
-                target="_blank" data-i18n="mecano.video1_link">Mécanographie vue par l'espace multimédia gantner</a> sur Vimeo.
+              <a href="https://vimeo.com/80070927" class="underline hover:text-[var(--color-primary-text)] transition-colors"
+                target="_blank" rel="noopener noreferrer" data-i18n="mecano.video1_link">Mécanographie vue par l'espace multimédia gantner</a> sur Vimeo.
             </p>
           </div>
 
           <div>
-            <div class="card-video relative w-full aspect-video bg-gray-200 cursor-pointer overflow-hidden group mb-3"
-              data-video="https://www.youtube.com/watch?v=kYvH5Qe2Htc">
-              <img src="/assets/images/placeholder.svg" alt="Video cover"
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale">
+            <div class="card-video relative w-full aspect-video bg-gray-200 cursor-pointer overflow-hidden group mb-3 rounded-xl shadow-md"
+              data-video="https://www.youtube.com/watch?v=70nclVNnIf4">
+              <img src="/assets/images/video-thumb-yt.webp" alt="Démonstration atelier mécanographique PB2I"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async">
               <div
                 class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/30 transition-colors">
                 <div
@@ -185,9 +242,11 @@
               </div>
             </div>
             <p class="text-xs font-medium text-gray-500">
-              <span data-i18n="mecano.video2_intro">Voir aussi le reportage audio :</span> <a href="https://www.youtube.com/watch?v=kYvH5Qe2Htc" target="_blank"
-                class="underline hover:text-primary transition-colors" data-i18n="mecano.video2_link">Préhistoire de l'informatique (site de Cécile
-                Babiole)</a>
+              <a href="https://www.youtube.com/watch?v=70nclVNnIf4" target="_blank" rel="noopener noreferrer"
+                class="underline hover:text-[var(--color-primary-text)] transition-colors">Démonstration de l'atelier mécanographique PB2I</a> sur YouTube.
+            </p>
+            <p class="text-xs text-gray-400 mt-1">
+              Voir aussi le reportage audio : <a href="http://babiole.net/pionniers-francais-de-linformatique/" target="_blank" rel="noopener noreferrer" class="underline hover:text-[var(--color-primary-text)] transition-colors">Préhistoire de l'informatique (site de Cécile Babiole)</a>
             </p>
           </div>
         </div>

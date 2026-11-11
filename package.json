@@ -3,6 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "author": {
+    "name": "Florian Gertner Kilian",
+    "url": "https://wizyx.me"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
